@@ -8,6 +8,7 @@ interface FormulaReport {
 interface Data {
   name: string;
   consultant: string;
+  gift: string;
 }
 
 export default FormulaReport;

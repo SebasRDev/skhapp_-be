@@ -1,10 +1,7 @@
 import { Content, TDocumentDefinitions } from 'pdfmake/interfaces';
+import { tableReport } from 'src/quotes/documents/table.report';
 import FormulaReport from 'src/quotes/interfaces/formula.interface';
-import {
-  calculateTotal,
-  currencyFormatter,
-  formatDate,
-} from 'src/quotes/utils/utils';
+import { formatDate } from 'src/quotes/utils/utils';
 
 const formulaProducts = [
   {
@@ -63,145 +60,8 @@ export const formulaReport = (
   const today = new Date();
   const formatedDate = formatDate(today);
 
-  const hasAnyDiscount = formulaProducts.some((product) => product.discount);
-
-  const total = calculateTotal(formulaProducts, 'profesionalPrice');
-
-  // const total = formulaProducts.reduce(
-  //   (acc, product) => {
-  //     const productTotal =
-  //       product.price * product.quantity * (1 - (product.discount || 0) / 100);
-  //     return {
-  //       subtotal: acc.subtotal + product.price * product.quantity,
-  //       total: acc.total + productTotal,
-  //     };
-  //   },
-  //   { subtotal: 0, total: 0 },
-  // );
-
   const { data } = formulaInfo;
-  const { name, consultant } = data;
-
-  interface CellConfig {
-    isLast?: boolean;
-    alignment?: 'left' | 'center' | 'right';
-    margin?: number[];
-  }
-
-  const HeaderCell = (value: string, config?: CellConfig) => {
-    const { isLast = false, alignment } = config || {};
-    return {
-      text: value,
-      // border: isLast
-      //   ? [false, false, false, false]
-      //   : [false, false, true, false],
-      style: isLast ? 'tableHeaderRight' : 'tableHeader',
-      alignment,
-    };
-  };
-
-  const regularCell = (value: string, config?: CellConfig) => {
-    const { isLast = false, alignment, margin } = config || {};
-    return {
-      text: value.toLowerCase(),
-      // border: isLast
-      //   ? [false, false, false, false]
-      //   : [false, false, true, false],
-      style: isLast ? 'lastCell' : 'cell',
-      alignment,
-      margin,
-    };
-  };
-
-  const getTableHeaders = () => {
-    const baseHeaders = [
-      HeaderCell('Nombre', { alignment: 'left' }),
-      HeaderCell('Fase Tratamiento'),
-      HeaderCell('Uso'),
-      HeaderCell('Cant'),
-    ];
-
-    if (hasAnyDiscount) {
-      baseHeaders.push(HeaderCell('Dcto'));
-    }
-
-    baseHeaders.push(HeaderCell('Valor', { isLast: true }));
-    return baseHeaders;
-  };
-
-  const getTableWidths = () => {
-    const baseWidths = [200, 'auto', 'auto', 30];
-    if (hasAnyDiscount) {
-      baseWidths.push('auto');
-    }
-    baseWidths.push('auto');
-    return baseWidths;
-  };
-
-  const getProductRow = (product: (typeof formulaProducts)[0]) => {
-    const baseRow = [
-      regularCell(product.name, { alignment: 'left' }),
-      regularCell(product.phase),
-      regularCell(product.time),
-      regularCell(product.quantity.toString()),
-    ];
-
-    if (hasAnyDiscount) {
-      baseRow.push(regularCell(`${product.discount || 0}%`));
-    }
-
-    baseRow.push(
-      regularCell(currencyFormatter.format(product.publicPrice), {
-        isLast: true,
-      }),
-    );
-
-    return baseRow;
-  };
-
-  const getTotalRows = () => {
-    const totalColSpan = hasAnyDiscount ? 5 : 4;
-    const rows: Content[][] = [];
-
-    const getEmptyCells = (count: number) => {
-      return Array(count)
-        .fill(null)
-        .map(() =>
-          regularCell('', {
-            alignment: 'center',
-            margin: [0, 5],
-          }),
-        );
-    };
-
-    if (hasAnyDiscount) {
-      rows.push([
-        {
-          text: 'SUBTOTAL',
-          alignment: 'right',
-          colSpan: totalColSpan,
-          border: [false, false, false, false],
-          style: 'tableHeader',
-        } as Content,
-        ...getEmptyCells(totalColSpan - 1),
-        HeaderCell(currencyFormatter.format(total.subtotal), { isLast: true }),
-      ]);
-    }
-
-    rows.push([
-      {
-        text: 'TOTAL',
-        alignment: 'right',
-        colSpan: totalColSpan,
-        border: [false, false, false, false],
-        style: 'tableHeader',
-      } as Content,
-      ...getEmptyCells(totalColSpan - 1),
-      HeaderCell(currencyFormatter.format(total.total), { isLast: true }),
-    ]);
-
-    return rows;
-  };
+  const { name, consultant, gift } = data;
 
   const getBenefits: Content[] = formulaProducts.map((product) => [
     {
@@ -256,19 +116,6 @@ export const formulaReport = (
     },
   ]);
 
-  const table: Content = {
-    layout: 'lightHorizontalLines',
-    table: {
-      widths: getTableWidths(),
-      headerRows: 1,
-      body: [
-        getTableHeaders(),
-        ...formulaProducts.map(getProductRow),
-        ...getTotalRows(),
-      ],
-    },
-  };
-
   return {
     pageMargins: [40, 150, 40, 40],
     background: function () {
@@ -297,9 +144,9 @@ export const formulaReport = (
         text: `Estimado/a ${name} a continuación ${consultant} especialista Skinhealth te hace la siguiente recomendación`,
         style: 'body',
       },
-      table,
+      tableReport(formulaProducts),
       {
-        text: `Las cortesías por su compra son: ${'Vela'}`,
+        text: `Las cortesías por su compra son: ${gift}`,
         style: 'body',
         margin: [0, 20],
       },
