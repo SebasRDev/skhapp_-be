@@ -1,0 +1,43 @@
+import {
+  Column,
+  Entity,
+  PrimaryGeneratedColumn,
+  OneToMany,
+  BeforeInsert,
+  BeforeUpdate,
+} from 'typeorm';
+import { KitProduct } from './kit-product.entity';
+
+@Entity({ name: 'kits' })
+export class Kit {
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
+
+  @Column('text', { unique: true })
+  name: string;
+
+  @Column('integer', { default: 0 })
+  price: number;
+
+  @OneToMany(() => KitProduct, (kitProduct) => kitProduct.kit, {
+    cascade: true,
+    eager: true,
+  })
+  kitProducts: KitProduct[];
+
+  @Column('text', { array: true, default: [] })
+  tips: string[];
+
+  @Column('jsonb', { nullable: false, default: { dia: [], noche: [] } })
+  protocol: { dia: string[]; noche: string[] };
+
+  @BeforeInsert()
+  @BeforeUpdate()
+  calculatePrice() {
+    console.log(this.kitProducts);
+    this.price =
+      this.kitProducts?.reduce((total, kitProduct) => {
+        return total + kitProduct.product.publicPrice * kitProduct.quantity;
+      }, 0) || 0;
+  }
+}
