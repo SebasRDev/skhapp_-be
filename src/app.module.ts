@@ -5,6 +5,7 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { PrinterModule } from './printer/printer.module';
 import { QuotesModule } from './quotes/quotes.module';
+import { SeedModule } from './seed/seed.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { QuotesModule } from './quotes/quotes.module';
     KitsModule,
     PrinterModule,
     QuotesModule,
+    SeedModule,
   ],
   controllers: [],
   providers: [],

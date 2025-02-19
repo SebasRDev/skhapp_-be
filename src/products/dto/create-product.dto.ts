@@ -7,10 +7,10 @@ export class CreateProductDto {
   readonly name: string;
   @IsNumber()
   @IsOptional()
-  readonly publicPrice?: number;
+  readonly publicPrice?: number | null;
   @IsNumber()
   @IsOptional()
-  readonly efficiency?: number;
+  readonly efficiency?: number | null;
   @IsNumber()
   readonly profesionalPrice: number;
   @IsString()

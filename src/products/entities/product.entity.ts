@@ -13,10 +13,10 @@ export class Product {
   name: string;
 
   @Column('integer', { nullable: true })
-  publicPrice: number;
+  publicPrice: number | null;
 
   @Column('integer', { nullable: true })
-  efficiency: number;
+  efficiency: number | null;
 
   @Column('integer')
   profesionalPrice: number;

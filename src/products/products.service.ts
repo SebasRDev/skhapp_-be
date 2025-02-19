@@ -88,6 +88,16 @@ export class ProductsService {
     }
   }
 
+  async deleteAllProducts() {
+    const query = this.productRepository.createQueryBuilder('product');
+
+    try {
+      await query.delete().where({}).execute();
+    } catch (error) {
+      this.handleException(error);
+    }
+  }
+
   private handleException(error: any) {
     const errorCode = (error as { code?: string }).code;
     const errorDetail = (error as { detail?: string }).detail;

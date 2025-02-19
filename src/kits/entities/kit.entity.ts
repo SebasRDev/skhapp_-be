@@ -34,7 +34,6 @@ export class Kit {
   @BeforeInsert()
   @BeforeUpdate()
   calculatePrice() {
-    console.log(this.kitProducts);
     this.price =
       this.kitProducts?.reduce((total, kitProduct) => {
         return total + kitProduct.product.publicPrice * kitProduct.quantity;

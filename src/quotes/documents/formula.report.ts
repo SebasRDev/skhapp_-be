@@ -1,67 +1,17 @@
 import { Content, TDocumentDefinitions } from 'pdfmake/interfaces';
+import Product from 'src/products/interfaces/product.interface';
 import { tableReport } from 'src/quotes/documents/table.report';
-import FormulaReport from 'src/quotes/interfaces/formula.interface';
+import { Data } from 'src/quotes/interfaces/formula.interface';
 import { formatDate } from 'src/quotes/utils/utils';
 
-const formulaProducts = [
-  {
-    id: '1341142',
-    code: 'LL150',
-    name: 'ACIDO LACTICO LIMPIADOR X 150 G',
-    phase: 'LIMPIEZA',
-    time: 'Día o Noche',
-    quantity: 100,
-    discount: 5,
-    publicPrice: 94900,
-    profesionalPrice: 74900,
-    actives: 'Ácido Láctico 1,1%',
-    properties: [
-      'Eliminas impurezas y toxinas.',
-      'Estabiliza la acidez natural de la piel.//Recomendado para pieles sensibles.',
-    ],
-  },
-  {
-    id: '134142',
-    code: 'LL151',
-    name: 'CREMA NUTRITIVA - AMINO REPAIR COMPLEX X 50 G',
-    phase: 'NUTRICIÓN E HIDRTATCIÓN',
-    time: 'Día o Noche',
-    quantity: 1,
-    publicPrice: 132400,
-    profesionalPrice: 122400,
-    actives: 'Ácido Glicólico 7%, Alantoína 0,2%',
-    properties: [
-      'limina células muertas mediante un peeling suave.',
-      'Devuelve el aspecto juvenil de la piel.',
-      'Deja una sensación de tersura y suavidad. // Recomendado para pieles sensibles.',
-    ],
-  },
-  {
-    id: '134113',
-    code: 'LL152',
-    name: 'AGUA VITALIZANTE NATURAL X 120 G',
-    phase: 'TÓNICO VITALIZANTE',
-    time: 'Día o Noche',
-    quantity: 1,
-    publicPrice: 77300,
-    profesionalPrice: 67300,
-    actives: '17 Aminoácidos Esenciales 5%, Rosa Mosqueta 5%',
-    properties: [
-      'Provee aminoácidos, vitaminas, proteínas y factor humectante.',
-      'Compensa la pérdida de nutrientes y favorece la regeneración de la piel.',
-      'Revitaliza la células y las estimula para producir colágeno y elastina. // Recomendado para pieles secas.',
-    ],
-  },
-];
-
 export const formulaReport = (
-  formulaInfo: FormulaReport,
+  quoteInfo: Data,
+  formulaProducts: Product[],
 ): TDocumentDefinitions => {
   const today = new Date();
   const formatedDate = formatDate(today);
 
-  const { data } = formulaInfo;
-  const { name, consultant, gift } = data;
+  const { name, consultant, gift, recommendation } = quoteInfo;
 
   const getBenefits: Content[] = formulaProducts.map((product) => [
     {
@@ -146,13 +96,15 @@ export const formulaReport = (
       },
       tableReport(formulaProducts),
       {
-        text: `Las cortesías por su compra son: ${gift}`,
+        text: gift ? `Las cortesías por su compra son: ${gift}` : '',
         style: 'body',
         margin: [0, 20],
       },
       {
-        text: `Recomendaciones:  
-        ${'Usar todas las noches antes de mimir'}`,
+        text: recommendation
+          ? `Recomendaciones:  
+        ${recommendation}`
+          : '',
         style: 'body',
         pageBreak: 'after',
       },

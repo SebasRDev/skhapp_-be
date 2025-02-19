@@ -66,8 +66,9 @@ export const tableReport = (data: Product[], property = 'profesionalPrice') => {
       baseRow.push(regularCell(`${product.discount || 0}%`));
     }
 
+    const formattedValue = currencyFormatter.format(Number(product[property]));
     baseRow.push(
-      regularCell(currencyFormatter.format(product[property]), {
+      regularCell(formattedValue, {
         isLast: true,
       }),
     );

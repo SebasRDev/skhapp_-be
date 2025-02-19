@@ -8,9 +8,12 @@ export class QuotesController {
   constructor(private readonly quotesService: QuotesService) {}
 
   @Post('formula')
-  getFormulaReport(@Body() params: FormulaReport, @Res() response: Response) {
+  async getFormulaReport(
+    @Body() params: FormulaReport,
+    @Res() response: Response,
+  ) {
     const { data } = params;
-    const pdfDoc = this.quotesService.getFormulaReport(params);
+    const pdfDoc = await this.quotesService.getFormulaReport(params);
     response.setHeader('Content-Type', 'application/pdf');
     pdfDoc.info.Title = `formula ${data?.name}`;
     pdfDoc.pipe(response);

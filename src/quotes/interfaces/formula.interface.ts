@@ -1,14 +1,19 @@
-import Product from 'src/products/interfaces/product.interface';
-
 interface FormulaReport {
   data: Data;
-  products: Product[];
+  products: ProductQuote[];
 }
 
-interface Data {
+export interface Data {
   name: string;
   consultant: string;
-  gift: string;
+  gift?: string;
+  recommendation?: string;
+}
+
+interface ProductQuote {
+  id: string;
+  quantity: number;
+  discount?: number;
 }
 
 export default FormulaReport;
