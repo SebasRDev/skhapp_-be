@@ -17,9 +17,12 @@ export class CreateProductDto {
   readonly actives: string;
   @IsString({ each: true })
   @IsArray()
+  @IsOptional({ each: true })
   readonly properties: string[];
   @IsString()
+  @IsOptional()
   readonly phase: string;
   @IsString()
+  @IsOptional()
   readonly time: string;
 }

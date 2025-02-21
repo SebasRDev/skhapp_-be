@@ -1,4 +1,4 @@
-interface FormulaReport {
+interface Report {
   data: Data;
   products: ProductQuote[];
 }
@@ -16,4 +16,4 @@ interface ProductQuote {
   discount?: number;
 }
 
-export default FormulaReport;
+export default Report;

@@ -5,6 +5,7 @@ import FormulaReport from 'src/quotes/interfaces/formula.interface';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Product } from 'src/products/entities/product.entity';
 import { Repository } from 'typeorm';
+import { quoteReport } from 'src/quotes/documents/quote.report';
 
 @Injectable()
 export class QuotesService {
@@ -15,7 +16,7 @@ export class QuotesService {
     private readonly printer: PrinterService,
   ) {}
 
-  async getFormulaReport(quoteData: FormulaReport) {
+  async getReport(quoteData: FormulaReport, type: 'formula' | 'quote') {
     const { data, products } = quoteData;
 
     const formulaProducts = await Promise.all(
@@ -32,7 +33,13 @@ export class QuotesService {
       }),
     );
 
-    const docDefinition = formulaReport(data, formulaProducts);
+    let docDefinition: any;
+    if (type === 'formula') {
+      docDefinition = formulaReport(data, formulaProducts);
+    }
+    if (type === 'quote') {
+      docDefinition = quoteReport(data, formulaProducts);
+    }
     return this.printer.createPdf(docDefinition);
   }
 }

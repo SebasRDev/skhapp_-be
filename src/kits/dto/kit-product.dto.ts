@@ -1,8 +1,8 @@
-import { IsUUID, IsInt, Min } from 'class-validator';
+import { IsInt, Min, IsString } from 'class-validator';
 
 export class KitProductDto {
-  @IsUUID()
-  id: string;
+  @IsString()
+  code: string;
 
   @IsInt()
   @Min(1)

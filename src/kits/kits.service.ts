@@ -33,8 +33,8 @@ export class KitsService {
 
       const products = await Promise.all(
         createKitDto.products.map(async (product) => {
-          const productDB = await this.productsRespository.findOneBy({
-            id: product.id,
+          const productDB = await this.productsRespository.findOne({
+            where: { code: product.code },
           });
           if (!productDB) throw new NotFoundException('Product not found');
           return {
