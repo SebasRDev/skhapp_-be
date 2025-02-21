@@ -36,7 +36,8 @@ export class Kit {
   calculatePrice() {
     this.price =
       this.kitProducts?.reduce((total, kitProduct) => {
-        return total + kitProduct.product.publicPrice * kitProduct.quantity;
+        const productPrice = kitProduct.product?.publicPrice ?? 0;
+        return total + productPrice * kitProduct.quantity;
       }, 0) || 0;
   }
 }
