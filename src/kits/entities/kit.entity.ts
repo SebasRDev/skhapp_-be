@@ -13,6 +13,9 @@ export class Kit {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
+  @Column('text', { nullable: true })
+  category: string;
+
   @Column('text', { unique: true })
   name: string;
 
@@ -30,6 +33,9 @@ export class Kit {
 
   @Column('jsonb', { nullable: false, default: { dia: [], noche: [] } })
   protocol: { dia: string[]; noche: string[] };
+
+  @Column('text', { nullable: true })
+  imageLink: string | null;
 
   @BeforeInsert()
   @BeforeUpdate()

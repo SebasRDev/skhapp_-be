@@ -32,7 +32,7 @@ export const quoteReport = (
             y: 0,
             w: 595.28,
             h: 841.89,
-            color: '#e6e2cf',
+            color: '#F2EED4',
           },
         ],
       };
@@ -50,7 +50,7 @@ export const quoteReport = (
         style: 'body',
       },
       tableReport(homeProducts, 'publicPrice'),
-      tableReport(cabineProducts),
+      cabineProducts.length > 0 ? tableReport(cabineProducts) : '',
       {
         text: gift ? `Las cortesías por su compra son: ${gift}` : '',
         style: 'body',

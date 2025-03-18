@@ -14,6 +14,9 @@ class Protocol {
 
 export class CreateKitDto {
   @IsString()
+  category: string;
+
+  @IsString()
   name: string;
 
   @IsArray()

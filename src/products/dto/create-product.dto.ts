@@ -25,4 +25,7 @@ export class CreateProductDto {
   @IsString()
   @IsOptional()
   readonly time: string;
+  @IsString()
+  @IsOptional()
+  image?: string | null;
 }

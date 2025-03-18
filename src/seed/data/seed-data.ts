@@ -8,13 +8,16 @@ interface Product {
   properties: string[];
   phase: string;
   time: string;
+  image?: string | null;
 }
 
 interface Kit {
+  category: string;
   name: string;
   tips: string[];
   protocol: { dia: string[]; noche: string[] };
   products: { code: string; quantity: number }[];
+  imageLink?: string | null;
 }
 
 interface SeedData {
@@ -39,6 +42,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751884/hhy1w7jhj2y6opmln6li.png',
     },
     {
       code: 'AGG',
@@ -55,6 +60,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751887/hymapdbiji96gxangf8t.png',
     },
     {
       code: 'AGL',
@@ -72,6 +79,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751885/nfvveeyhcaoxeuxilfl5.png',
     },
     {
       code: 'AGHK',
@@ -87,6 +96,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751883/zetxvyx1iy8qsxapm6z5.png',
     },
     {
       code: 'AKG',
@@ -102,6 +113,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751878/tv6bhty9cu7us3hmprq1.png',
     },
     {
       code: 'VC30',
@@ -118,6 +131,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751882/zkbureisbvxswxtazhlv.png',
     },
     {
       code: 'MAN10-30',
@@ -132,6 +147,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751877/qhvcdqcoxavqjpsfeyce.png',
     },
     {
       code: 'AHA10',
@@ -147,6 +164,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751876/frbpeew4tj2yyyartihh.png',
     },
     {
       code: 'SDN30',
@@ -161,6 +180,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751873/znjwnwjovnjyqjvdui0q.png',
     },
     {
       code: 'AL150',
@@ -176,6 +197,8 @@ export const initialData: SeedData = {
       ],
       phase: 'LIMPIEZA',
       time: 'DÍA O NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751875/q5q93gt4u3l5zlxlj2aj.png',
     },
     {
       code: 'GE125',
@@ -191,6 +214,8 @@ export const initialData: SeedData = {
       ],
       phase: 'LIMPIEZA',
       time: 'DÍA O NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751872/lp4yfqyxjvi6rszcukrr.png',
     },
     {
       code: 'GL125',
@@ -205,6 +230,8 @@ export const initialData: SeedData = {
       ],
       phase: 'LIMPIEZA',
       time: 'DÍA O NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751870/gp2lejbp0wasbjbt38v9.png',
     },
     {
       code: 'LL150',
@@ -220,6 +247,8 @@ export const initialData: SeedData = {
       ],
       phase: 'LIMPIEZA',
       time: 'DÍA O NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741829902/lsxadrfzpzj7n1iw6o2f.png',
     },
     {
       code: 'GD100',
@@ -227,7 +256,7 @@ export const initialData: SeedData = {
       publicPrice: 101600,
       efficiency: null,
       profesionalPrice: 68600,
-      actives: 'Semillas de durazno y nuez 10%, Ácidos Grasos de Coco 5%',
+      actives: 'Semillas de nuez 10%, Ácidos Grasos de Coco 5%',
       properties: [
         '1.Elimina impurezas y toxinas.',
         'Prepara la piel para recibir principios activos.',
@@ -235,6 +264,8 @@ export const initialData: SeedData = {
       ],
       phase: 'LIMPIEZA Y EXFOLIACIÓN',
       time: 'DÍA O NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751869/kwrvblrp9jlurlatg12x.png',
     },
     {
       code: 'ATN120',
@@ -252,6 +283,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TÓNICO VITALIZANTE',
       time: 'DÍA O NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751867/cuutspiftbdhdyl1oeai.png',
     },
     {
       code: 'ATR120',
@@ -269,6 +302,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TÓNICO VITALIZANTE',
       time: 'DÍA O NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751867/cuutspiftbdhdyl1oeai.png',
     },
     {
       code: 'ATV120',
@@ -286,6 +321,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TÓNICO VITALIZANTE',
       time: 'DÍA O NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751867/cuutspiftbdhdyl1oeai.png',
     },
     {
       code: 'CEQ10',
@@ -302,6 +339,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO ',
       time: 'DÍA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751711/zen4wjncbyzlvnn1ald2.png',
     },
     {
       code: 'RQ50',
@@ -317,6 +356,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO ',
       time: 'DÍA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751866/wydhwe5d4cf5vdnnscou.png',
     },
     {
       code: 'GA50',
@@ -332,6 +373,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751865/szhqahekbzezmzqjme6f.png',
     },
     {
       code: 'BA150',
@@ -349,6 +392,8 @@ export const initialData: SeedData = {
       ],
       phase: 'NUTRICIÓN E HIDRTATCIÓN',
       time: 'DIA O NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751863/b8cjkotpcydxp4g9mrrs.png',
     },
     {
       code: 'BL30',
@@ -366,6 +411,8 @@ export const initialData: SeedData = {
       ],
       phase: 'NUTRICIÓN E HIDRTATCIÓN',
       time: 'DIA O NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751862/v2s2lmifzaojtmvgvhlh.png',
     },
     {
       code: 'CN50',
@@ -382,6 +429,8 @@ export const initialData: SeedData = {
       ],
       phase: 'NUTRICIÓN E HIDRTATCIÓN',
       time: 'DIA O NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751861/jhivmmxrlalo1o6oby6p.png',
     },
     {
       code: 'GH100',
@@ -397,6 +446,8 @@ export const initialData: SeedData = {
       ],
       phase: 'NUTRICIÓN E HIDRTATCIÓN',
       time: 'DIA O NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751858/pkpdsuw1mwlzcpstbscn.png',
     },
     {
       code: 'HF50',
@@ -414,6 +465,8 @@ export const initialData: SeedData = {
       ],
       phase: 'NUTRICIÓN E HIDRTATCIÓN',
       time: 'DIA O NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751859/nku57yacqfm34zsqb5p4.png',
     },
     {
       code: 'SH50',
@@ -430,6 +483,8 @@ export const initialData: SeedData = {
       ],
       phase: 'NUTRICIÓN E HIDRTATCIÓN',
       time: 'DIA O NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751856/te4hvojksxr9ossdiguz.png',
     },
     {
       code: 'CO30',
@@ -444,6 +499,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO',
       time: 'DIA O NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751855/khbtfdyyq6r9dex0ckwt.png',
     },
     {
       code: 'DO125',
@@ -458,6 +515,8 @@ export const initialData: SeedData = {
       ],
       phase: 'LIMPIEZA',
       time: 'DIA O NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751854/yw2eoohixgvaswz7ssqt.png',
     },
     {
       code: 'DO250',
@@ -472,6 +531,8 @@ export const initialData: SeedData = {
       ],
       phase: 'LIMPIEZA',
       time: 'DIA O NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751854/yw2eoohixgvaswz7ssqt.png',
     },
     {
       code: 'PT60',
@@ -486,6 +547,8 @@ export const initialData: SeedData = {
       ],
       phase: 'PROTECCIÓN',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751822/ugonclvwab1mu2mlfbx1.png',
     },
     {
       code: 'PT100',
@@ -500,6 +563,8 @@ export const initialData: SeedData = {
       ],
       phase: 'PROTECCIÓN',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751822/ugonclvwab1mu2mlfbx1.png',
     },
     {
       code: 'PT150',
@@ -514,6 +579,8 @@ export const initialData: SeedData = {
       ],
       phase: 'PROTECCIÓN',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751822/ugonclvwab1mu2mlfbx1.png',
     },
     {
       code: 'PTC60',
@@ -530,6 +597,8 @@ export const initialData: SeedData = {
       ],
       phase: 'PROTECCIÓN',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751823/exizpm8q8d6fhrq3idod.png',
     },
     {
       code: 'PTC100',
@@ -546,6 +615,8 @@ export const initialData: SeedData = {
       ],
       phase: 'PROTECCIÓN',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751823/exizpm8q8d6fhrq3idod.png',
     },
     {
       code: 'PTC150',
@@ -562,6 +633,8 @@ export const initialData: SeedData = {
       ],
       phase: 'PROTECCIÓN',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751823/exizpm8q8d6fhrq3idod.png',
     },
     {
       code: 'CC60',
@@ -577,6 +650,8 @@ export const initialData: SeedData = {
       ],
       phase: 'REPARACIÓN',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751724/tpawfxhzxzdjm5w3hnhn.png',
     },
     {
       code: 'PSN30',
@@ -592,6 +667,8 @@ export const initialData: SeedData = {
       ],
       phase: 'PRIMER',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751723/xeseenlevjosy7lqzazh.png',
     },
     {
       code: 'PSP30',
@@ -607,6 +684,8 @@ export const initialData: SeedData = {
       ],
       phase: 'PRIMER',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751722/wts1eubnymgx0hkzvshg.png',
     },
     {
       code: 'LHT150',
@@ -622,6 +701,8 @@ export const initialData: SeedData = {
       ],
       phase: 'HIDRATACIÓN Y NUTRICIÓN',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751721/oqmpagiwfiadx91shfo2.png',
     },
     {
       code: 'LHS150',
@@ -637,6 +718,8 @@ export const initialData: SeedData = {
       ],
       phase: 'HIDRATACIÓN Y NUTRICIÓN',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751721/oqmpagiwfiadx91shfo2.png',
     },
     {
       code: 'CI150',
@@ -653,6 +736,8 @@ export const initialData: SeedData = {
       ],
       phase: 'LIMPIEZA',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751719/mqvzsa4qymkklikxninu.png',
     },
     {
       code: 'GN150',
@@ -669,6 +754,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751718/t9x81w6d5jqxhmcxq4b4.png',
     },
     {
       code: 'GS150',
@@ -684,6 +771,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751717/iddz7ywx4rhyjghiwqdq.png',
     },
     {
       code: 'GLD100',
@@ -691,13 +780,15 @@ export const initialData: SeedData = {
       publicPrice: 92500,
       efficiency: null,
       profesionalPrice: 66200,
-      actives: 'Semillas de durazno y nuez 10%, Ácidos Grasos de Coco 5%',
+      actives: 'Semillas de durazno 10%, Ácidos Grasos de Coco 5%',
       properties: [
         'Ayuda a eliminar células muertas y toxinas de la piel.',
         'Prepara la piel para recibir activos por abrasión mecánica',
       ],
       phase: 'LIMPIEZA Y EXFOLIACIÓN',
       time: 'DIA O NOCHE',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751715/gtmzmjx1zv8wgzyighcq.png',
     },
     {
       code: 'GI300',
@@ -712,6 +803,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751716/znqjvjesuvsnhsl1xca5.png',
     },
     {
       code: 'SA300',
@@ -726,6 +819,8 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751714/o1mymmoj0h5rxjxqycod.png',
     },
     {
       code: 'CTR65',
@@ -740,6 +835,8 @@ export const initialData: SeedData = {
       ],
       phase: 'RELAJACIÓN',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751710/bcckr7cwz89noa8ugz7d.png',
     },
     {
       code: 'CTR25',
@@ -754,6 +851,8 @@ export const initialData: SeedData = {
       ],
       phase: 'RELAJACIÓN',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751710/bcckr7cwz89noa8ugz7d.png',
     },
     {
       code: 'ESML13',
@@ -767,6 +866,8 @@ export const initialData: SeedData = {
       ],
       phase: 'RELAJACIÓN',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751712/lkyvpdiofadnhhvewg8d.png',
     },
     {
       code: 'ESEU13',
@@ -781,6 +882,8 @@ export const initialData: SeedData = {
       ],
       phase: 'RELAJACIÓN',
       time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751711/cchcbhejho3ezq5xdwru.png',
     },
     {
       code: 'AL500',
@@ -796,6 +899,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'GE500',
@@ -810,6 +914,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'GL500',
@@ -824,6 +929,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'LL500',
@@ -839,6 +945,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'GD500',
@@ -854,6 +961,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'MD300',
@@ -866,6 +974,7 @@ export const initialData: SeedData = {
       properties: ['Suaviza y regenera.', 'Disminuye la irritación.'],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'MF300',
@@ -881,6 +990,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'MP300',
@@ -896,6 +1006,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'MV300',
@@ -911,12 +1022,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'MA300',
       name: 'MASCARILLA ASTRINGENTE NATURAL X 300 G',
       publicPrice: null,
-      efficiency: 25,
+      efficiency: 25.5,
       profesionalPrice: 70100,
       actives:
         'Extractos Herbales Ayurvedas 4%, Bentonita 6%, Kaolín 6%, Óxido de ZInc 10% ',
@@ -928,12 +1040,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'MAH300',
       name: 'MASCARILLA ASTRINGENTE HERBAL X 300 G',
       publicPrice: null,
-      efficiency: 25,
+      efficiency: 25.5,
       profesionalPrice: 70100,
       actives:
         'Extractos Herbales Ayurvedas 4%, Bentonita 6%, Kaolín 6%, Óxido de ZInc 10% ',
@@ -945,6 +1058,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'BA500',
@@ -962,12 +1076,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'BL150',
       name: 'GEL BIOCOLAGENO III-LIPOSOMA X 150 G',
       publicPrice: null,
-      efficiency: 127,
+      efficiency: 127.5,
       profesionalPrice: 208900,
       actives:
         'Rosa Mosqueta 5%, Amplificador de Síntesis de Colágeno  ASCIII 2%',
@@ -979,12 +1094,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'CN150',
       name: 'CREMA NUTRITIVA X 150 G',
       publicPrice: null,
-      efficiency: 127,
+      efficiency: 127.5,
       profesionalPrice: 153600,
       actives: '17 Aminoácidos Esenciales 5%, Rosa Mosqueta 5%',
       properties: [
@@ -995,6 +1111,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'GH500',
@@ -1010,12 +1127,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'HF150',
       name: 'LOCIÓN HIDRATANTE FACIAL -LIPOSOMAX 150 G',
       publicPrice: null,
-      efficiency: 127,
+      efficiency: 127.5,
       profesionalPrice: 185500,
       actives:
         'Amplificador de Síntesis de Colágeno  ASCIII 0,1%, Acción Anti UV',
@@ -1027,12 +1145,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'CEQ150',
       name: 'SUERO ANTIOXIDANTE - SERUM LIPOSOME X 150 G',
       publicPrice: null,
-      efficiency: 127,
+      efficiency: 127.5,
       profesionalPrice: 172300,
       actives:
         'Vitamina C 3%,  Coenzima Q10 Liposomada 0,5%, Vitamina E 0,2%, Ácido Hialurónico 0,2%',
@@ -1042,12 +1161,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'SH150',
       name: 'SUERO HIDRATANTE X 150 G',
       publicPrice: null,
-      efficiency: 127,
+      efficiency: 127.5,
       profesionalPrice: 165600,
       actives: 'Aminoacid Complex 5%, Escleroglucam 1%',
       properties: [
@@ -1058,12 +1178,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'RQ150',
       name: 'GEL REAFIRMANTE Q10-LIPOSOMA X 150 G',
       publicPrice: null,
-      efficiency: 127,
+      efficiency: 127.5,
       profesionalPrice: 192200,
       actives: 'Coenzima Q10 Liposomada 3%, Escleroglucam 1%',
       properties: [
@@ -1072,6 +1193,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'ATN300',
@@ -1089,6 +1211,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'ATR300',
@@ -1106,6 +1229,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'ATV300',
@@ -1123,6 +1247,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'CC120',
@@ -1138,6 +1263,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'MPN250',
@@ -1154,12 +1280,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'GI500',
       name: 'GEL FRÍO PARA MASAJES X 500 G',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: 42.5,
       profesionalPrice: 66800,
       actives: 'Cafeína 1%, Mentol 1%, Alcanfor',
       properties: [
@@ -1168,6 +1295,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'GI4000',
@@ -1182,12 +1310,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'SA500',
       name: 'GEL CALIENTE PARA MASAJES x 500 G',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: 42.5,
       profesionalPrice: 56700,
       actives: 'Rubefacientes',
       properties: [
@@ -1196,6 +1325,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'SA4000',
@@ -1210,27 +1340,29 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'GF500',
       name: 'GEL FRIO REAFIRMANTE X 500 G',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: 42.5,
       profesionalPrice: 68500,
       actives:
-        'Mentol 1%, Centella Asiática 1%, Algas Fucus 1%, Equisetum Arvense 1%.',
+        'Mentol 2%, Centella Asiática 1%, Algas Fucus 1%, Equisetum Arvense 1%.',
       properties: [
         'Estimula la circulación periférica.                                       2.Tonifica y favore la evauación de toxinas.',
         'Reduce la flacidex y aumenta la flexibilidad de la piel.',
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'HV500',
       name: 'LOCIÓN HIPOTÉRMICA VENDAS X 500 G',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: 42.5,
       profesionalPrice: 45500,
       actives: 'Cafeína 1%, Mentol 1%',
       properties: [
@@ -1240,12 +1372,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'LB500',
       name: 'LOCIÓN HIPOTÉRMICA BUSTO X 500 G',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: 42.5,
       profesionalPrice: 81500,
       actives: 'Cafeína 1%, Mentol 1%',
       properties: [
@@ -1255,12 +1388,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'RB500',
       name: 'GEL REAFIRMANTE BUSTO x 500 G',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: 42.5,
       profesionalPrice: 89500,
       actives:
         'Mentol 1%, Centella Asiática 1%, Algas Fucus 1%, Equisetum Arvense 1%.',
@@ -1270,12 +1404,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'MB500',
       name: 'MASCARILLA CRIOGENICA BUSTO x 500 G',
       publicPrice: null,
-      efficiency: 25,
+      efficiency: 25.5,
       profesionalPrice: 81400,
       actives:
         'Mentol 1%, Extracto de Aloe Vera 4%, Bentonita 6%, Kaolín 6%, Óxido de ZInc 10% ',
@@ -1286,12 +1421,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'CB120',
       name: 'CREMA REPARADORA BUSTO x 120 G',
       publicPrice: null,
-      efficiency: 212,
+      efficiency: 212.5,
       profesionalPrice: 61100,
       actives: 'Alantoína 0,2%, Úrea 2,5%, Rosa Mosqueta 5%, Vitamina E 1%.',
       properties: [
@@ -1300,12 +1436,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'GN500',
       name: 'GEL ANTICELULÍTICO X 500 G',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: 42.5,
       profesionalPrice: 143600,
       actives:
         'Cafeína 1%, Centella Asiática 1%, Algas Fucus 1%, Ginko Biloba 1%,  Castaño de Indias 1%, Equisetum Arvense 1%, Ácido Hialurónico 0,1%.',
@@ -1316,6 +1453,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'GS500',
@@ -1331,12 +1469,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'GLD500',
       name: 'GEL LIMPIADOR EXFOLIANTE CORPORAL DURAZNO X 500 G',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: 42.5,
       profesionalPrice: 104600,
       actives: 'Semillas de durazno y nuez 10%, Ácidos Grasos de Coco 5%',
       properties: [
@@ -1345,6 +1484,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AA500',
@@ -1359,6 +1499,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AN500',
@@ -1373,40 +1514,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-    },
-    {
-      code: 'AMT500',
-      name: 'ACEITE PARA MASAJES DE TE VERDE X 500 G',
-      publicPrice: null,
-      efficiency: 25,
-      profesionalPrice: 71000,
-      actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
-      properties: [
-        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.',
-        'DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
-        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
-        'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
-        'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
-      ],
-      phase: '',
-      time: '',
-    },
-    {
-      code: 'AMS500',
-      name: 'ACEITE PARA MASAJES DE SEDUCTION X 500 G',
-      publicPrice: null,
-      efficiency: 25,
-      profesionalPrice: 71000,
-      actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
-      properties: [
-        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.',
-        'DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
-        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
-        'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
-        'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
-      ],
-      phase: '',
-      time: '',
+      image: null,
     },
     {
       code: 'AMY500',
@@ -1421,6 +1529,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AMK500',
@@ -1435,6 +1544,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AMD500',
@@ -1449,6 +1559,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AA4000',
@@ -1463,6 +1574,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AN4000',
@@ -1477,6 +1589,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AMT4000',
@@ -1491,6 +1604,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AMS4000',
@@ -1505,6 +1619,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AMY4000',
@@ -1519,6 +1634,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AMK4000',
@@ -1533,6 +1649,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AMD4000',
@@ -1547,6 +1664,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AQ4000A',
@@ -1560,6 +1678,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AQ4000T',
@@ -1573,6 +1692,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'CI500',
@@ -1589,6 +1709,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AG15-30',
@@ -1600,6 +1721,7 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AG15-60',
@@ -1611,6 +1733,7 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AG25-30',
@@ -1622,6 +1745,7 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AG25-60',
@@ -1633,6 +1757,7 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AG35-30',
@@ -1644,6 +1769,7 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AG35-60',
@@ -1655,6 +1781,7 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'LN250',
@@ -1666,6 +1793,7 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'MAN30-30',
@@ -1677,6 +1805,7 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AHA30',
@@ -1688,6 +1817,7 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AP30',
@@ -1699,6 +1829,7 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AL10-30',
@@ -1710,6 +1841,7 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'AKG5-30',
@@ -1721,6 +1853,7 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'SD',
@@ -1732,12 +1865,13 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'GLT500',
       name: 'GEL LIMPIADOR EXFOLIANTE TE VERDE X 500 G',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: 42.5,
       profesionalPrice: 104600,
       actives: '',
       properties: [
@@ -1748,12 +1882,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'MRT500',
       name: 'MASCARILLA CORPORAL ARCILLA TE VERDE X 500 G',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: 42.5,
       profesionalPrice: 95800,
       actives: '',
       properties: [
@@ -1764,6 +1899,24 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
+    },
+    {
+      code: 'AMT500',
+      name: 'ACEITE PARA MASAJES TE VERDE X 500 G',
+      publicPrice: null,
+      efficiency: 25,
+      profesionalPrice: 71000,
+      actives: '',
+      properties: [
+        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.                             2.DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
+        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
+        'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
+        'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
+      ],
+      phase: '',
+      time: '',
+      image: null,
     },
     {
       code: 'LHT500',
@@ -1780,6 +1933,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'MNT300',
@@ -1796,12 +1950,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'GLS500',
       name: 'GEL LIMPIADOR EXFOLIANTE SEDUCTION X 500',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: 42.5,
       profesionalPrice: 104600,
       actives: '',
       properties: [
@@ -1812,12 +1967,13 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'MRS500',
       name: 'MASCARILLA CORPORAL ARCILLA SEDUCTION X 500 G',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: 42.5,
       profesionalPrice: 95800,
       actives: '',
       properties: [
@@ -1828,6 +1984,24 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
+    },
+    {
+      code: 'AMS500',
+      name: 'ACEITE PARA MASAJES SEDUCTION X 500 G',
+      publicPrice: null,
+      efficiency: 25,
+      profesionalPrice: 71000,
+      actives: '',
+      properties: [
+        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.                             2.DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
+        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
+        'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
+        'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
+      ],
+      phase: '',
+      time: '',
+      image: null,
     },
     {
       code: 'LHS500',
@@ -1844,6 +2018,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'MNS300',
@@ -1860,6 +2035,7 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'LPR5',
@@ -1871,6 +2047,7 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'LPR10',
@@ -1882,6 +2059,7 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'OLPR',
@@ -1893,6 +2071,7 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'LPR120',
@@ -1900,10 +2079,15 @@ export const initialData: SeedData = {
       publicPrice: 90200,
       efficiency: 20,
       profesionalPrice: 49300,
-      actives: '',
-      properties: [],
-      phase: '',
-      time: '',
+      actives: 'Cafeina, Metilsilanotriol manuronato, Fosfolipidos de Soya.',
+      properties: [
+        'Elimina gradualmente adiposidad localizada.',
+        'Restablece la textura suave de la piel.',
+        'Elimina gradualmente los efectos de la celulitis.',
+      ],
+      phase: 'TRATAMIENTO ',
+      time: 'DIA O NOCHE',
+      image: null,
     },
     {
       code: 'LPRP',
@@ -1916,6 +2100,7 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'LPRP10',
@@ -1928,6 +2113,7 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
     {
       code: 'OLPRP',
@@ -1940,10 +2126,12 @@ export const initialData: SeedData = {
       properties: [],
       phase: '',
       time: '',
+      image: null,
     },
   ],
   kits: [
     {
+      category: 'CASA',
       name: 'KIT CUIDADO DE OJOS',
       products: [
         {
@@ -1955,30 +2143,27 @@ export const initialData: SeedData = {
           quantity: 1,
         },
         {
-          code: 'PT60',
+          code: 'PSN30',
           quantity: 1,
         },
         {
-          code: 'PSN30',
+          code: 'PT60',
           quantity: 1,
         },
       ],
       tips: [
-        'Para ojeras y bolsas muy visibles en los ojos: Humedecer los pomitos con el contorno de ojos y depositarlos en el congelador unos minutos y aplicar en la zona, creando efecto vasoconstrictor. Para finalizar realizar tecleo facial',
-        'Cuando se aplique el contorno de ojos evitar la zona del lagrimal',
+        '1. Humedecer los pomitos con el contorno de ojos y depositarlos en el congelador unos minutos y aplicar en la zona, creando efecto vasoconstrictor. Para finalizar realizar tecleo facial',
       ],
       protocol: {
         dia: [],
         noche: [
-          'Desmaquillar los ojos con el desmaquillante de ojos, agitar el producto hasta optener burbujas, aplique en un pomito la cantidad adecuada  para retirar el maquillaje y suciedad del contorno de los ojos',
-          'Coloque inicialmente el pomito sobre el ojo y dejelo acturar unos segundos, luego realice movimientos de forma lineales de arriba hacia abajo (nunca circular) hasta retirar todo el maquillaje',
-          'Active la valvula del controno de ojos en el pulpejo del dedo aular  ( este dedo ejerce menos presion) y apliquelo de a toquesitos en el contorno de los parpados (inferior y en la parte alta  del parpado movil, bajo la ceja) hasta su completa absorción',
-          'Aplique  una pequeña cantidad de pantalla solar gel  para proteger esta area. si se va a exponer a rayos solares o dispositivos electronicos',
-          'Aplique piel de seda, para matificar y minimizar pequeñas imperfecciones',
+          '1. Desmaquillar los ojos con el desmaquillante de ojos, agitar el producto hasta optener burbujas, aplique en un pomito la cantidad adecuada  para retirar el maquillaje y suciedad del contorno de los ojos.',
         ],
       },
+      imageLink: null,
     },
     {
+      category: 'CASA',
       name: 'KIT PIEL SENSIBLE',
       products: [
         {
@@ -1987,10 +2172,6 @@ export const initialData: SeedData = {
         },
         {
           code: 'AGG',
-          quantity: 1,
-        },
-        {
-          code: 'CN50',
           quantity: 1,
         },
         {
@@ -2003,27 +2184,28 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        'La piel sensible puede presentarse en todo tipo de piel',
-        'Seca, grasa mixta. Este tipo de piel reacciona de manera excesiva, mas fuerte o mas rapidamente a un factor externo',
-        '¿y cómo responden? Con escozor, eritema, descamacion, inflamación entre otros',
+        '1. Seca, grasa mixta. Este tipo de piel reacciona de manera excesiva, mas fuerte o mas rapidamente a un factor externo.',
+        '2. ¿y cómo responden? Con escozor, eritema, descamacion, inflamación entre otros.',
       ],
       protocol: {
         dia: [
-          'Lavar muy bien el rostro con abundante agua',
-          'Aplicar un rocío de Agua Vitalizante sobre el rostro y realizar movimientos de tecleo, hasta su completa absorción',
-          'Aplicar cantidad suficiente de Crema Nutritiva Amino Repair Complex, y realizar un suave masaje hasta su absorción',
-          'Dosifique un gramo de Pantalla Solar Gel y aplique sobre el rostro con suaves maniobras hasta que se genere una capa transparente sobre la piel',
+          '1. Lave muy bien el rostro con abundante agua.',
+          'Aplique Crema Nutritiva - Amino Repair Complex y realice un pequeño masaje hasta su absorción.',
+          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          'Active una o dos veces la válvula de Ácido Lactico Limpiador sobre el rostro húmedo',
-          'Realice movimientos circulares suaves hasta que salga espuma y lave con abundante agua',
+          '1. Active una o dos veces la válvula de Ácido Lactico Limpiador sobre el rostro húmedo.',
+          'Realice movimientos circulares suaves hasta que salga espuma y lave con abundante agua.',
           'Aplique un rocío de Agua Vitalizante sobre el rostro y realice movimientos hasta su absorción',
-          'Aplique una cantidad generosa de Crema Nutritiva Amino Repair Complex y realice un suave masaje hasta su absorción',
-          'Aplique Ácido Glicólico 7% sobre el rostro, evitando el controno de los ojos y mucuosas. Dejar actuar toda la noche',
+          'Aplique una cantidad generosa de Crema Nutritiva Amino Repair Complex y realice un suave masaje hasta su absorción.',
+          'Aplique Ácido Glicólico 7% sobre el rostro, evitando el controno de los ojos y mucuosas. Dejar actuar toda la noche.',
         ],
       },
+      imageLink:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1740779801/oryunuo8wcuqml9azc2p.jpg',
     },
     {
+      category: 'CASA',
       name: 'KIT PIEL SECA',
       products: [
         {
@@ -2044,25 +2226,27 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        'Limitar el tiempo en la ducha o baño a 5 a 10 minutos, utilizar agua templada en vez de caliente',
-        'Aplicar hidratante inmediatamente después de cualquier lavado',
-        'Cuando su piel es seca debe dejar de utilizar jabones, desodorantes y productos que contengan alcohol y fragancias',
+        '1. Limitar el tiempo en la ducha o baño a 5 a 10 minutos, utilizar agua templada en vez de caliente.',
+        '2. Aplicar hidratante inmediatamente después de cualquier lavado.',
+        '3. Cuando su piel es seca debe dejar de utilizar jabones, desodorantes y productos que contengan alcohol y fragancias.',
       ],
       protocol: {
         dia: [
-          'Lave muy bien el rostro con abundante agua',
-          'Aplique Crema Nutritiva - Amino Repair Complex y realice un pequeño masaje hasta su absorción',
-          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel',
+          '1. Lave muy bien el rostro con abundante agua.',
+          'Aplique Crema Nutritiva - Amino Repair Complex y realice un pequeño masaje hasta su absorción.',
+          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          'Active una o dos veces la valvula de Leche Limpiadora',
-          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua',
-          'Aplique Crema Nutritiva Amino Repair Complex y realice un pequeño masaje hasta su absorción',
-          'Aplique una capa delgada y pareja de Ácido Glicólico Crema 10%, evitando la zona de los ojos y mucosas, dejar actuar toda la noche',
+          '1. Active una o dos veces la valvula de Leche Limpiadora.  2 .Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
+          'Aplique Crema Nutritiva Amino Repair Complex y realice un pequeño masaje hasta su absorción.',
+          'Aplique una capa delgada y pareja de Ácido Glicólico Crema 10%, evitando la zona de los ojos y mucosas, dejar actuar toda la noche.',
         ],
       },
+      imageLink:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1740784534/j33smvwd4tuj3vbdxsed.jpg',
     },
     {
+      category: 'CASA',
       name: 'KIT PIEL GRASA',
       products: [
         {
@@ -2087,29 +2271,32 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        'Limpiar el rostro antes de dormir y en la mañana.Buscamos eliminar tanto las impurezas que se acumulan al dormir como las que surgen a lo largo del dia',
-        'Evitar productos muy agresivos que eliminen completamente el manto hidrolipídico de la piel',
-        'Utilizar agua tibia en lugar de caliente o fría',
-        'Utilizar un maquillaje que no ocluya los poros',
-        'Es muy importante utilizar un producto especial para pieles grasas o de lo contrario aumentaremos la oleosidad',
+        '1. Limpiar el rostro antes de dormir y en la mañana.Buscamos eliminar tanto las impurezas que se acumulan al dormir como las que surgen a lo largo del dia.',
+        '2. Evitar productos muy agresivos que eliminen completamente el manto hidrolipídico de la piel.',
+        '3. Utilizar agua tibia en lugar de caliente o fría.',
+        '4. Utilizar un maquillaje que no ocluya los poros.',
+        '5. Es muy importante utilizar un producto especial para pieles grasas o de lo contrario aumentaremos la oleosidad.',
       ],
       protocol: {
         dia: [
-          'Lave muy bien el rostro con abundante agua',
-          'Aplique Suero Hidratante - Amino Acid Complex y realice un pequeño masaje hasta su absorción',
-          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel',
-          'Aplique un gramo Gel Piel De Seda con movimientos circulares y lineales suaves',
+          '1. Lave muy bien el rostro con abundante agua.',
+          'Aplique Suero Hidratante - Amino Acid Complex y realice un pequeño masaje hasta su absorción.',
+          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
+          'Aplique un gramo Gel Piel De Seda con movimientos circulares y lineales suaves.',
         ],
         noche: [
-          'Dosifique uno o dos gramos de Gel Limpiador',
-          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua',
-          'Aplique Suero Hidratante Amino Acid Complex y realice un pequeño masaje hasta su absorción',
-          'Aplique una capa delgada y pareja de Ácido Glicólico Loción 10%, evitando la zona de los ojos y las mucosas, deja actuar toda la noche',
+          '1. Dosifique uno o dos gramos de Gel Limpiador.',
+          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
+          'Aplique Suero Hidratante Amino Acid Complex y realice un pequeño masaje hasta su absorción.',
+          'Aplique una capa delgada y pareja de Ácido Glicólico Loción 10%, evitando la zona de los ojos y las mucosas, deja actuar toda la noche.',
         ],
       },
+      imageLink:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1740781650/ysqcyo5jsgpanrnsyahy.png',
     },
     {
-      name: 'KIT PIEL NORMAL',
+      category: 'CASA',
+      name: 'KIT PIEL MIXTA',
       products: [
         {
           code: 'AL150',
@@ -2129,25 +2316,28 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        'El principal problema a la hora de cuidar la piel mixta es evitar que aumente la cantidad de sebo en la zona T del rostro, al tiempo que las zonas más secas reciben toda la hidratación que requieren',
-        'Utilizar un producto hidratante ligero con un bajo contenido de aceite y aplicarlo con moderación en la zona de la frente, la nariz y barbilla',
-        'Es fundamental para mantener una hidratación profunda y, al mismo tiempo, controlar la oleosidad de la piel',
+        '1. El principal problema a la hora de cuidar la piel mixta es evitar que aumente la cantidad de sebo en la zona T del rostro, al tiempo que las zonas más secas reciben toda la hidratación que requieren.',
+        '2. Utilizar un producto hidratante ligero con un bajo contenido de aceite y aplicarlo con moderación en la zona de la frente, la nariz y barbilla.',
+        '3. Es fundamental para mantener una hidratación profunda y, al mismo tiempo, controlar la oleosidad de la piel.',
       ],
       protocol: {
         dia: [
-          'Lave muy bien el rostro con abundante agua',
-          'Aplique Loción Hidratante Facial Liposomada y realice un pequeño masaje hasta su absorción',
-          'Para proteger, dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel',
+          '1. Lave muy bien el rostro con abundante agua.',
+          'Aplique Loción Hidratante Facial Liposomada y realice un pequeño masaje hasta su absorción.',
+          'Para proteger, dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          'Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el rostro',
-          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua',
-          'Aplique Loción Hidratante Facial Liposomada y realice un pequeño masaje hasta su absorción',
-          'Aplique una capa delgada y pareja de Ácido Glicólico Loción 10%, evitando la zona de los ojos y las mucosas. Dejar actuar toda la noche',
+          '1. Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el rostro.',
+          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
+          'Aplique Loción Hidratante Facial Liposomada y realice un pequeño masaje hasta su absorción.',
+          'Aplique una capa delgada y pareja de Ácido Glicólico Loción 10%, evitando la zona de los ojos y las mucosas. Dejar actuar toda la noche.',
         ],
       },
+      imageLink:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1740784857/beky3bsvxvmj5nk5tb1g.jpg',
     },
     {
+      category: 'CASA',
       name: 'KIT MANTENIMIENTO',
       products: [
         {
@@ -2168,25 +2358,27 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        'Nuestra piel no está acostumbrada a la mascarilla y esto produce falta de oxigenación; la piel respira menos y el rozamiento con la mascarilla aumenta el riesgo de infeccion por bacterias propias de nuestra dermis y de irritación por contacto',
-        'El resultado es que se taponan los poros y es más fácil que nos salgan erupciones y comedones',
-        "Las mascarillas sintéticas o derivadas de plástico generan más ocusión e irritación, por lo que se aconseja 'mascarillas de algodón para quienes tienen la piel sensible'",
+        '1. Nuestra piel no está acostumbrada a la mascarilla y esto produce falta de oxigenación; la piel respira menos y el rozamiento con la mascarilla aumenta el riesgo de infeccion por bacterias propias de nuestra dermis y de irritación por contacto',
+        '2. El resultado es que se taponan los poros y es más fácil que nos salgan erupciones y comedones.',
       ],
       protocol: {
         dia: [
-          'Lave muy bien el rostro con abundante agua',
-          'Aplique Suero Antioxidante y realice un pequeño masaje hasta su absorción',
-          'Para proteger, dosifique un gramo de Pantalla Solar Gel, aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel',
+          '1. Lave muy bien el rostro con abundante agua.',
+          'Aplique Suero Antioxidante y realice un pequeño masaje hasta su absorción.',
+          'Para proteger, dosifique un gramo de Pantalla Solar Gel, aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          'Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el rostro',
-          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua',
-          'Aplique Suero Antioxidante y realice un pequeño masaje hasta su absorción',
-          'Aplique una capa delgada y pareja de Ácido Glicólico Gel 7%, evitando la zona de los ojos y las mucosas.',
+          '1.  Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el rostro.',
+          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
+          'Aplique Suero Antioxidante y realice un pequeño masaje hasta su absorción.',
+          'Aplique una capa delgada y pareja de Ácido Glicólico Gel 7%, evitando la zona de los ojos y las mucosas. Dejar actuar toda la noche.',
         ],
       },
+      imageLink:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1740785164/oz2mouqpvxopokgpr8vq.jpg',
     },
     {
+      category: 'CASA',
       name: 'KIT REJUVENECIMIENTO',
       products: [
         {
@@ -2207,25 +2399,28 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        'Incluir antioxidante en la dieta',
-        'Beber suficiente agua',
-        'Protegerse del sol',
-        'Respirar profundo cuantas veces sea posible',
+        '1. Incluir antioxidante en la dieta.',
+        '2. Beber suficiente agua.',
+        '3. Protegerse del sol.',
+        '4. Respirar profundo cuantas veces sea posible.',
       ],
       protocol: {
         dia: [
-          'Lave muy bien el rostro con abundane agua',
-          'Aplique Gel Biocolágeno III Liposoma y realice un pequeño masaje hasta su absorción',
-          'Para proteger, dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel',
+          '1. Lave muy bien el rostro con abundane agua.',
+          'Aplique Gel Biocolágeno III Liposoma y realice un pequeño masaje hasta su absorción.',
+          'Para proteger, dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          'Dosifique uno o dos gramos de Gel Limpiador sobre el rostro',
-          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua',
-          'Dosifique cantidad necesaria de Gel Antiedad en su mano y aplique de forma pareja en su rostro, formando una capa uniforme y delgada, Evite el área de los ojos y las mucosas. Déjelo actuar toda la noche',
+          '1. Dosifique uno o dos gramos de Gel Limpiador sobre el rostro.',
+          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
+          'Dosifique cantidad necesaria de Gel Antiedad en su mano y aplique de forma pareja en su rostro, formando una capa uniforme y delgada, Evite el área de los ojos y las mucosas. Déjelo actuar toda la noche.',
         ],
       },
+      imageLink:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1740779681/b6myot3hucohwjetpqj3.png',
     },
     {
+      category: 'CASA',
       name: 'KIT REJUVENECIMIENTO ESCOTE',
       products: [
         {
@@ -2246,27 +2441,30 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        'La piel del escote es especialmente fina y delicada. Apenas presenta el colágeno suficiente para mantener su firmeza, por lo que se debe extremar su cuidado',
-        'Proteger, exfoliar e hidratar son claves para un escote firme y sano',
+        '1. La piel del escote es especialmente fina y delicada. Apenas presenta el colágeno suficiente para mantener su firmeza, por lo que se debe extremar su cuidado.',
+        '2. Proteger, exfoliar e hidratar son claves para un escote firme y sano.',
       ],
       protocol: {
         dia: [
-          'Lave muy bien el rostro con abundante agua',
-          'Aplique sobre el escote Crema Nutritiva Amino Repair Complex y realice un pequeño masaje hasta su absorción',
-          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique sobre el escote con suaves maniobras hasta que se genere una capa transparente sobre la piel',
+          '1. Lave muy bien el rostro con abundante agua.',
+          'Aplique sobre el escote Crema Nutritiva Amino Repair Complex y realice un pequeño masaje hasta su absorción.',
+          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique sobre el escote con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          'Dosifique uno o dos gramos de Áciddo Láctico Limpiador sobre el escote',
-          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua',
-          'Dosifique cantidad necesaria de Gel Reafirmante Q10 Liposomado y aplique de forma pareja sobre el escote con movimientos circulares hasta su total absorción',
+          '1. Dosifique uno o dos gramos de Áciddo Láctico Limpiador sobre el escote.',
+          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
+          'Dosifique cantidad necesaria de Gel Reafirmante Q10 Liposomado y aplique de forma pareja sobre el escote con movimientos circulares hasta su total absorción.',
         ],
       },
+      imageLink:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1740784764/dadxbi9fzd9hkx9c6rfn.jpg',
     },
     {
+      category: 'CASA',
       name: 'KIT ENVEJECIMIENTO PREMATURO',
       products: [
         {
-          code: 'GE125',
+          code: 'LL150',
           quantity: 1,
         },
         {
@@ -2283,24 +2481,27 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        'El paso del tiempo no es el principal causante de arrugas, manchas o falta de elasticidad, sino la exposición a diferentes factores de manera excesiva y sin cuidado alguno',
-        'La exposición solar, el uso prolongado y excesivo de maquillaje y la deficiencia de vitamina A y B se cuentan dentro de estos factores y es sabido que aceleran el envejecimiento cutáneo',
-        'Cuidados tempranos son claves para prlongar salud y la apariencia joven de la piel',
+        '1. El paso del tiempo no es el principal causante de arrugas, manchas o falta de elasticidad, sino la exposición a diferentes factores de manera excesiva y sin cuidado alguno.',
+        '2. La exposición solar, el uso prolongado y excesivo de maquillaje y la deficiencia de vitamina A y B se cuentan dentro de estos factores y es sabido que aceleran el envejecimiento cutáneo.',
+        '3. Cuidados tempranos son claves para prlongar salud y la apariencia joven de la piel.',
       ],
       protocol: {
         dia: [
-          'Lave muy bien el rostro con abundante agua',
-          'Aplique Crema Nutritiva Amino Repair Complex y realice un pequeño masaje hasta su absorción',
-          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique sobre el rostro con suaves maniobras hasta que se genere una capa sobre la piel',
+          '1. Lave muy bien el rostro con abundante agua.',
+          'Aplique Crema Nutritiva Amino Repair Complex y realice un pequeño masaje hasta su absorción.',
+          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique sobre el rostro con suaves maniobras hasta que se genere una capa sobre la piel.',
         ],
         noche: [
-          'Active la válvula de Leche Limpiadora una o dos veces y aplíquela sobre el rostro',
-          'Realice movimientos circulares por 30 seg, reitre con paño húmedo',
-          'Dosifique la cantidad necesaria de Gel Con Vitamina C en su mano y aplique de forma pareja en su rostro, formando una capa uniforme y delgada. Evite el área de los ojos y las mucosas. Déjelo actuar toda la noche',
+          '1. Active la válvula de Leche Limpiadora una o dos veces y aplíquela sobre el rostro.',
+          'Realice movimientos circulares por 30 seg, reitre con paño húmedo.',
+          'Dosifique la cantidad necesaria de Gel Con Vitamina C en su mano y aplique de forma pareja en su rostro, formando una capa uniforme y delgada. Evite el área de los ojos y las mucosas. Déjelo actuar toda la noche.',
         ],
       },
+      imageLink:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1740785221/mgikrxt4upkhtv5mqnqz.jpg',
     },
     {
+      category: 'CASA',
       name: 'KIT ACNÉ VULGAR',
       products: [
         {
@@ -2321,25 +2522,28 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        'Procure tener una toalla exclusiva para el rostro y exfoliar la cara cada 15 días',
-        'Limpie el rostro una o dos veces al dia y tambien después del ejercicio. Evite frotar o lavar la piel en forma repetitiva',
-        'No manipule las lesiones del rostro. Evite los cosmeticos con bases oleosas',
-        'Tome suficiente agua durante el día. Disminuya al máximo el consumo de azúcares, lácteos y chocolates',
+        '1. Procure tener una toalla exclusiva para el rostro y exfoliar la cara cada 15 días.',
+        '2. Limpie el rostro una o dos veces al dia y tambien después del ejercicio. Evite frotar o lavar la piel en forma repetitiva.',
+        '3. No manipule las lesiones del rostro. Evite los cosmeticos con bases oleosas.',
+        '4. Tome suficiente agua durante el día. Disminuya al máximo el consumo de azúcares, lácteos y chocolates.',
       ],
       protocol: {
         dia: [
-          'Lave muy bien el rostro con abundante agua',
-          'Aplique Suero Hidratante - Amino Acid Complex y realice un pequeño masaje hasta su absorción',
-          'Para proteger, dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel',
+          '1. Lave muy bien el rostro con abundante agua.',
+          'Aplique Suero Hidratante - Amino Acid Complex y realice un pequeño masaje hasta su absorción.',
+          'Para proteger, dosifique  un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          'Dosifique una porción generosa de Gel Espumoso Facial sobre el rostro húmedo',
-          'Realice movimientos circulares suaves hasta que salga espuma, lavar con abundante agua',
-          'Dosifique una cantidad necesaria de Ácido Kójico Gel y aplique de forma pareja en su rostro, formando una capa uniforme y delgada. Evite el área de los ojos y las mucosas nasales. Déjelo actuar toda la noche',
+          '1. Dosifique una porción generosa de Gel Espumoso Facial sobre el rostro húmedo.',
+          'Realice movimientos circulares suaves hasta que salga espuma, lavar con abundante agua.',
+          'Dosifique una cantidad necesaria de Ácido Kójico Gel y aplique de forma pareja en su rostro, formando una capa uniforme y delgada. Evite el área de los ojos y las mucosas nasales. Déjelo actuar toda la noche.',
         ],
       },
+      imageLink:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1740781914/injdnbjpqwjgsn4w91sz.png',
     },
     {
+      category: 'CASA',
       name: 'KIT ACNÉ JUVENIL',
       products: [
         {
@@ -2360,26 +2564,29 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        'No apriete, rasque o frote agresivamente las erupciones. Esto puede conducir a infecciones cutáneas, formación de cicatrices y demorar la sanación',
-        'Evite el uso de bandas para la cabeza, gorras de béisbol y otros sombreros apretados',
-        'Evite las cremas o cosméticos oleosos',
-        'Procure desmaquillar todas las noches',
+        '1. No apriete, rasque o frote agresivamente las erupciones. Esto puede conducir a infecciones cutáneas, formación de cicatrices y demorar la sanación.',
+        '2. Evite el uso de bandas para la cabeza, gorras de béisbol y otros sombreros apretados.',
+        '3. Evite las cremas o cosméticos oleosos.',
+        '4. Procure desmaquillar todas las noches.',
       ],
       protocol: {
         dia: [
-          'Lave muy bien el rostro con abudante agua',
-          'Aplique Gel Hidratante Con Aloe y realice un pequeño masaje hasta su absorción',
-          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel',
+          '1. Lave muy bien el rostro con abudante agua.',
+          'Aplique Gel Hidratante Con Aloe y realice un pequeño masaje hasta su absorción.',
+          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          'Dosifique una porción generosa de Gel Espumoso Facial sobre el rostro húmedo',
-          'Realice movimientos circulares suaves hasta que salga espuma, lavar con abudane agua',
-          'Dosifique cantidad necesaria de Ácido Glicólico Loción 10% y aplique de forma pareja en su rostro, formando una capa uniforme y delgada, Evite el área de los ojos y mucosas. Déjelo actuar toda la noche',
+          '1. Dosifique una porción generosa de Gel Espumoso Facial sobre el rostro húmedo.',
+          'Realice movimientos circulares suaves hasta que salga espuma, lavar con abudane agua.',
+          'Dosifique cantidad necesaria de Ácido Glicólico Loción 10% y aplique de forma pareja en su rostro, formando una capa uniforme y delgada, Evite el área de los ojos y mucosas. Déjelo actuar toda la noche.',
         ],
       },
+      imageLink:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1740781989/irufywxljfsvpy0evrbl.jpg',
     },
     {
-      name: 'KIT PIEL MIXTA HIPERPIGMENTADA ',
+      category: 'CASA',
+      name: 'KIT PIEL MIXTA HIPERPIGMENTADA',
       products: [
         {
           code: 'GL125',
@@ -2399,26 +2606,29 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        'Hidrate diariamente la piel y límpiela con agua tibia, sin usar jabón',
-        'Evite el maquillaje excesivo',
-        'Evite las exposiciones solares directas y prolongadas. Proteja su piel con Pantalla Solar Gel',
-        'Evite el agua de mar o de piscina',
+        '1. Hidrate diariamente la piel y límpiela con agua tibia, sin usar jabón.',
+        '2. Evite el maquillaje excesivo.',
+        '3. Evite las exposiciones solares directas y prolongadas. Proteja su piel con Pantalla Solar Gel.',
+        '4. Evite el agua de mar o de piscina',
       ],
       protocol: {
         dia: [
-          'Lave el rostro con abundante agua',
-          'Aplique Loción Hidratante Facial Liposomada y realice un pequeño masaje hasta su absorción',
-          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel',
+          '1. Lave el rostro con abundante agua.',
+          'Aplique Loción Hidratante Facial Liposomada y realice un pequeño masaje hasta su absorción.',
+          'Para proteger dosifique un gramo de Pantalla Soloar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          'Dosifique uno o dos gramos de Gel Limpiador sobre el rostro',
-          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua',
-          'Dosifique cantidad necesaria de Gel Despigmentante Liposomado y aplique de forma pareja en su rostro, formando una capa uniforme y delgada. Evite el área de los ojos y las mucosas. Déjelo actuar toda la noche',
+          '1. Dosifique uno o dos gramos de Gel Limpiador sobre el rostro.',
+          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
+          'Dosifique cantidad necesaria de Gel Despigmentante Liposomado y aplique de forma pareja en su rostro, formando una capa uniforme y delgada. Evite el área de los ojos y las mucosas. Déjelo actuar toda la noche.',
         ],
       },
+      imageLink:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1740780723/pluidgooy83qnsjtudzu.png',
     },
     {
-      name: 'KIT ACLARADOR PIGMENTACION LEVE',
+      category: 'CASA',
+      name: 'KIT ACLARADOR PIGMENTACIÓN LEVE',
       products: [
         {
           code: 'AL150',
@@ -2442,27 +2652,30 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        'Hidrate diariamente la piel y límpiela con agua tibia, sin usar jabón',
-        'Evite el maquillaje excesivo',
-        'Evite las exposiciones solares directas y prolongadas. Proteja su piel con Pantalla Solar Gel',
-        'Evite el agua de mar o de piscina',
+        '1. Hidrate diariamente la piel y límpiela con agua tibia, sin usar jabón.',
+        '2. Evite el maquillaje excesivo.',
+        '3. Evite las exposiciones solares directas y prolongadas. Proteja su piel con Pantalla Solar Gel.',
+        '4. Evite el agua de mar o de piscina.',
       ],
       protocol: {
         dia: [
-          'Lave muy bien el rostro con abundante agua',
-          'Aplique una cantidad suficiente de Gel Con Vitamina C y realice un pequeño masaje hasta su absorción',
-          'Aplique Loción Hidratante Facial Liposomada y realice un pequeño masaje hasta su absorción',
-          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel',
+          '1. Lave muy bien el rostro con abundante agua.',
+          'Aplique una cantidad suficiente de Gel Con Vitamina C y realice un pequeño masaje hasta su absorción.',
+          'Aplique Loción Hidratante Facial Liposomada y realice un pequeño masaje hasta su absorción.',
+          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          'Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el rostro',
-          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua',
-          "Dosifique cantidad necesaria de Suero Aclarador AHA'S Mandelic Serum y aplique de forma pareja formando una capa uniforme y delgada. Evite el área de los ojos y las mucosas. Déjelo actuar toda la noche",
+          '1. Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el rostro.',
+          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
+          "Dosifique cantidad necesaria de Suero Aclarador AHA'S Mandelic Serum y aplique de forma pareja formando una capa uniforme y delgada. Evite el área de los ojos y las mucosas. Déjelo actuar toda la noche.",
         ],
       },
+      imageLink:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1740785073/lsyiquqo9uim4oqscsty.jpg',
     },
     {
-      name: 'KIT PIEL ÉTNICA HIPERPIGMENTADA ',
+      category: 'CASA',
+      name: 'KIT PIEL ÉTNICA HIPERPIGMENTADA',
       products: [
         {
           code: 'GL125',
@@ -2482,26 +2695,29 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        'Hidrate diariamente la piel y límpiela con agua tibia, sin usar jabón',
-        'Evite el maquillaje excesivo',
-        'Evite las exposiciones solares directas y prolongadas. Proteja su piel con Pantalla Solar Gel',
-        'Evite el agua de mar o de piscina',
+        '1. Hidrate diariamente la piel y límpiela con agua tibia, sin usar jabón.',
+        '2. Evite el maquillaje excesivo.',
+        '3. Evite las exposiciones solares directas y prolongadas. Proteja su piel con Pantalla Solar Gel',
+        '4. Evite el agua de mar o de piscina.',
       ],
       protocol: {
         dia: [
-          'Lave muy bien el rostro con abundante agua',
-          'Aplique Suero Hidratante Amino Acid Complex y realice un pequeño masaje hasta su absorción',
-          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel',
+          '1. Lave muy bien el rostro con abundante agua.',
+          'Aplique Suero Hidratante Amino Acid Complex y realice un pequeño masaje hasta su absorción.',
+          'Para proteger dosifique un gramo de Pantalla Sola Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          'Dosifique uno o dos gramos de Gel Limpiador sobre el rostro',
-          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua',
-          'Dosifique cantidad necesaria de Mandélico Gel Líposoma 10% y aplique de forma pareja formando una capa uniforme y delgada. Evite el área de los ojos y las mucosas. Déjelo actuar toda la noche',
+          '1. Dosifique uno o dos gramos de Gel Limpiador sobre el rostro.',
+          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
+          'Dosifique cantidad necesaria de Mandélico Gel Líposoma 10% y aplique de forma pareja formando una capa uniforme y delgada. Evite el área de los ojos y las mucosas. Déjelo actuar toda la noche.',
         ],
       },
+      imageLink:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1740779912/fw9pt0nqsjgpfvwn34gs.png',
     },
     {
-      name: 'KIT PIEL SENSIBLE HIPERPIGMENTADA ',
+      category: 'CASA',
+      name: 'KIT PIEL SENSIBLE HIPERPIGMENTADA',
       products: [
         {
           code: 'AL150',
@@ -2521,23 +2737,425 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        'Hidrate diariamente la piel y límpiela con agua tibia, sin usar jabón',
-        'Evite el maquillaje excesivo',
-        'Evite las exposiciones solares directas y prolongadas. Proteja su piel con Pantalla Solar Gel',
-        'Evite el agua de mar o de piscina',
+        '1. Hidrate diariamente la piel y límpiela con agua tibia, sin usar jabón.',
+        '2. Evite el maquillaje excesivo.',
+        '3. Evite las exposiciones solares directas y prolongadas. Proteja su piel con Pantalla Solar Gel',
+        '4. Evite el agua de mar o de piscina.',
       ],
       protocol: {
         dia: [
-          'Lave muy bien el rostro con abundante agua',
-          'Aplique Suero Hidratante Amino Acid Complex y realice un pequeño masaje hasta su absorción',
-          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel',
+          '1. Lave muy bien el rostro con abundante agua.',
+          'Aplique Loción Hidratante Facial Liposomada y realice un pequeño masaje hasta su absorción.',
+          'Para proteger dosifique un gramo de Pantalla Sola Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          'Dosifique uno o dos gramos de Gel Limpiador sobre el rostro',
-          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua',
-          'Dosifique cantidad necesaria de Mandélico Gel Líposoma 10% y aplique de forma pareja formando una capa uniforme y delgada. Evite el área de los ojos y las mucosas. Déjelo actuar toda la noche',
+          '1. Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el rostro.',
+          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
+          'Dosifique cantidad necesaria de Suero Despigmentante B3 Niacinamide Liposome y aplique de forma pareja formando una capa uniforme y delgada. Evite el área de los ojos y las mucosas. Déjelo actuar toda la noche.',
         ],
       },
+      imageLink:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1740786102/qprxanggh1wi5tbzae4h.png',
+    },
+    {
+      category: 'CABINA',
+      name: 'PROTOCOLO DESPIGMENTACIÓN',
+      products: [
+        {
+          code: 'GL500',
+          quantity: 1,
+        },
+        {
+          code: 'ATV300',
+          quantity: 1,
+        },
+        {
+          code: 'MD300',
+          quantity: 1,
+        },
+        {
+          code: 'HF150',
+          quantity: 1,
+        },
+        {
+          code: 'CC120',
+          quantity: 1,
+        },
+        {
+          code: 'VC30',
+          quantity: 1,
+        },
+        {
+          code: 'PT150',
+          quantity: 1,
+        },
+        {
+          code: 'PSN30',
+          quantity: 1,
+        },
+        {
+          code: 'MAN30-30',
+          quantity: 1,
+        },
+        {
+          code: 'LN250',
+          quantity: 1,
+        },
+      ],
+      tips: [],
+      protocol: {
+        dia: [],
+        noche: [],
+      },
+      imageLink: null,
+    },
+    {
+      category: 'CABINA',
+      name: 'PROTOCOLO LIFTING MERIDIONAL JAPONÉS',
+      products: [
+        {
+          code: 'RQ150',
+          quantity: 1,
+        },
+        {
+          code: 'BL150',
+          quantity: 1,
+        },
+        {
+          code: 'CN150',
+          quantity: 1,
+        },
+        {
+          code: 'PT150',
+          quantity: 1,
+        },
+        {
+          code: 'SH150',
+          quantity: 1,
+        },
+        {
+          code: 'CC120',
+          quantity: 1,
+        },
+        {
+          code: 'AP30',
+          quantity: 1,
+        },
+        {
+          code: 'MPN250',
+          quantity: 1,
+        },
+      ],
+      tips: [],
+      protocol: {
+        dia: [],
+        noche: [],
+      },
+      imageLink: null,
+    },
+    {
+      category: 'CABINA',
+      name: 'PROTOCOLO P.E.F.E',
+      products: [
+        {
+          code: 'LPRP',
+          quantity: 2,
+        },
+        {
+          code: 'GN500',
+          quantity: 1,
+        },
+        {
+          code: 'GLD500',
+          quantity: 1,
+        },
+        {
+          code: 'HV500',
+          quantity: 1,
+        },
+      ],
+      tips: [],
+      protocol: {
+        dia: [],
+        noche: [],
+      },
+      imageLink: null,
+    },
+    {
+      category: 'CABINA',
+      name: 'PROTOCOLO G.L.M',
+      products: [
+        {
+          code: 'CC120',
+          quantity: 1,
+        },
+        {
+          code: 'LN250',
+          quantity: 1,
+        },
+        {
+          code: 'MD300',
+          quantity: 1,
+        },
+        {
+          code: 'CEQ150',
+          quantity: 1,
+        },
+        {
+          code: 'HF150',
+          quantity: 1,
+        },
+        {
+          code: 'PT150',
+          quantity: 1,
+        },
+        {
+          code: 'AG15-30',
+          quantity: 1,
+        },
+        {
+          code: 'AL10-30',
+          quantity: 1,
+        },
+        {
+          code: 'MAN30-30',
+          quantity: 1,
+        },
+      ],
+      tips: [],
+      protocol: {
+        dia: [],
+        noche: [],
+      },
+      imageLink: null,
+    },
+    {
+      category: 'CABINA',
+      name: 'PROTOCOLO PORCELANIZACIÓN',
+      products: [
+        {
+          code: 'GD500',
+          quantity: 1,
+        },
+        {
+          code: 'ATV300',
+          quantity: 1,
+        },
+        {
+          code: 'MF300',
+          quantity: 1,
+        },
+        {
+          code: 'CC120',
+          quantity: 1,
+        },
+        {
+          code: 'AGG',
+          quantity: 1,
+        },
+        {
+          code: 'CEQ150',
+          quantity: 1,
+        },
+        {
+          code: 'PT150',
+          quantity: 1,
+        },
+        {
+          code: 'PSN30',
+          quantity: 1,
+        },
+      ],
+      tips: [],
+      protocol: {
+        dia: [],
+        noche: [],
+      },
+      imageLink: null,
+    },
+    {
+      category: 'CABINA',
+      name: 'PROTOCOLO BIONEUROEMOCIÓN',
+      products: [
+        {
+          code: 'GN500',
+          quantity: 1,
+        },
+        {
+          code: 'GF500',
+          quantity: 1,
+        },
+        {
+          code: 'SA500',
+          quantity: 1,
+        },
+        {
+          code: 'HV500',
+          quantity: 1,
+        },
+        {
+          code: 'MB500',
+          quantity: 1,
+        },
+        {
+          code: 'LPRP',
+          quantity: 2,
+        },
+      ],
+      tips: [],
+      protocol: {
+        dia: [],
+        noche: [],
+      },
+      imageLink: null,
+    },
+    {
+      category: 'CABINA',
+      name: 'PROTOCOLO BUSTO Y GLÚTEOS',
+      products: [
+        {
+          code: 'LB500',
+          quantity: 1,
+        },
+        {
+          code: 'RB500',
+          quantity: 1,
+        },
+        {
+          code: 'MB500',
+          quantity: 1,
+        },
+        {
+          code: 'CB120',
+          quantity: 1,
+        },
+        {
+          code: 'GS500',
+          quantity: 1,
+        },
+        {
+          code: 'GLD500',
+          quantity: 1,
+        },
+      ],
+      tips: [],
+      protocol: {
+        dia: [],
+        noche: [],
+      },
+      imageLink: null,
+    },
+    {
+      category: 'CABINA',
+      name: 'PROTOCOLO ACNÉ',
+      products: [
+        {
+          code: 'GE500',
+          quantity: 1,
+        },
+        {
+          code: 'ATR120',
+          quantity: 1,
+        },
+        {
+          code: 'MD300',
+          quantity: 1,
+        },
+        {
+          code: 'MP300',
+          quantity: 1,
+        },
+        {
+          code: 'MAH300',
+          quantity: 1,
+        },
+        {
+          code: 'GH500',
+          quantity: 1,
+        },
+        {
+          code: 'PT150',
+          quantity: 1,
+        },
+        {
+          code: 'PSN30',
+          quantity: 1,
+        },
+        {
+          code: 'MAN30-30',
+          quantity: 1,
+        },
+      ],
+      tips: [],
+      protocol: {
+        dia: [],
+        noche: [],
+      },
+      imageLink: null,
+    },
+    {
+      category: 'CABINA',
+      name: 'PROTOCOLO ZONAS NIGRIS',
+      products: [
+        {
+          code: 'GH500',
+          quantity: 1,
+        },
+        {
+          code: 'ATN300',
+          quantity: 1,
+        },
+        {
+          code: 'MD300',
+          quantity: 1,
+        },
+        {
+          code: 'CC120',
+          quantity: 1,
+        },
+        {
+          code: 'MAN30-30',
+          quantity: 1,
+        },
+      ],
+      tips: [],
+      protocol: {
+        dia: [],
+        noche: [],
+      },
+      imageLink: null,
+    },
+    {
+      category: 'CABINA',
+      name: 'PROTOCOLO ANTIEDAD',
+      products: [
+        {
+          code: 'CN150',
+          quantity: 1,
+        },
+        {
+          code: 'PT150',
+          quantity: 1,
+        },
+        {
+          code: 'SH150',
+          quantity: 1,
+        },
+        {
+          code: 'CC120',
+          quantity: 1,
+        },
+        {
+          code: 'AP30',
+          quantity: 1,
+        },
+      ],
+      tips: [],
+      protocol: {
+        dia: [],
+        noche: [],
+      },
+      imageLink: null,
     },
   ],
 };

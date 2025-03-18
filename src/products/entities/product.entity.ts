@@ -15,7 +15,7 @@ export class Product {
   @Column('integer', { nullable: true })
   publicPrice: number | null;
 
-  @Column('integer', { nullable: true })
+  @Column('float', { nullable: true })
   efficiency: number | null;
 
   @Column('integer')
@@ -32,6 +32,9 @@ export class Product {
 
   @Column('text')
   time: string;
+
+  @Column('text', { nullable: true })
+  image: string | null;
 
   @OneToMany(() => KitProduct, (kitProduct) => kitProduct.product)
   kitProducts: KitProduct[];

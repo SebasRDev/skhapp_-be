@@ -1,7 +1,11 @@
 import { Content } from 'pdfmake/interfaces';
 import Product from 'src/products/interfaces/product.interface';
 import { CellConfig } from 'src/quotes/interfaces/quote.interface';
-import { calculateTotal, currencyFormatter } from 'src/quotes/utils/utils';
+import {
+  calculateTotal,
+  capitalize,
+  currencyFormatter,
+} from 'src/quotes/utils/utils';
 
 export const tableReport = (data: Product[], property = 'profesionalPrice') => {
   const formulaProducts = data;
@@ -22,7 +26,7 @@ export const tableReport = (data: Product[], property = 'profesionalPrice') => {
   const regularCell = (value: string, config?: CellConfig) => {
     const { isLast = false, alignment, margin } = config || {};
     return {
-      text: value.toLowerCase(),
+      text: capitalize(value),
       style: isLast ? 'lastCell' : 'cell',
       alignment,
       margin,
@@ -30,12 +34,22 @@ export const tableReport = (data: Product[], property = 'profesionalPrice') => {
   };
 
   const getTableHeaders = () => {
-    const baseHeaders = [
-      HeaderCell('Nombre', { alignment: 'left' }),
-      HeaderCell('Fase Tratamiento'),
-      HeaderCell('Uso'),
-      HeaderCell('Cant'),
-    ];
+    let baseHeaders;
+    if (property !== 'profesionalPrice') {
+      baseHeaders = [
+        HeaderCell('Nombre', { alignment: 'left' }),
+        HeaderCell('Fase Tratamiento'),
+        HeaderCell('Cant'),
+        HeaderCell('Uso'),
+      ];
+    } else {
+      baseHeaders = [
+        HeaderCell('Nombre', { alignment: 'left' }),
+        HeaderCell('Rendimiento'),
+        HeaderCell('Precio Prof.'),
+        HeaderCell('Cant'),
+      ];
+    }
 
     if (hasAnyDiscount) {
       baseHeaders.push(HeaderCell('Dcto'));
@@ -102,6 +116,19 @@ export const tableReport = (data: Product[], property = 'profesionalPrice') => {
         } as Content,
         ...getEmptyCells(totalColSpan - 1),
         HeaderCell(currencyFormatter.format(total.subtotal), { isLast: true }),
+      ]);
+      rows.push([
+        {
+          text: 'AHORRO',
+          alignment: 'right',
+          colSpan: totalColSpan,
+          border: [false, false, false, false],
+          style: 'tableHeader',
+        } as Content,
+        ...getEmptyCells(totalColSpan - 1),
+        HeaderCell(currencyFormatter.format(total.subtotal - total.total), {
+          isLast: true,
+        }),
       ]);
     }
 

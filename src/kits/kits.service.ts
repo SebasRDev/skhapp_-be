@@ -36,7 +36,7 @@ export class KitsService {
           const productDB = await this.productsRespository.findOne({
             where: { code: product.code },
           });
-          if (!productDB) throw new NotFoundException('Product not found');
+          if (!productDB) throw new NotFoundException('Product not found ' + product.code);
           return {
             productDB,
             quantity: product.quantity,
@@ -96,6 +96,19 @@ export class KitsService {
     const kit = await this.findOne(id);
     if (kit) {
       await this.kitRepository.remove(kit);
+    }
+  }
+
+  async deleteAllKits() {
+    const query = this.kitRepository.createQueryBuilder('kit');
+    const queryKitsProdcuts =
+      this.kitProductRepository.createQueryBuilder('kitProduct');
+
+    try {
+      await queryKitsProdcuts.delete().where({}).execute();
+      await query.delete().where({}).execute();
+    } catch (error) {
+      this.handleException(error);
     }
   }
 

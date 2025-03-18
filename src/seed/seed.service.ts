@@ -11,6 +11,7 @@ export class SeedService {
   ) {}
 
   async runSeed() {
+    await this.kitsService.deleteAllKits();
     await this.insertNewProducts();
     await this.insertNewKits();
     return true;

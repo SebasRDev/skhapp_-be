@@ -32,3 +32,10 @@ export const calculateTotal = (
     { subtotal: 0, total: 0 },
   );
 };
+
+export const capitalize = (str: string) => {
+  const data = str.split(' ');
+  return data
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ');
+};
