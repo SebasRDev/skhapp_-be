@@ -43,7 +43,7 @@ export const initialData: SeedData = {
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751884/hhy1w7jhj2y6opmln6li.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413911/noi6cqot6axzxhjydtyh.png',
     },
     {
       code: 'AGG',
@@ -61,7 +61,7 @@ export const initialData: SeedData = {
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751887/hymapdbiji96gxangf8t.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413911/sswdutsjj7ifdegpywqf.png',
     },
     {
       code: 'AGL',
@@ -80,7 +80,7 @@ export const initialData: SeedData = {
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751885/nfvveeyhcaoxeuxilfl5.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413902/pkqmhdjrwpnplo2tfizi.png',
     },
     {
       code: 'AGHK',
@@ -92,12 +92,13 @@ export const initialData: SeedData = {
         'Ácido Glicólico 10%, Ácido Mandélico Liposomado 10%, Ácido Kójico Liposomado 3%,',
       properties: [
         'Atenúa manchas de procedencia hormonal o por sobreexposición solar.',
-        'Devueleve a la piel su textuta suave, saluable y humectada.                                                                    3.Atenúa líneas de expresión.',
+        'Devueleve a la piel su textuta suave, saluable y humectada.',
+        'Atenúa líneas de expresión.',
       ],
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751883/zetxvyx1iy8qsxapm6z5.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413910/tnhew2jkdqdjuruuwejh.png',
     },
     {
       code: 'AKG',
@@ -108,13 +109,14 @@ export const initialData: SeedData = {
       actives: 'Ácido Kójico Liposomado 3%',
       properties: [
         'Atenúa manchas de procedencia hormonal o por secuelas de acné.',
-        'Regenera la capa más externa  de la piel.                                                          3.Atenúa líneas de expresión.',
+        'Regenera la capa más externa  de la piel.',
+        'Atenúa líneas de expresión.',
         'Recomendado para todo tipo de piel.',
       ],
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751878/tv6bhty9cu7us3hmprq1.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/benbdyatvh5eo0za20w5.png',
     },
     {
       code: 'VC30',
@@ -124,7 +126,7 @@ export const initialData: SeedData = {
       profesionalPrice: 125300,
       actives: 'Ascorbil Fosfato de Sodio 10%, Ácido Hialurónico 0,2%',
       properties: [
-        '1.Atrapa y destruye agentes oxidantes agresivos del tejido.',
+        'Atrapa y destruye agentes oxidantes agresivos del tejido.',
         'Intesifica la síntesis de Colágeno.',
         'Aclara la piel y le devuelve su brillo natural.',
         'Recomendado para todo tipo de piel.',
@@ -132,7 +134,7 @@ export const initialData: SeedData = {
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751882/zkbureisbvxswxtazhlv.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/oci3oalpz5niembomt71.png',
     },
     {
       code: 'MAN10-30',
@@ -148,7 +150,7 @@ export const initialData: SeedData = {
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751877/qhvcdqcoxavqjpsfeyce.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413910/g8clyi9slkwrjyuhdipn.png',
     },
     {
       code: 'AHA10',
@@ -159,13 +161,15 @@ export const initialData: SeedData = {
       actives:
         'Ácido Mandélico, Ácido Glicólico, Ácido Láctico, Ácido Tartárico, Ácido Málico y Ácido Cítrico.',
       properties: [
-        '1.Aclara gradualente manchas ligeras.                                                                                                                                   2.Atenúa efectos del fotoenvejecimiento.                                      3.Mejora la elasticidad de la piel.',
+        'Aclara gradualente manchas ligeras.',
+        'Atenúa efectos del fotoenvejecimiento.',
+        'Mejora la elasticidad de la piel.',
         'Recomendado para pieles sensibles.',
       ],
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751876/frbpeew4tj2yyyartihh.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413901/vsfvs7nhkr6objiw250s.png',
     },
     {
       code: 'SDN30',
@@ -175,13 +179,15 @@ export const initialData: SeedData = {
       profesionalPrice: 128400,
       actives: 'Niacinamida 1%, Ácido Hialurónico 1%, Alfa Arbutina 5%',
       properties: [
-        '1.Aclara manchas de diferente procedencia.                                                                                                                                   2.Atenúa efectos del fotoenvejecimiento.                                      3.Hidrata y acondicona la piel.',
+        'Aclara manchas de diferente procedencia.',
+        'Atenúa efectos del fotoenvejecimiento.',
+        'Hidrata y acondicona la piel.',
         'Recomendado para pieles sensibles.',
       ],
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751873/znjwnwjovnjyqjvdui0q.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413901/nqav4kqidizbfiypu4v7.png',
     },
     {
       code: 'AL150',
@@ -198,7 +204,7 @@ export const initialData: SeedData = {
       phase: 'LIMPIEZA',
       time: 'DÍA O NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751875/q5q93gt4u3l5zlxlj2aj.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413910/bfodpf83l1dwqyl1ac3j.png',
     },
     {
       code: 'GE125',
@@ -215,7 +221,7 @@ export const initialData: SeedData = {
       phase: 'LIMPIEZA',
       time: 'DÍA O NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751872/lp4yfqyxjvi6rszcukrr.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413910/eoiizzocwtsdgf8q0rin.png',
     },
     {
       code: 'GL125',
@@ -225,13 +231,14 @@ export const initialData: SeedData = {
       profesionalPrice: 62300,
       actives: 'Ácidos Grasos de Coco 15%',
       properties: [
-        '1.Elimina impurezas y toxinas.                                               2.Remueve el maquillaje y prepara la piel para recibir principios activos.',
+        'Elimina impurezas y toxinas.',
+        'Remueve el maquillaje y prepara la piel para recibir principios activos.',
         'Recomendado para todo tipo de piel.',
       ],
       phase: 'LIMPIEZA',
       time: 'DÍA O NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751870/gp2lejbp0wasbjbt38v9.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413901/aouf1hwlsm7gufkhk4xj.png',
     },
     {
       code: 'LL150',
@@ -241,14 +248,14 @@ export const initialData: SeedData = {
       profesionalPrice: 63500,
       actives: 'Ácido Glicólico 0,2%, Aloe Vera 0,2% , Vitamina E 0,1%,',
       properties: [
-        '1.Elimina impurezas y células muertas.',
+        'Elimina impurezas y células muertas.',
         'Provee hidratación y suavidad.',
         'Recomendado para pieles mixtas y secas.',
       ],
       phase: 'LIMPIEZA',
       time: 'DÍA O NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741829902/lsxadrfzpzj7n1iw6o2f.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/gvmdxrwvvtpgau3dbg7y.png',
     },
     {
       code: 'GD100',
@@ -258,14 +265,14 @@ export const initialData: SeedData = {
       profesionalPrice: 68600,
       actives: 'Semillas de nuez 10%, Ácidos Grasos de Coco 5%',
       properties: [
-        '1.Elimina impurezas y toxinas.',
+        'Elimina impurezas y toxinas.',
         'Prepara la piel para recibir principios activos.',
         'Recomendado para todo tipo de piel.',
       ],
       phase: 'LIMPIEZA Y EXFOLIACIÓN',
       time: 'DÍA O NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751869/kwrvblrp9jlurlatg12x.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413911/dxeqgrlesimnfhnievjm.png',
     },
     {
       code: 'ATN120',
@@ -284,7 +291,7 @@ export const initialData: SeedData = {
       phase: 'TÓNICO VITALIZANTE',
       time: 'DÍA O NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751867/cuutspiftbdhdyl1oeai.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/xlzskwgdirhkffuzz9vn.png',
     },
     {
       code: 'ATR120',
@@ -303,7 +310,7 @@ export const initialData: SeedData = {
       phase: 'TÓNICO VITALIZANTE',
       time: 'DÍA O NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751867/cuutspiftbdhdyl1oeai.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/xlzskwgdirhkffuzz9vn.png',
     },
     {
       code: 'ATV120',
@@ -322,7 +329,7 @@ export const initialData: SeedData = {
       phase: 'TÓNICO VITALIZANTE',
       time: 'DÍA O NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751867/cuutspiftbdhdyl1oeai.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/xlzskwgdirhkffuzz9vn.png',
     },
     {
       code: 'CEQ10',
@@ -340,7 +347,7 @@ export const initialData: SeedData = {
       phase: 'TRATAMIENTO ',
       time: 'DÍA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751711/zen4wjncbyzlvnn1ald2.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/aqyn4qju0m0o2yvilrrn.png',
     },
     {
       code: 'RQ50',
@@ -357,7 +364,7 @@ export const initialData: SeedData = {
       phase: 'TRATAMIENTO ',
       time: 'DÍA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751866/wydhwe5d4cf5vdnnscou.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413906/uonri7k7tyfskums65hi.png',
     },
     {
       code: 'GA50',
@@ -374,7 +381,7 @@ export const initialData: SeedData = {
       phase: 'TRATAMIENTO ',
       time: 'NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751865/szhqahekbzezmzqjme6f.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413910/su4b5s6js4ribs5tepha.png',
     },
     {
       code: 'BA150',
@@ -393,7 +400,7 @@ export const initialData: SeedData = {
       phase: 'NUTRICIÓN E HIDRTATCIÓN',
       time: 'DIA O NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751863/b8cjkotpcydxp4g9mrrs.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413901/etuhknuzbp72dvocvmau.png',
     },
     {
       code: 'BL30',
@@ -405,14 +412,15 @@ export const initialData: SeedData = {
         'Rosa Mosqueta 5%, Amplificador de Síntesis de Colágeno  ASCIII 2%',
       properties: [
         'Restaura la piel y acelera su regeneración.',
-        'Amplifica selectivamente la biosiíntesis de de Colágeno tipo III.                                                                                      3.Disminuye la pérdidad de agua transepidérmica.',
+        'Amplifica selectivamente la biosiíntesis de de Colágeno tipo III.',
+        'Disminuye la pérdidad de agua transepidérmica.',
         'Suaviza paulatinamente las líneas de expresión.',
         'Recomendado para todo tipo de piel.',
       ],
       phase: 'NUTRICIÓN E HIDRTATCIÓN',
       time: 'DIA O NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751862/v2s2lmifzaojtmvgvhlh.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/e1hcm3traw5uye1itokh.png',
     },
     {
       code: 'CN50',
@@ -430,7 +438,7 @@ export const initialData: SeedData = {
       phase: 'NUTRICIÓN E HIDRTATCIÓN',
       time: 'DIA O NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751861/jhivmmxrlalo1o6oby6p.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413904/jyy7fsng3vydmnghe6p1.png',
     },
     {
       code: 'GH100',
@@ -447,7 +455,7 @@ export const initialData: SeedData = {
       phase: 'NUTRICIÓN E HIDRTATCIÓN',
       time: 'DIA O NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751858/pkpdsuw1mwlzcpstbscn.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/vtchupl8gkkjae8ey2xi.png',
     },
     {
       code: 'HF50',
@@ -466,7 +474,7 @@ export const initialData: SeedData = {
       phase: 'NUTRICIÓN E HIDRTATCIÓN',
       time: 'DIA O NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751859/nku57yacqfm34zsqb5p4.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/sn7itfr23fsief6vwdjl.png',
     },
     {
       code: 'SH50',
@@ -484,7 +492,7 @@ export const initialData: SeedData = {
       phase: 'NUTRICIÓN E HIDRTATCIÓN',
       time: 'DIA O NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751856/te4hvojksxr9ossdiguz.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/xeoooniobmd3ybpihgoc.png',
     },
     {
       code: 'CO30',
@@ -500,7 +508,7 @@ export const initialData: SeedData = {
       phase: 'TRATAMIENTO',
       time: 'DIA O NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751855/khbtfdyyq6r9dex0ckwt.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/twsnshzsmcgbl18ogl1e.png',
     },
     {
       code: 'DO125',
@@ -516,7 +524,7 @@ export const initialData: SeedData = {
       phase: 'LIMPIEZA',
       time: 'DIA O NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751854/yw2eoohixgvaswz7ssqt.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/im0pne2qi3sdnmliinl5.png',
     },
     {
       code: 'DO250',
@@ -532,7 +540,7 @@ export const initialData: SeedData = {
       phase: 'LIMPIEZA',
       time: 'DIA O NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751854/yw2eoohixgvaswz7ssqt.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/im0pne2qi3sdnmliinl5.png',
     },
     {
       code: 'PT60',
@@ -543,12 +551,13 @@ export const initialData: SeedData = {
       actives:
         'Foto protectores de amplio espectro anti-UV, Dióxido de Titanio.',
       properties: [
-        'Forma una capa física que absorbe y refleja la radiación.                                                                         2.Evita que la radiación UVA y UVB alcance la piel.',
+        'Forma una capa física que absorbe y refleja la radiación.',
+        'Evita que la radiación UVA y UVB alcance la piel.',
       ],
       phase: 'PROTECCIÓN',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751822/ugonclvwab1mu2mlfbx1.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416045/oeobnzv2lkrwya1lfq9j.png',
     },
     {
       code: 'PT100',
@@ -559,12 +568,13 @@ export const initialData: SeedData = {
       actives:
         'Foto protectores de amplio espectro anti-UV, Dióxido de Titanio.',
       properties: [
-        'Forma una capa física que absorbe y refleja la radiación.                                                                         2.Evita que la radiación UVA y UVB alcance la piel.',
+        'Forma una capa física que absorbe y refleja la radiación.',
+        'Evita que la radiación UVA y UVB alcance la piel.',
       ],
       phase: 'PROTECCIÓN',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751822/ugonclvwab1mu2mlfbx1.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416045/oeobnzv2lkrwya1lfq9j.png',
     },
     {
       code: 'PT150',
@@ -575,12 +585,13 @@ export const initialData: SeedData = {
       actives:
         'Foto protectores de amplio espectro anti-UV, Dióxido de Titanio.',
       properties: [
-        'Forma una capa física que absorbe y refleja la radiación.                                                                         2.Evita que la radiación UVA y UVB alcance la piel.',
+        'Forma una capa física que absorbe y refleja la radiación.',
+        'Evita que la radiación UVA y UVB alcance la piel.',
       ],
       phase: 'PROTECCIÓN',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751822/ugonclvwab1mu2mlfbx1.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416045/oeobnzv2lkrwya1lfq9j.png',
     },
     {
       code: 'PTC60',
@@ -598,7 +609,7 @@ export const initialData: SeedData = {
       phase: 'PROTECCIÓN',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751823/exizpm8q8d6fhrq3idod.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416043/dcgofck6iudd6q7kdqng.png',
     },
     {
       code: 'PTC100',
@@ -616,7 +627,7 @@ export const initialData: SeedData = {
       phase: 'PROTECCIÓN',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751823/exizpm8q8d6fhrq3idod.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416043/dcgofck6iudd6q7kdqng.png',
     },
     {
       code: 'PTC150',
@@ -634,7 +645,7 @@ export const initialData: SeedData = {
       phase: 'PROTECCIÓN',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751823/exizpm8q8d6fhrq3idod.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416043/dcgofck6iudd6q7kdqng.png',
     },
     {
       code: 'CC60',
@@ -651,7 +662,7 @@ export const initialData: SeedData = {
       phase: 'REPARACIÓN',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751724/tpawfxhzxzdjm5w3hnhn.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/suj8rjbilusnschh8dp8.png',
     },
     {
       code: 'PSN30',
@@ -661,14 +672,14 @@ export const initialData: SeedData = {
       profesionalPrice: 123100,
       actives: 'Elastómeros de Silicona.',
       properties: [
-        '1.Elimina la brillantez instánteamente y dismula pequeñas imperfecciones.',
+        'Elimina la brillantez instánteamente y dismula pequeñas imperfecciones.',
         'Deja un sensación sedosa y matizada.',
         'Mejora la apariencia de cicatrices.',
       ],
       phase: 'PRIMER',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751723/xeseenlevjosy7lqzazh.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413902/swbamj1u13yfjmph3w9w.png',
     },
     {
       code: 'PSP30',
@@ -678,14 +689,14 @@ export const initialData: SeedData = {
       profesionalPrice: 115900,
       actives: 'Elastómeros de Silicona, mica.',
       properties: [
-        '1.Elimina la brillantez instánteamente y dismula pequeñas imperfecciones.',
+        'Elimina la brillantez instánteamente y dismula pequeñas imperfecciones.',
         'Deja una textura  sedosa y matizada.',
         'Aporta un delicado color cálido a la piel.',
       ],
       phase: 'PRIMER',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751722/wts1eubnymgx0hkzvshg.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/cszkdphjaj3we12eszd2.png',
     },
     {
       code: 'LHT150',
@@ -702,7 +713,7 @@ export const initialData: SeedData = {
       phase: 'HIDRATACIÓN Y NUTRICIÓN',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751721/oqmpagiwfiadx91shfo2.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/mkbpmnwhxnlk2ssji23z.png',
     },
     {
       code: 'LHS150',
@@ -719,7 +730,7 @@ export const initialData: SeedData = {
       phase: 'HIDRATACIÓN Y NUTRICIÓN',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751721/oqmpagiwfiadx91shfo2.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/mkbpmnwhxnlk2ssji23z.png',
     },
     {
       code: 'CI150',
@@ -737,7 +748,7 @@ export const initialData: SeedData = {
       phase: 'LIMPIEZA',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751719/mqvzsa4qymkklikxninu.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413902/lsbx8extme0auve9x9ci.png',
     },
     {
       code: 'GN150',
@@ -754,8 +765,7 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO',
       time: 'DIA',
-      image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751718/t9x81w6d5jqxhmcxq4b4.png',
+      image: null,
     },
     {
       code: 'GS150',
@@ -772,7 +782,7 @@ export const initialData: SeedData = {
       phase: 'TRATAMIENTO',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751717/iddz7ywx4rhyjghiwqdq.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/vjtezmdavkoshkzjmmmu.png',
     },
     {
       code: 'GLD100',
@@ -788,7 +798,7 @@ export const initialData: SeedData = {
       phase: 'LIMPIEZA Y EXFOLIACIÓN',
       time: 'DIA O NOCHE',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751715/gtmzmjx1zv8wgzyighcq.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/jk9uans0jb2jjxskmtdc.png',
     },
     {
       code: 'GI300',
@@ -804,7 +814,7 @@ export const initialData: SeedData = {
       phase: 'TRATAMIENTO',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751716/znqjvjesuvsnhsl1xca5.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413902/usatlfvkoxhpc1wfuqed.png',
     },
     {
       code: 'SA300',
@@ -820,7 +830,7 @@ export const initialData: SeedData = {
       phase: 'TRATAMIENTO',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751714/o1mymmoj0h5rxjxqycod.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413902/mw37jrugacrrs3kgets4.png',
     },
     {
       code: 'CTR65',
@@ -836,7 +846,7 @@ export const initialData: SeedData = {
       phase: 'RELAJACIÓN',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751710/bcckr7cwz89noa8ugz7d.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/irba8iyidhyzvez3knzn.png',
     },
     {
       code: 'CTR25',
@@ -852,7 +862,7 @@ export const initialData: SeedData = {
       phase: 'RELAJACIÓN',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751710/bcckr7cwz89noa8ugz7d.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/irba8iyidhyzvez3knzn.png',
     },
     {
       code: 'ESML13',
@@ -862,12 +872,13 @@ export const initialData: SeedData = {
       profesionalPrice: 35800,
       actives: 'Aceite Esencial Mandarina, Aceite Esencial Lima',
       properties: [
-        'Revitaliza y enfoca. 2.Disipa neblina mental producidad por el estrés.',
+        'Revitaliza y enfoca.',
+        'Disipa neblina mental producidad por el estrés.',
       ],
       phase: 'RELAJACIÓN',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751712/lkyvpdiofadnhhvewg8d.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413901/dsitm9k62r0vbmfvpdbf.png',
     },
     {
       code: 'ESEU13',
@@ -883,7 +894,7 @@ export const initialData: SeedData = {
       phase: 'RELAJACIÓN',
       time: 'DIA',
       image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1741751711/cchcbhejho3ezq5xdwru.png',
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413901/sa4nsjgm9wjnw8vyevlf.png',
     },
     {
       code: 'AL500',
@@ -893,7 +904,7 @@ export const initialData: SeedData = {
       profesionalPrice: 109200,
       actives: 'Ácido Láctico 1,1%',
       properties: [
-        '1.Eliminas impurezas y toxinas.',
+        'Eliminas impurezas y toxinas.',
         'Estabiliza la acidez natural de la piel.',
         'Recomendado para pieles sensibles.',
       ],
@@ -909,7 +920,8 @@ export const initialData: SeedData = {
       profesionalPrice: 116500,
       actives: 'Aloe Vera 10% , Ácido Salicílico 1,9%',
       properties: [
-        '1.Elimina impurezas, tóxinas y excesos de secreción sebácea.                                                                          2.Calma y protege la piel por acción del Extracto de Aloe Vera.',
+        'Elimina impurezas, tóxinas y excesos de secreción sebácea.',
+        'Calma y protege la piel por acción del Extracto de Aloe Vera.',
         'Recomendado para pieles grasas con tendencia comedogénica.',
       ],
       phase: '',
@@ -924,7 +936,8 @@ export const initialData: SeedData = {
       profesionalPrice: 89800,
       actives: 'Ácidos Grasos de Coco 15%',
       properties: [
-        '1.Elimina impurezas y toxinas.                                               2.Remueve el maquillaje y prepara la piel para recibir principios activos.',
+        'Elimina impurezas y toxinas.',
+        'Remueve el maquillaje y prepara la piel para recibir principios activos.',
         'Recomendado para todo tipo de piel.',
       ],
       phase: '',
@@ -939,7 +952,7 @@ export const initialData: SeedData = {
       profesionalPrice: 89900,
       actives: 'Ácido Glicólico 0,2%, Aloe Vera 0,2% , Vitamina E 0,1%,',
       properties: [
-        '1.Elimina impurezas y células muertas.',
+        'Elimina impurezas y células muertas.',
         'Provee hidratación y suavidad.',
         'Recomendado para pieles mixtas y secas.',
       ],
@@ -955,7 +968,7 @@ export const initialData: SeedData = {
       profesionalPrice: 107800,
       actives: 'Semillas de durazno y nuez 10%, Ácidos Grasos de Coco 5%',
       properties: [
-        '1.Elimina impurezas y toxinas.',
+        'Elimina impurezas y toxinas.',
         'Prepara la piel para recibir principios activos.',
         'Recomendado para todo tipo de piel.',
       ],
@@ -1028,7 +1041,7 @@ export const initialData: SeedData = {
       code: 'MA300',
       name: 'MASCARILLA ASTRINGENTE NATURAL X 300 G',
       publicPrice: null,
-      efficiency: 25.5,
+      efficiency: 25,
       profesionalPrice: 70100,
       actives:
         'Extractos Herbales Ayurvedas 4%, Bentonita 6%, Kaolín 6%, Óxido de ZInc 10% ',
@@ -1046,7 +1059,7 @@ export const initialData: SeedData = {
       code: 'MAH300',
       name: 'MASCARILLA ASTRINGENTE HERBAL X 300 G',
       publicPrice: null,
-      efficiency: 25.5,
+      efficiency: 25,
       profesionalPrice: 70100,
       actives:
         'Extractos Herbales Ayurvedas 4%, Bentonita 6%, Kaolín 6%, Óxido de ZInc 10% ',
@@ -1082,13 +1095,14 @@ export const initialData: SeedData = {
       code: 'BL150',
       name: 'GEL BIOCOLAGENO III-LIPOSOMA X 150 G',
       publicPrice: null,
-      efficiency: 127.5,
+      efficiency: 127,
       profesionalPrice: 208900,
       actives:
         'Rosa Mosqueta 5%, Amplificador de Síntesis de Colágeno  ASCIII 2%',
       properties: [
         'Restaura la piel y acelera su regeneración.',
-        'Amplifica selectivamente la biosiíntesis de de Colágeno tipo III.                                                                                      3.Disminuye la pérdidad de agua transepidérmica.',
+        'Amplifica selectivamente la biosiíntesis de de Colágeno tipo III.',
+        'Disminuye la pérdidad de agua transepidérmica.',
         'Suaviza paulatinamente las líneas de expresión.',
         'Recomendado para todo tipo de piel.',
       ],
@@ -1100,7 +1114,7 @@ export const initialData: SeedData = {
       code: 'CN150',
       name: 'CREMA NUTRITIVA X 150 G',
       publicPrice: null,
-      efficiency: 127.5,
+      efficiency: 127,
       profesionalPrice: 153600,
       actives: '17 Aminoácidos Esenciales 5%, Rosa Mosqueta 5%',
       properties: [
@@ -1133,7 +1147,7 @@ export const initialData: SeedData = {
       code: 'HF150',
       name: 'LOCIÓN HIDRATANTE FACIAL -LIPOSOMAX 150 G',
       publicPrice: null,
-      efficiency: 127.5,
+      efficiency: 127,
       profesionalPrice: 185500,
       actives:
         'Amplificador de Síntesis de Colágeno  ASCIII 0,1%, Acción Anti UV',
@@ -1151,12 +1165,14 @@ export const initialData: SeedData = {
       code: 'CEQ150',
       name: 'SUERO ANTIOXIDANTE - SERUM LIPOSOME X 150 G',
       publicPrice: null,
-      efficiency: 127.5,
+      efficiency: 127,
       profesionalPrice: 172300,
       actives:
         'Vitamina C 3%,  Coenzima Q10 Liposomada 0,5%, Vitamina E 0,2%, Ácido Hialurónico 0,2%',
       properties: [
-        '1.Libera la piel del estrés oxidativo.                                    2.Revierte los efectos del envejecimiento prematuro.         3.Mejora la apariencia de la piel.',
+        'Libera la piel del estrés oxidativo.',
+        'Revierte los efectos del envejecimiento prematuro.',
+        'Mejora la apariencia de la piel.',
         'Recomendado paro todo tipo de piel.',
       ],
       phase: '',
@@ -1167,7 +1183,7 @@ export const initialData: SeedData = {
       code: 'SH150',
       name: 'SUERO HIDRATANTE X 150 G',
       publicPrice: null,
-      efficiency: 127.5,
+      efficiency: 127,
       profesionalPrice: 165600,
       actives: 'Aminoacid Complex 5%, Escleroglucam 1%',
       properties: [
@@ -1184,11 +1200,13 @@ export const initialData: SeedData = {
       code: 'RQ150',
       name: 'GEL REAFIRMANTE Q10-LIPOSOMA X 150 G',
       publicPrice: null,
-      efficiency: 127.5,
+      efficiency: 127,
       profesionalPrice: 192200,
       actives: 'Coenzima Q10 Liposomada 3%, Escleroglucam 1%',
       properties: [
-        '1.Revierte los efectos del envejecimiento celular.                2.Optimiza el uso de energía celular.                                    3.Revitaliza el tejido.',
+        'Revierte los efectos del envejecimiento celular.',
+        'Optimiza el uso de energía celular.',
+        'Revitaliza el tejido.',
         'Recomendado paro todo tipo de piel.',
       ],
       phase: '',
@@ -1286,7 +1304,7 @@ export const initialData: SeedData = {
       code: 'GI500',
       name: 'GEL FRÍO PARA MASAJES X 500 G',
       publicPrice: null,
-      efficiency: 42.5,
+      efficiency: 42,
       profesionalPrice: 66800,
       actives: 'Cafeína 1%, Mentol 1%, Alcanfor',
       properties: [
@@ -1316,7 +1334,7 @@ export const initialData: SeedData = {
       code: 'SA500',
       name: 'GEL CALIENTE PARA MASAJES x 500 G',
       publicPrice: null,
-      efficiency: 42.5,
+      efficiency: 42,
       profesionalPrice: 56700,
       actives: 'Rubefacientes',
       properties: [
@@ -1346,12 +1364,13 @@ export const initialData: SeedData = {
       code: 'GF500',
       name: 'GEL FRIO REAFIRMANTE X 500 G',
       publicPrice: null,
-      efficiency: 42.5,
+      efficiency: 42,
       profesionalPrice: 68500,
       actives:
         'Mentol 2%, Centella Asiática 1%, Algas Fucus 1%, Equisetum Arvense 1%.',
       properties: [
-        'Estimula la circulación periférica.                                       2.Tonifica y favore la evauación de toxinas.',
+        'Estimula la circulación periférica.',
+        'Tonifica y favore la evauación de toxinas.',
         'Reduce la flacidex y aumenta la flexibilidad de la piel.',
       ],
       phase: '',
@@ -1362,7 +1381,7 @@ export const initialData: SeedData = {
       code: 'HV500',
       name: 'LOCIÓN HIPOTÉRMICA VENDAS X 500 G',
       publicPrice: null,
-      efficiency: 42.5,
+      efficiency: 42,
       profesionalPrice: 45500,
       actives: 'Cafeína 1%, Mentol 1%',
       properties: [
@@ -1378,7 +1397,7 @@ export const initialData: SeedData = {
       code: 'LB500',
       name: 'LOCIÓN HIPOTÉRMICA BUSTO X 500 G',
       publicPrice: null,
-      efficiency: 42.5,
+      efficiency: 42,
       profesionalPrice: 81500,
       actives: 'Cafeína 1%, Mentol 1%',
       properties: [
@@ -1394,12 +1413,13 @@ export const initialData: SeedData = {
       code: 'RB500',
       name: 'GEL REAFIRMANTE BUSTO x 500 G',
       publicPrice: null,
-      efficiency: 42.5,
+      efficiency: 42,
       profesionalPrice: 89500,
       actives:
         'Mentol 1%, Centella Asiática 1%, Algas Fucus 1%, Equisetum Arvense 1%.',
       properties: [
-        'Estimula la circulación periférica.                                       2.Tonifica y favore la evauación de toxinas.',
+        'Estimula la circulación periférica.',
+        'Tonifica y favore la evauación de toxinas.',
         'Reduce la flacidex y aumenta la flexibilidad de la piel del busto.',
       ],
       phase: '',
@@ -1410,7 +1430,7 @@ export const initialData: SeedData = {
       code: 'MB500',
       name: 'MASCARILLA CRIOGENICA BUSTO x 500 G',
       publicPrice: null,
-      efficiency: 25.5,
+      efficiency: 25,
       profesionalPrice: 81400,
       actives:
         'Mentol 1%, Extracto de Aloe Vera 4%, Bentonita 6%, Kaolín 6%, Óxido de ZInc 10% ',
@@ -1427,7 +1447,7 @@ export const initialData: SeedData = {
       code: 'CB120',
       name: 'CREMA REPARADORA BUSTO x 120 G',
       publicPrice: null,
-      efficiency: 212.5,
+      efficiency: 212,
       profesionalPrice: 61100,
       actives: 'Alantoína 0,2%, Úrea 2,5%, Rosa Mosqueta 5%, Vitamina E 1%.',
       properties: [
@@ -1442,7 +1462,7 @@ export const initialData: SeedData = {
       code: 'GN500',
       name: 'GEL ANTICELULÍTICO X 500 G',
       publicPrice: null,
-      efficiency: 42.5,
+      efficiency: 42,
       profesionalPrice: 143600,
       actives:
         'Cafeína 1%, Centella Asiática 1%, Algas Fucus 1%, Ginko Biloba 1%,  Castaño de Indias 1%, Equisetum Arvense 1%, Ácido Hialurónico 0,1%.',
@@ -1475,7 +1495,7 @@ export const initialData: SeedData = {
       code: 'GLD500',
       name: 'GEL LIMPIADOR EXFOLIANTE CORPORAL DURAZNO X 500 G',
       publicPrice: null,
-      efficiency: 42.5,
+      efficiency: 42,
       profesionalPrice: 104600,
       actives: 'Semillas de durazno y nuez 10%, Ácidos Grasos de Coco 5%',
       properties: [
@@ -1504,6 +1524,36 @@ export const initialData: SeedData = {
     {
       code: 'AN500',
       name: 'ACEITE PARA MASAJES DE NARANJA X 500 G',
+      publicPrice: null,
+      efficiency: 25,
+      profesionalPrice: 71000,
+      actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
+      properties: [
+        'Apoya protocolos reductores, anticelulíticos, adelgazantes y reafirmantes.',
+        'Nutre la piel con porderosos antioxidantes presentes en los Extractos Naturles.',
+      ],
+      phase: '',
+      time: '',
+      image: null,
+    },
+    {
+      code: 'AMT500',
+      name: 'ACEITE PARA MASAJES DE TE VERDE X 500 G',
+      publicPrice: null,
+      efficiency: 25,
+      profesionalPrice: 71000,
+      actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
+      properties: [
+        'Apoya protocolos reductores, anticelulíticos, adelgazantes y reafirmantes.',
+        'Nutre la piel con porderosos antioxidantes presentes en los Extractos Naturles.',
+      ],
+      phase: '',
+      time: '',
+      image: null,
+    },
+    {
+      code: 'AMS500',
+      name: 'ACEITE PARA MASAJES DE SEDUCTION X 500 G',
       publicPrice: null,
       efficiency: 25,
       profesionalPrice: 71000,
@@ -1674,7 +1724,8 @@ export const initialData: SeedData = {
       profesionalPrice: 65200,
       actives: 'Agentes conductores.',
       properties: [
-        '1.Sirve de interfase en procedimientos estéticos como diatermia. 2.Permite reducir la resistencia eléctrica entre la piel y los electrodos mejorando la transmisión de la señal.',
+        'Sirve de interfase en procedimientos estéticos como diatermia.',
+        'Permite reducir la resistencia eléctrica entre la piel y los electrodos mejorando la transmisión de la señal.',
       ],
       phase: '',
       time: '',
@@ -1688,7 +1739,8 @@ export const initialData: SeedData = {
       profesionalPrice: 65200,
       actives: 'Agentes conductores.',
       properties: [
-        '1.Sirve de interfase en procedimientos estéticos como diatermia. 2.Permite reducir la resistencia eléctrica entre la piel y los electrodos mejorando la transmisión de la señal.',
+        'Sirve de interfase en procedimientos estéticos como diatermia.',
+        'Permite reducir la resistencia eléctrica entre la piel y los electrodos mejorando la transmisión de la señal.',
       ],
       phase: '',
       time: '',
@@ -1871,11 +1923,12 @@ export const initialData: SeedData = {
       code: 'GLT500',
       name: 'GEL LIMPIADOR EXFOLIANTE TE VERDE X 500 G',
       publicPrice: null,
-      efficiency: 42.5,
+      efficiency: 42,
       profesionalPrice: 104600,
       actives: '',
       properties: [
-        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.                             2.DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
+        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.',
+        'DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
         'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
         'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
         'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
@@ -1888,28 +1941,12 @@ export const initialData: SeedData = {
       code: 'MRT500',
       name: 'MASCARILLA CORPORAL ARCILLA TE VERDE X 500 G',
       publicPrice: null,
-      efficiency: 42.5,
+      efficiency: 42,
       profesionalPrice: 95800,
       actives: '',
       properties: [
-        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.                             2.DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
-        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
-        'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
-        'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
-      ],
-      phase: '',
-      time: '',
-      image: null,
-    },
-    {
-      code: 'AMT500',
-      name: 'ACEITE PARA MASAJES TE VERDE X 500 G',
-      publicPrice: null,
-      efficiency: 25,
-      profesionalPrice: 71000,
-      actives: '',
-      properties: [
-        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.                             2.DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
+        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.',
+        'DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
         'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
         'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
         'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
@@ -1926,7 +1963,8 @@ export const initialData: SeedData = {
       profesionalPrice: 115000,
       actives: '',
       properties: [
-        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.                             2.DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
+        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.',
+        'DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
         'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
         'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
         'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
@@ -1943,7 +1981,8 @@ export const initialData: SeedData = {
       profesionalPrice: 62500,
       actives: '',
       properties: [
-        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.                             2.DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
+        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.',
+        'DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
         'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
         'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
         'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
@@ -1956,11 +1995,12 @@ export const initialData: SeedData = {
       code: 'GLS500',
       name: 'GEL LIMPIADOR EXFOLIANTE SEDUCTION X 500',
       publicPrice: null,
-      efficiency: 42.5,
+      efficiency: 42,
       profesionalPrice: 104600,
       actives: '',
       properties: [
-        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.                             2.DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
+        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.',
+        'DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
         'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
         'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
         'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
@@ -1973,28 +2013,12 @@ export const initialData: SeedData = {
       code: 'MRS500',
       name: 'MASCARILLA CORPORAL ARCILLA SEDUCTION X 500 G',
       publicPrice: null,
-      efficiency: 42.5,
+      efficiency: 42,
       profesionalPrice: 95800,
       actives: '',
       properties: [
-        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.                             2.DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
-        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
-        'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
-        'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
-      ],
-      phase: '',
-      time: '',
-      image: null,
-    },
-    {
-      code: 'AMS500',
-      name: 'ACEITE PARA MASAJES SEDUCTION X 500 G',
-      publicPrice: null,
-      efficiency: 25,
-      profesionalPrice: 71000,
-      actives: '',
-      properties: [
-        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.                             2.DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
+        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.',
+        'DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
         'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
         'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
         'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
@@ -2011,7 +2035,8 @@ export const initialData: SeedData = {
       profesionalPrice: 115000,
       actives: '',
       properties: [
-        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.                             2.DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
+        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.',
+        'DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
         'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
         'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
         'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
@@ -2028,7 +2053,8 @@ export const initialData: SeedData = {
       profesionalPrice: 62500,
       actives: '',
       properties: [
-        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.                             2.DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
+        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.',
+        'DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
         'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
         'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
         'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',

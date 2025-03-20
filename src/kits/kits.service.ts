@@ -36,7 +36,8 @@ export class KitsService {
           const productDB = await this.productsRespository.findOne({
             where: { code: product.code },
           });
-          if (!productDB) throw new NotFoundException('Product not found ' + product.code);
+          if (!productDB)
+            throw new NotFoundException('Product not found ' + product.code);
           return {
             productDB,
             quantity: product.quantity,

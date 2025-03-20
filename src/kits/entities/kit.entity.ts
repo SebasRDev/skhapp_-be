@@ -40,10 +40,25 @@ export class Kit {
   @BeforeInsert()
   @BeforeUpdate()
   calculatePrice() {
-    this.price =
-      this.kitProducts?.reduce((total, kitProduct) => {
-        const productPrice = kitProduct.product?.publicPrice ?? 0;
-        return total + productPrice * kitProduct.quantity;
-      }, 0) || 0;
+    if (this.category === 'CASA') {
+      this.price =
+        this.kitProducts?.reduce((total, kitProduct) => {
+          const productPrice = kitProduct.product?.publicPrice ?? 0;
+          return total + productPrice * kitProduct.quantity;
+        }, 0) || 0;
+    } else if (this.category === 'CABINA') {
+      this.price =
+        this.kitProducts?.reduce((total, kitProduct) => {
+          const productPrice = kitProduct.product?.profesionalPrice ?? 0;
+          return total + productPrice * kitProduct.quantity;
+        }, 0) || 0;
+    } else {
+      // Default calculation if category is neither CASA nor CABINA
+      this.price =
+        this.kitProducts?.reduce((total, kitProduct) => {
+          const productPrice = kitProduct.product?.publicPrice ?? 0;
+          return total + productPrice * kitProduct.quantity;
+        }, 0) || 0;
+    }
   }
 }
