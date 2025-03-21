@@ -36,18 +36,16 @@ export const tableReport = (data: Product[], property = 'profesionalPrice') => {
   const getTableHeaders = () => {
     const baseHeaders = [
       HeaderCell('Nombre', { alignment: 'left' }),
+      HeaderCell('Fase de tratamiento'),
+      HeaderCell('Uso'),
       HeaderCell('Cant'),
-      HeaderCell(
-        property === 'profesionalPrice' ? 'Precio Público' : 'Rendimiento',
-      ),
-      HeaderCell('Precio Prof.'),
     ];
 
     if (hasAnyDiscount) {
       baseHeaders.push(HeaderCell('Dcto'));
     }
 
-    baseHeaders.push(HeaderCell('Total de Línea', { isLast: true }));
+    baseHeaders.push(HeaderCell('Valor', { isLast: true }));
     return baseHeaders;
   };
 

@@ -1,12 +1,14 @@
 import { Content, TDocumentDefinitions } from 'pdfmake/interfaces';
+import { Kit } from 'src/kits/entities/kit.entity';
 import Product from 'src/products/interfaces/product.interface';
 import { tableReport } from 'src/quotes/documents/table.report';
 import { Data } from 'src/quotes/interfaces/formula.interface';
-import { formatDate } from 'src/quotes/utils/utils';
+import { formatDate, getImage } from 'src/quotes/utils/utils';
 
 export const formulaReport = (
   quoteInfo: Data,
   formulaProducts: Product[],
+  kitData: Kit | null,
 ): TDocumentDefinitions => {
   const today = new Date();
   const formatedDate = formatDate(today);
@@ -66,6 +68,129 @@ export const formulaReport = (
     },
   ]);
 
+  const imageKit = getImage(kitData?.imageLink, 250);
+  console.log(imageKit);
+
+  const kitPageContent: Content[] = kitData
+    ? [
+        // kitData.imageLink
+        //   ? {
+        //       image: kitData.imageLink,
+        //       width: 150,
+        //       height: 150,
+        //     }
+        //   : '',
+        {
+          text: `${kitData.name}`,
+          style: 'title',
+          alignment: 'center',
+          pageBreak: 'beforeEven',
+          marginBottom: 30,
+        },
+        {
+          columnGap: 20,
+          columns: [
+            [
+              {
+                marginBottom: 10,
+                marginTop: 10,
+                table: {
+                  widths: ['*'],
+                  body: [
+                    [
+                      {
+                        text: 'PRODUCTOS',
+                        border: [false, false, false, false],
+                        fillColor: '#D9D9D9',
+                        bold: true,
+                        alignment: 'center',
+                        margin: [2, 3],
+                      },
+                    ],
+                  ],
+                },
+                layout: 'noBorders',
+              },
+              formulaProducts.map((prod) => ({
+                text: `- ${prod.name}`,
+                style: 'BenefitsBody',
+              })),
+              {
+                marginBottom: 10,
+                marginTop: 10,
+                table: {
+                  widths: ['*'],
+                  body: [
+                    [
+                      {
+                        text: 'TIPS',
+                        border: [false, false, false, false],
+                        fillColor: '#D9D9D9',
+                        alignment: 'center',
+                        bold: true,
+                        margin: [2, 3],
+                      },
+                    ],
+                  ],
+                },
+                layout: 'noBorders',
+              },
+              kitData.tips.map((tip) => ({
+                text: `- ${tip}`,
+                style: 'BenefitsBody',
+              })),
+            ],
+            [
+              {
+                marginBottom: 10,
+                marginTop: 10,
+                table: {
+                  widths: ['*'],
+                  body: [
+                    [
+                      {
+                        text: 'PROTOCOLOS',
+                        border: [false, false, false, false],
+                        fillColor: '#D9D9D9',
+                        alignment: 'center',
+                        bold: true,
+                        margin: [2, 3],
+                      },
+                    ],
+                  ],
+                },
+                layout: 'noBorders',
+              },
+              kitData.protocol.dia.length > 0
+                ? {
+                    text: 'DIA',
+                    style: 'BenefitsBody',
+                  }
+                : '',
+              kitData.protocol.dia.length > 0
+                ? kitData.protocol.dia.map((tip) => ({
+                    text: `- ${tip}`,
+                    style: 'BenefitsBody',
+                  }))
+                : [],
+              kitData.protocol.noche.length > 0
+                ? {
+                    text: 'NOCHE',
+                    style: 'BenefitsBody',
+                  }
+                : '',
+              kitData.protocol.noche.length > 0
+                ? kitData.protocol.noche.map((tip) => ({
+                    text: `- ${tip}`,
+                    style: 'BenefitsBody',
+                  }))
+                : [],
+            ],
+          ],
+        },
+      ]
+    : [];
+
   return {
     pageMargins: [40, 150, 40, 40],
     background: function () {
@@ -77,7 +202,7 @@ export const formulaReport = (
             y: 0,
             w: 595.28,
             h: 841.89,
-            color: '#e6e2cf',
+            color: '#eeede7',
           },
         ],
       };
@@ -103,13 +228,14 @@ export const formulaReport = (
       {
         text: recommendation
           ? `Recomendaciones:  
-        ${recommendation}`
+            ${recommendation}`
           : '',
         style: 'body',
         pageBreak: 'after',
       },
       { text: 'BENEFICIOS PARA TU PIEL', style: 'title', marginBottom: 10 },
       getBenefits,
+      kitPageContent,
     ],
     footer: function () {
       return [

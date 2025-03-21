@@ -6,6 +6,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Product } from 'src/products/entities/product.entity';
 import { Repository } from 'typeorm';
 import { quoteReport } from 'src/quotes/documents/quote.report';
+import { Kit } from 'src/kits/entities/kit.entity';
 
 @Injectable()
 export class QuotesService {
@@ -13,11 +14,14 @@ export class QuotesService {
     @InjectRepository(Product)
     private readonly productsRepository: Repository<Product>,
 
+    @InjectRepository(Kit)
+    private readonly kitRepository: Repository<Kit>,
+
     private readonly printer: PrinterService,
   ) {}
 
   async getReport(quoteData: FormulaReport, type: 'formula' | 'quote') {
-    const { data, products } = quoteData;
+    const { data, products, kit } = quoteData;
 
     const formulaProducts = await Promise.all(
       products.map(async (product) => {
@@ -33,9 +37,13 @@ export class QuotesService {
       }),
     );
 
+    const formulaKit = await this.kitRepository.findOneBy({
+      id: quoteData.kit,
+    });
+
     let docDefinition: any;
     if (type === 'formula') {
-      docDefinition = formulaReport(data, formulaProducts);
+      docDefinition = formulaReport(data, formulaProducts, formulaKit);
     }
     if (type === 'quote') {
       docDefinition = quoteReport(data, formulaProducts);

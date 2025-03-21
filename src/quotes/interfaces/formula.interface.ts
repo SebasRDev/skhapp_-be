@@ -1,5 +1,6 @@
 interface Report {
   data: Data;
+  kit: string;
   products: ProductQuote[];
 }
 
