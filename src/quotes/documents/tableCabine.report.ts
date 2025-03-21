@@ -5,14 +5,24 @@ import {
   calculateTotal,
   capitalize,
   currencyFormatter,
+  getProductPrice,
 } from 'src/quotes/utils/utils';
 
-export const tableReport = (data: Product[], property = 'profesionalPrice') => {
+export const tableCabineReport = (
+  data: Product[],
+  generalDiscount?: number,
+  property = 'profesionalPrice',
+) => {
   const formulaProducts = data;
 
-  const total = calculateTotal(formulaProducts, 'profesionalPrice');
+  const total = calculateTotal(
+    formulaProducts,
+    'profesionalPrice',
+    generalDiscount,
+  );
 
-  const hasAnyDiscount = formulaProducts.some((product) => product.discount);
+  const hasAnyDiscount =
+    formulaProducts.some((product) => product.discount) || generalDiscount;
 
   const HeaderCell = (value: string, config?: CellConfig) => {
     const { isLast = false, alignment } = config || {};
@@ -37,9 +47,7 @@ export const tableReport = (data: Product[], property = 'profesionalPrice') => {
     const baseHeaders = [
       HeaderCell('Nombre', { alignment: 'left' }),
       HeaderCell('Cant'),
-      HeaderCell(
-        property === 'profesionalPrice' ? 'Precio Público' : 'Rendimiento',
-      ),
+      HeaderCell('Precio Público'),
       HeaderCell('Precio Prof.'),
     ];
 
@@ -52,7 +60,7 @@ export const tableReport = (data: Product[], property = 'profesionalPrice') => {
   };
 
   const getTableWidths = () => {
-    const baseWidths = [200, 'auto', 'auto', 30];
+    const baseWidths = [200, 'auto', '*', 'auto'];
     if (hasAnyDiscount) {
       baseWidths.push('auto');
     }
@@ -63,18 +71,38 @@ export const tableReport = (data: Product[], property = 'profesionalPrice') => {
   const getProductRow = (product: Product, property: string) => {
     const baseRow = [
       regularCell(product.name, { alignment: 'left' }),
-      regularCell(product.phase),
-      regularCell(product.time),
-      regularCell(product.quantity.toString()),
+      regularCell(String(product.quantity)),
+      regularCell(
+        property === 'publicPrice'
+          ? currencyFormatter.format(Number(product.publicPrice))
+          : String(product.efficiency),
+      ),
+      regularCell(currencyFormatter.format(Number(product.profesionalPrice))),
     ];
 
     if (hasAnyDiscount) {
-      baseRow.push(regularCell(`${product.discount || 0}%`));
+      if (product.discount && generalDiscount) {
+        baseRow.push(
+          regularCell(`${product.discount || 0}%+${generalDiscount || 0}%`),
+        );
+      }
+      if (product.discount && !generalDiscount) {
+        baseRow.push(regularCell(`${product.discount || 0}%`));
+      }
+      if (!product.discount && generalDiscount) {
+        baseRow.push(regularCell(`${generalDiscount || 0}%`));
+      }
     }
 
-    const formattedValue = currencyFormatter.format(Number(product[property]));
+    const total = getProductPrice(
+      Number(product.profesionalPrice),
+      product.quantity,
+      product.discount,
+      generalDiscount,
+    );
+
     baseRow.push(
-      regularCell(formattedValue, {
+      regularCell(currencyFormatter.format(total), {
         isLast: true,
       }),
     );

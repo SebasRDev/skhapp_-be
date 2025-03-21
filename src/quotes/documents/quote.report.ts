@@ -1,8 +1,12 @@
 import { TDocumentDefinitions } from 'pdfmake/interfaces';
 import Product from 'src/products/interfaces/product.interface';
-import { tableReport } from 'src/quotes/documents/table.report';
+import { tableCabineReport } from 'src/quotes/documents/tableCabine.report';
 import { Data } from 'src/quotes/interfaces/formula.interface';
-import { formatDate } from 'src/quotes/utils/utils';
+import {
+  calculateQuoteTotals,
+  currencyFormatter,
+  formatDate,
+} from 'src/quotes/utils/utils';
 
 export const quoteReport = (
   quoteInfo: Data,
@@ -21,6 +25,66 @@ export const quoteReport = (
     (product) => product.publicPrice === null,
   );
 
+  const { totalHome, profitability, totalCabine } = calculateQuoteTotals(
+    quoteProducts,
+    Number(quoteInfo.generalDiscount),
+  );
+
+  const hasAnyDiscount =
+    quoteProducts.some((product) => product.discount) ||
+    (quoteInfo.generalDiscount !== undefined &&
+      Number(quoteInfo.generalDiscount) > 0);
+
+  // Preparar el cuerpo de la tabla con validaciones para evitar errores
+  const tableBody: Array<
+    Array<{
+      text: string;
+      style: string;
+      alignment?: string;
+      pageBreak?: string;
+    }>
+  > = [];
+
+  // Solo agregar filas de descuento si realmente hay descuentos
+  if (hasAnyDiscount) {
+    tableBody.push([
+      {
+        text: 'Total Sin Descuentos:',
+        style: 'tableHeader',
+        alignment: 'right',
+      },
+      {
+        text: currencyFormatter.format(
+          totalHome.totalNoDiscount + totalCabine.totalNoDiscount,
+        ),
+        style: 'tableHeaderRight',
+      },
+    ]);
+
+    tableBody.push([
+      { text: 'Ahorro Total:', style: 'tableHeader', alignment: 'right' },
+      {
+        text: currencyFormatter.format(
+          totalHome.totalNoDiscount +
+            totalCabine.totalNoDiscount -
+            (totalHome.totalToPay + totalCabine.totalToPay),
+        ),
+        style: 'tableHeaderRight',
+      },
+    ]);
+  }
+
+  // Siempre agregar el total a pagar
+  tableBody.push([
+    { text: 'Total a pagar:', style: 'tableHeader', alignment: 'right' },
+    {
+      text: currencyFormatter.format(
+        totalHome.totalToPay + totalCabine.totalToPay,
+      ),
+      style: 'tableHeaderRight',
+    },
+  ]);
+
   return {
     pageMargins: [40, 150, 40, 40],
     background: function () {
@@ -38,23 +102,71 @@ export const quoteReport = (
       };
     },
     header: {
-      height: 150,
-      width: 150,
-      image: 'src/assets/logo_30_y.png',
       margin: [20, 10],
+      columns: [
+        {
+          height: 150,
+          width: 150,
+          image: 'src/assets/logo_30_y.png',
+        },
+        {
+          text: 'MARCA REGISTRADA DE LA\n EMPRESA CODEMFAR SAS\n nit 800233452-8',
+          style: 'watermark',
+        },
+      ],
     },
     content: [
-      { text: 'Recomendación de tu profesional', style: 'title' },
+      { text: 'Cotización', style: 'title' },
       {
-        text: `Estimado/a ${name} a continuación ${consultant} especialista Skinhealth te hace la siguiente recomendación`,
+        text: `Estimado/a ${name} el asesor ${consultant} presenta la cotización a continuación`,
         style: 'body',
       },
-      tableReport(homeProducts, 'publicPrice'),
-      cabineProducts.length > 0 ? tableReport(cabineProducts) : '',
+      {
+        text: homeProducts.length > 0 ? 'Productos uso en casa:' : '',
+        style: 'heading',
+      },
+      homeProducts.length > 0
+        ? tableCabineReport(
+            homeProducts,
+            quoteInfo.generalDiscount,
+            'publicPrice',
+          )
+        : '',
+      {
+        text: homeProducts.length > 0 ? 'Productos uso en cabina:' : '',
+        style: 'heading',
+      },
+      cabineProducts.length > 0
+        ? tableCabineReport(cabineProducts, quoteInfo.generalDiscount)
+        : '',
       {
         text: gift ? `Las cortesías por su compra son: ${gift}` : '',
         style: 'body',
         margin: [0, 20],
+      },
+      {
+        text:
+          homeProducts.length > 0
+            ? `En los productos de USO EN CASA el total de venta a público es ${currencyFormatter.format(totalHome.totalPublic)}, lo cual genera una ganancia de ${currencyFormatter.format(totalHome.totalPublic - totalHome.totalToPay)} y una rentabilidad de ${profitability.toFixed(2)}%`
+            : '',
+        style: 'body',
+        margin: [0, 20],
+      },
+      {
+        text:
+          cabineProducts.length > 0
+            ? `En los productos de USO EN CABINA el rendimiento promedio es de ${totalCabine.averageEfficiency} sesiones`
+            : '',
+        style: 'body',
+        margin: [0, 20],
+      },
+      {
+        layout: 'noBorders',
+        table: {
+          widths: ['*', 100],
+          headerRows: 1,
+          body: tableBody,
+        },
       },
     ],
     footer: function () {
@@ -79,6 +191,13 @@ export const quoteReport = (
       ];
     },
     styles: {
+      watermark: {
+        fontSize: 10,
+        bold: true,
+        font: 'Trajan-Pro',
+        alignment: 'right',
+        color: '#c7bfbf',
+      },
       header: {
         fontSize: 20,
         bold: true,
@@ -90,6 +209,14 @@ export const quoteReport = (
         font: 'Trajan-Pro',
         alignment: 'center',
         color: '#4b4b4b',
+      },
+      heading: {
+        fontSize: 12,
+        bold: true,
+        font: 'Trajan-Pro',
+        alignment: 'left',
+        color: '#4b4b4b',
+        margin: [0, 15],
       },
       body: {
         fontSize: 12,

@@ -8,6 +8,7 @@ export interface Data {
   consultant: string;
   gift?: string;
   recommendation?: string;
+  generalDiscount?: number;
 }
 
 interface ProductQuote {
