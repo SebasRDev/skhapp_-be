@@ -28,7 +28,8 @@ export class QuotesService {
         const productDB = await this.productsRepository.findOneBy({
           id: product.id,
         });
-        if (!productDB) throw new NotFoundException('Product not found');
+        if (!productDB)
+          throw new NotFoundException(`Product ${product.id} not found`);
         return {
           ...productDB,
           quantity: product.quantity,

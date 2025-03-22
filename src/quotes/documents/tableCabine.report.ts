@@ -47,7 +47,7 @@ export const tableCabineReport = (
     const baseHeaders = [
       HeaderCell('Nombre', { alignment: 'left' }),
       HeaderCell('Cant'),
-      HeaderCell('Precio Público'),
+      HeaderCell(property === 'publicPrice' ? 'Precio Público' : 'Rendimiento'),
       HeaderCell('Precio Prof.'),
     ];
 

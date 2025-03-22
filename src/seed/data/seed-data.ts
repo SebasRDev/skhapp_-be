@@ -35,7 +35,7 @@ export const initialData: SeedData = {
       profesionalPrice: 93700,
       actives: 'Ácido Glicólico 10%, Alantoína 0,2%',
       properties: [
-        'Elimina gradualente manchas ligeras y secuelas del acné.',
+        'Elimina gradualmente manchas ligeras y secuelas del acné.',
         'Restablece la textura suave  y luminosidad de la piel.',
         'Devuelve los niveles de hidratación.',
         'Recomendado para pieles mixtas a secas.',
@@ -71,7 +71,7 @@ export const initialData: SeedData = {
       profesionalPrice: 108600,
       actives: 'Ácido Glicólico 10%, Alantoína 0,2%',
       properties: [
-        'Elimina gradualente manchas ligeras y secuelas del acné.',
+        'Elimina gradualmente manchas ligeras y secuelas del acné.',
         'Restablece la textura suave  y luminosidad de la piel.',
         'Normaliza los niveles de secreción sebácea',
         'Atenúa líneas de expresión.',
@@ -92,7 +92,7 @@ export const initialData: SeedData = {
         'Ácido Glicólico 10%, Ácido Mandélico Liposomado 10%, Ácido Kójico Liposomado 3%,',
       properties: [
         'Atenúa manchas de procedencia hormonal o por sobreexposición solar.',
-        'Devueleve a la piel su textuta suave, saluable y humectada.',
+        'Devuelve a la piel su textura suave, saludable y humectada.',
         'Atenúa líneas de expresión.',
       ],
       phase: 'TRATAMIENTO ',
@@ -127,7 +127,7 @@ export const initialData: SeedData = {
       actives: 'Ascorbil Fosfato de Sodio 10%, Ácido Hialurónico 0,2%',
       properties: [
         'Atrapa y destruye agentes oxidantes agresivos del tejido.',
-        'Intesifica la síntesis de Colágeno.',
+        'Intensifica la síntesis de Colágeno.',
         'Aclara la piel y le devuelve su brillo natural.',
         'Recomendado para todo tipo de piel.',
       ],
@@ -144,7 +144,7 @@ export const initialData: SeedData = {
       profesionalPrice: 82100,
       actives: 'Ácido Mandélico Liposomado 10%',
       properties: [
-        '1.Elimina gradualente manchas ligeras.                                                                                                                                   2.Restablece la  luminosidad de la piel.                                      3.Devuelve los niveles de hidratación.',
+        '1.Elimina gradualmente manchas ligeras.                                                                                                                                   2.Restablece la  luminosidad de la piel.                                      3.Devuelve los niveles de hidratación.',
         'Recomendado para pieles sensibles y étnicas.',
       ],
       phase: 'TRATAMIENTO ',
@@ -161,7 +161,7 @@ export const initialData: SeedData = {
       actives:
         'Ácido Mandélico, Ácido Glicólico, Ácido Láctico, Ácido Tartárico, Ácido Málico y Ácido Cítrico.',
       properties: [
-        'Aclara gradualente manchas ligeras.',
+        'Aclara gradualmente manchas ligeras.',
         'Atenúa efectos del fotoenvejecimiento.',
         'Mejora la elasticidad de la piel.',
         'Recomendado para pieles sensibles.',
@@ -181,7 +181,7 @@ export const initialData: SeedData = {
       properties: [
         'Aclara manchas de diferente procedencia.',
         'Atenúa efectos del fotoenvejecimiento.',
-        'Hidrata y acondicona la piel.',
+        'Hidrata y acondiciona la piel.',
         'Recomendado para pieles sensibles.',
       ],
       phase: 'TRATAMIENTO ',
@@ -197,7 +197,7 @@ export const initialData: SeedData = {
       profesionalPrice: 66400,
       actives: 'Ácido Láctico 1,1%',
       properties: [
-        'Eliminas impurezas y toxinas.',
+        'Eliminar impurezas y toxinas.',
         'Estabiliza la acidez natural de la piel.',
         'Recomendado para pieles sensibles.',
       ],
@@ -286,7 +286,7 @@ export const initialData: SeedData = {
         'Provee Oligoelementos, Ácidos Grasos Naturales, Vitaminas y Aceites Esenciales.',
         'Hidrata y estabiliza el pH natural de la piel.',
         'Disminuye la Irritación.',
-        'Recomenda en pieles sensibles.',
+        'Recomendada en pieles sensibles.',
       ],
       phase: 'TÓNICO VITALIZANTE',
       time: 'DÍA O NOCHE',
@@ -305,7 +305,7 @@ export const initialData: SeedData = {
         'Provee Oligoelementos, Ácidos Grasos Naturales, Vitaminas y Aceites Esenciales.',
         'Hidrata y estabiliza el pH natural de la piel.',
         'Disminuye la Irritación.',
-        'Recomenda en pieles acneicas.',
+        'Recomendada en pieles acneicas.',
       ],
       phase: 'TÓNICO VITALIZANTE',
       time: 'DÍA O NOCHE',
@@ -324,7 +324,7 @@ export const initialData: SeedData = {
         'Provee Oligoelementos, Ácidos Grasos Naturales, Vitaminas y Aceites Esenciales.',
         'Hidrata y estabiliza el pH natural de la piel.',
         'Disminuye la Irritación.',
-        'Recomenda para todo tipo de piel.',
+        'Recomendado para todo tipo de piel.',
       ],
       phase: 'TÓNICO VITALIZANTE',
       time: 'DÍA O NOCHE',
@@ -355,7 +355,7 @@ export const initialData: SeedData = {
       publicPrice: 208200,
       efficiency: null,
       profesionalPrice: 139000,
-      actives: 'Coenzima Q10 Liposomada 3%, Escleroglucam 1%',
+      actives: 'Coenzima Q10 Liposomada 3%, Scleroglucan 1%',
       properties: [
         'Revierte los efectos del envejecimiento celular.',
         'Optimiza el uso de energía celular.',
@@ -397,7 +397,7 @@ export const initialData: SeedData = {
         'Calma la irritación producida por el afeitado.',
         'Recomendado para todo tipo de piel.',
       ],
-      phase: 'NUTRICIÓN E HIDRTATCIÓN',
+      phase: 'NUTRICIÓN E HIDRATACIÓN',
       time: 'DIA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413901/etuhknuzbp72dvocvmau.png',
@@ -412,12 +412,12 @@ export const initialData: SeedData = {
         'Rosa Mosqueta 5%, Amplificador de Síntesis de Colágeno  ASCIII 2%',
       properties: [
         'Restaura la piel y acelera su regeneración.',
-        'Amplifica selectivamente la biosiíntesis de de Colágeno tipo III.',
-        'Disminuye la pérdidad de agua transepidérmica.',
+        'Amplifica selectivamente la síntesis de de Colágeno tipo III.',
+        'Disminuye la pérdida de agua transepidérmica.',
         'Suaviza paulatinamente las líneas de expresión.',
         'Recomendado para todo tipo de piel.',
       ],
-      phase: 'NUTRICIÓN E HIDRTATCIÓN',
+      phase: 'NUTRICIÓN E HIDRATACIÓN',
       time: 'DIA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/e1hcm3traw5uye1itokh.png',
@@ -435,7 +435,7 @@ export const initialData: SeedData = {
         'Revitaliza la células y las estimula para producir colágeno y elastina.',
         'Recomendado para pieles secas.',
       ],
-      phase: 'NUTRICIÓN E HIDRTATCIÓN',
+      phase: 'NUTRICIÓN E HIDRATACIÓN',
       time: 'DIA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413904/jyy7fsng3vydmnghe6p1.png',
@@ -452,7 +452,7 @@ export const initialData: SeedData = {
         'Restaura la humedad perdida por causa del sol, viento y polución.',
         'Recomendado para pieles grasas.',
       ],
-      phase: 'NUTRICIÓN E HIDRTATCIÓN',
+      phase: 'NUTRICIÓN E HIDRATACIÓN',
       time: 'DIA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/vtchupl8gkkjae8ey2xi.png',
@@ -466,30 +466,30 @@ export const initialData: SeedData = {
       actives:
         'Amplificador de Síntesis de Colágeno  ASCIII 0,1%, Acción Anti UV',
       properties: [
-        'Aumenta y retiene la humendad de la piel.',
+        'Aumenta y retiene la humedad de la piel.',
         'Estimula la síntesis de colágeno.',
         'Amplía la protección de la Pantalla Solar Gel por la presencia de filtros solares adicionales.',
         'Recomendado para pieles normales y mixtas.',
       ],
-      phase: 'NUTRICIÓN E HIDRTATCIÓN',
+      phase: 'NUTRICIÓN E HIDRATACIÓN',
       time: 'DIA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/sn7itfr23fsief6vwdjl.png',
     },
     {
       code: 'SH50',
-      name: 'SUERO HIDRATANTE - AMINOACID COMPLEX X 50 G',
+      name: 'SUERO HIDRATANTE - AMINO ACID COMPLEX X 50 G',
       publicPrice: 179100,
       efficiency: null,
       profesionalPrice: 122000,
-      actives: 'Aminoacid Complex 5%, Escleroglucam 1%',
+      actives: 'Amino Acid Complex 5%, Scleroglucan 1%',
       properties: [
-        'Mantiene el factor de hidrtatación natural.',
+        'Mantiene el factor de hidratación natural.',
         'Mejora la proliferación celular y nutre la piel.',
         'Refuerza los mecanismos antiedad de la piel.',
-        'Recomendado para piele grasas y mixtas.',
+        'Recomendado para piel grasas y mixtas.',
       ],
-      phase: 'NUTRICIÓN E HIDRTATCIÓN',
+      phase: 'NUTRICIÓN E HIDRATACIÓN',
       time: 'DIA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/xeoooniobmd3ybpihgoc.png',
@@ -518,7 +518,7 @@ export const initialData: SeedData = {
       profesionalPrice: 59800,
       actives: 'Ciclometicona',
       properties: [
-        'Retira eficienteme el maquillaje de ojos y labios.',
+        'Retira eficientemente el maquillaje de ojos y labios.',
         'Cuida el manto hidrolipídico de la piel.',
       ],
       phase: 'LIMPIEZA',
@@ -534,7 +534,7 @@ export const initialData: SeedData = {
       profesionalPrice: 85600,
       actives: 'Ciclometicona',
       properties: [
-        'Retira eficienteme el maquillaje de ojos y labios.',
+        'Retira eficientemente el maquillaje de ojos y labios.',
         'Cuida el manto hidrolipídico de la piel.',
       ],
       phase: 'LIMPIEZA',
@@ -549,7 +549,7 @@ export const initialData: SeedData = {
       efficiency: null,
       profesionalPrice: 111500,
       actives:
-        'Foto protectores de amplio espectro anti-UV, Dióxido de Titanio.',
+        'Fotoprotectores de amplio espectro anti-UV, Dióxido de Titanio.',
       properties: [
         'Forma una capa física que absorbe y refleja la radiación.',
         'Evita que la radiación UVA y UVB alcance la piel.',
@@ -566,7 +566,7 @@ export const initialData: SeedData = {
       efficiency: null,
       profesionalPrice: 148600,
       actives:
-        'Foto protectores de amplio espectro anti-UV, Dióxido de Titanio.',
+        'Fotoprotectores de amplio espectro anti-UV, Dióxido de Titanio.',
       properties: [
         'Forma una capa física que absorbe y refleja la radiación.',
         'Evita que la radiación UVA y UVB alcance la piel.',
@@ -583,7 +583,7 @@ export const initialData: SeedData = {
       efficiency: null,
       profesionalPrice: 190200,
       actives:
-        'Foto protectores de amplio espectro anti-UV, Dióxido de Titanio.',
+        'Fotoprotectores de amplio espectro anti-UV, Dióxido de Titanio.',
       properties: [
         'Forma una capa física que absorbe y refleja la radiación.',
         'Evita que la radiación UVA y UVB alcance la piel.',
@@ -594,31 +594,13 @@ export const initialData: SeedData = {
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416045/oeobnzv2lkrwya1lfq9j.png',
     },
     {
-      code: 'PTC60',
-      name: 'PANTALLA SOLAR GEL COLOR X 60 G',
-      publicPrice: 166600,
-      efficiency: null,
-      profesionalPrice: 119300,
-      actives:
-        'Foto protectores de amplio espectro anti-UV, Dióxido de Titanio.',
-      properties: [
-        'Forma una capa física que absorbe y refleja la radiación.',
-        'Evita que la radiación UVA y UVB alcance la piel.',
-        'Aporta un delicado color cálido a la piel.',
-      ],
-      phase: 'PROTECCIÓN',
-      time: 'DIA',
-      image:
-        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416043/dcgofck6iudd6q7kdqng.png',
-    },
-    {
       code: 'PTC100',
       name: 'PANTALLA SOLAR GEL COLOR X 100 G',
       publicPrice: 213400,
       efficiency: null,
       profesionalPrice: 163400,
       actives:
-        'Foto protectores de amplio espectro anti-UV, Dióxido de Titanio.',
+        'Fotoprotectores de amplio espectro anti-UV, Dióxido de Titanio.',
       properties: [
         'Forma una capa física que absorbe y refleja la radiación.',
         'Evita que la radiación UVA y UVB alcance la piel.',
@@ -636,7 +618,7 @@ export const initialData: SeedData = {
       efficiency: null,
       profesionalPrice: 207300,
       actives:
-        'Foto protectores de amplio espectro anti-UV, Dióxido de Titanio.',
+        'Fotoprotectores de amplio espectro anti-UV, Dióxido de Titanio.',
       properties: [
         'Forma una capa física que absorbe y refleja la radiación.',
         'Evita que la radiación UVA y UVB alcance la piel.',
@@ -672,7 +654,7 @@ export const initialData: SeedData = {
       profesionalPrice: 123100,
       actives: 'Elastómeros de Silicona.',
       properties: [
-        'Elimina la brillantez instánteamente y dismula pequeñas imperfecciones.',
+        'Elimina la brillantez instantáneamente y disimula pequeñas imperfecciones.',
         'Deja un sensación sedosa y matizada.',
         'Mejora la apariencia de cicatrices.',
       ],
@@ -689,7 +671,7 @@ export const initialData: SeedData = {
       profesionalPrice: 115900,
       actives: 'Elastómeros de Silicona, mica.',
       properties: [
-        'Elimina la brillantez instánteamente y dismula pequeñas imperfecciones.',
+        'Elimina la brillantez instantáneamente y disimula pequeñas imperfecciones.',
         'Deja una textura  sedosa y matizada.',
         'Aporta un delicado color cálido a la piel.',
       ],
@@ -742,7 +724,7 @@ export const initialData: SeedData = {
         'Aloe Vera 5%, Extracto de Caléndula 2%, Extracto de Manzanilla 2%, Ácido Láctico 1,1%',
       properties: [
         'Aporta delicada higiene a las parte íntima de la mujer.',
-        'Mantiene el pH balanceado y la flora bacteriana en sus niveles equilibados.',
+        'Mantiene el pH balanceado y la flora bacteriana en sus niveles equilibrados.',
         'Su uso continuo previene el flujo vaginal.',
       ],
       phase: 'LIMPIEZA',
@@ -757,7 +739,7 @@ export const initialData: SeedData = {
       efficiency: null,
       profesionalPrice: 81300,
       actives:
-        'Cafeína 1%, Centella Asiática 1%, Algas Fucus 1%, Ginko Biloba 1%,  Castaño de Indias 1%, Equisetum Arvense 1%, Ácido Hialurónico 0,1%.',
+        'Cafeína 1%, Centella Asiática 1%, Algas Fucus 1%, Ginkgo Biloba 1%,  Castaño de Indias 1%, Equisetum Arvense 1%, Ácido Hialurónico 0,1%.',
       properties: [
         'Provee oligoelementos, terpenos,aceites esenciales, flavonoides y aminoácidos.',
         'Alienta el movimiento de la linfa y la evacuación de toxinas.',
@@ -773,7 +755,7 @@ export const initialData: SeedData = {
       publicPrice: 105500,
       efficiency: null,
       profesionalPrice: 65000,
-      actives: 'Rosa Mosqueta 3%, Centella Asiática 2,5%, Esclerolucam 0,1%',
+      actives: 'Rosa Mosqueta 3%, Centella Asiática 2,5%, Escleroglucam 0,1%',
       properties: [
         'Repara y mejora el tono y la textura de la piel.',
         'Estimula la síntesis de colágeno.',
@@ -825,7 +807,7 @@ export const initialData: SeedData = {
       actives: 'Rubefacientes',
       properties: [
         'Activa la microcirculación periférica.',
-        'Coayuda en tratamientos anticelulíticos y adelgazantes.',
+        'Coadyuva en tratamientos anticelulíticos y adelgazantes.',
       ],
       phase: 'TRATAMIENTO',
       time: 'DIA',
@@ -840,8 +822,8 @@ export const initialData: SeedData = {
       profesionalPrice: 49800,
       actives: 'Manteca de Karité, Vitamina E',
       properties: [
-        'Rica en Mantequillas vegetales de humectan y nutren produndamente.',
-        'Su temperatura de fusión promueve la relajacion de las fibras miofasciales.',
+        'Rica en Mantequillas vegetales de humectan y nutren profundamente.',
+        'Su temperatura de fusión promueve la relajación de las fibras miofasciales.',
       ],
       phase: 'RELAJACIÓN',
       time: 'DIA',
@@ -856,8 +838,8 @@ export const initialData: SeedData = {
       profesionalPrice: 27600,
       actives: 'Manteca de Karité, Vitamina E',
       properties: [
-        'Rica en Mantequillas vegetales de humectan y nutren produndamente.',
-        'Su temperatura de fusión promueve la relajacion de las fibras miofasciales.',
+        'Rica en Mantequillas vegetales de humectan y nutren profundamente.',
+        'Su temperatura de fusión promueve la relajación de las fibras miofasciales.',
       ],
       phase: 'RELAJACIÓN',
       time: 'DIA',
@@ -873,7 +855,7 @@ export const initialData: SeedData = {
       actives: 'Aceite Esencial Mandarina, Aceite Esencial Lima',
       properties: [
         'Revitaliza y enfoca.',
-        'Disipa neblina mental producidad por el estrés.',
+        'Disipa neblina mental producida por el estrés.',
       ],
       phase: 'RELAJACIÓN',
       time: 'DIA',
@@ -904,7 +886,7 @@ export const initialData: SeedData = {
       profesionalPrice: 109200,
       actives: 'Ácido Láctico 1,1%',
       properties: [
-        'Eliminas impurezas y toxinas.',
+        'Eliminar impurezas y toxinas.',
         'Estabiliza la acidez natural de la piel.',
         'Recomendado para pieles sensibles.',
       ],
@@ -983,7 +965,7 @@ export const initialData: SeedData = {
       efficiency: 51,
       profesionalPrice: 71900,
       actives:
-        'Extacto de Aloe >10%,   Extracto de Manzanilla >1%, Extracto de papaya >1%, Extracto de Fresa >1%',
+        'Extracto de Aloe >10%,   Extracto de Manzanilla >1%, Extracto de papaya >1%, Extracto de Fresa >1%',
       properties: ['Suaviza y regenera.', 'Disminuye la irritación.'],
       phase: '',
       time: '',
@@ -996,7 +978,7 @@ export const initialData: SeedData = {
       efficiency: 51,
       profesionalPrice: 63900,
       actives:
-        'Extacto de Aloe >10%,   Extracto de Manzanilla >1%, Extracto de papaya >1%, Extracto de Fresa >1%',
+        'Extracto de Aloe >10%,   Extracto de Manzanilla >1%, Extracto de papaya >1%, Extracto de Fresa >1%',
       properties: [
         'Tonifica el tejido.',
         'Mejora la apariencia gracias a su acción astringente.',
@@ -1012,7 +994,7 @@ export const initialData: SeedData = {
       efficiency: 51,
       profesionalPrice: 64400,
       actives:
-        'Extacto de Aloe >10%,   Extracto de Manzanilla >1%, Extracto de papaya >1%, Extracto de Fresa >1%',
+        'Extracto de Aloe >10%,   Extracto de Manzanilla >1%, Extracto de papaya >1%, Extracto de Fresa >1%',
       properties: [
         'Remueve células muerta gracias a su acción enzimática.',
         'Deja una apariencia suave, luminosa e hidratada.',
@@ -1028,7 +1010,7 @@ export const initialData: SeedData = {
       efficiency: 51,
       profesionalPrice: 73600,
       actives:
-        'Extacto de Aloe >10%,   Extracto de Manzanilla >1%, Extracto de papaya >1%, Extracto de Fresa >1%',
+        'Extracto de Aloe >10%,   Extracto de Manzanilla >1%, Extracto de papaya >1%, Extracto de Fresa >1%',
       properties: [
         'Hidrata profundamente.',
         'Estimula la regeneración celular.',
@@ -1044,7 +1026,7 @@ export const initialData: SeedData = {
       efficiency: 25,
       profesionalPrice: 70100,
       actives:
-        'Extractos Herbales Ayurvedas 4%, Bentonita 6%, Kaolín 6%, Óxido de ZInc 10% ',
+        'Extractos Herbales Ayurvedas 4%, Bentonita 6%, Caolín 6%, Óxido de ZInc 10% ',
       properties: [
         'Limpia la piel absorbiendo toxinas y excesos de grasa.',
         'Controla la propagación bacteriana.',
@@ -1062,7 +1044,7 @@ export const initialData: SeedData = {
       efficiency: 25,
       profesionalPrice: 70100,
       actives:
-        'Extractos Herbales Ayurvedas 4%, Bentonita 6%, Kaolín 6%, Óxido de ZInc 10% ',
+        'Extractos Herbales Ayurvedas 4%, Bentonita 6%, Caolín 6%, Óxido de ZInc 10% ',
       properties: [
         'Limpia la piel absorbiendo toxinas y excesos de grasa.',
         'Controla la propagación bacteriana.',
@@ -1075,7 +1057,7 @@ export const initialData: SeedData = {
     },
     {
       code: 'BA500',
-      name: 'BALSAMO AFTER SHAVE -INHIBIDOR VELLO X 500 G',
+      name: 'BÁLSAMO AFTER SHAVE -INHIBIDOR VELLO X 500 G',
       publicPrice: null,
       efficiency: 425,
       profesionalPrice: 88600,
@@ -1101,8 +1083,8 @@ export const initialData: SeedData = {
         'Rosa Mosqueta 5%, Amplificador de Síntesis de Colágeno  ASCIII 2%',
       properties: [
         'Restaura la piel y acelera su regeneración.',
-        'Amplifica selectivamente la biosiíntesis de de Colágeno tipo III.',
-        'Disminuye la pérdidad de agua transepidérmica.',
+        'Amplifica selectivamente la síntesis de de Colágeno tipo III.',
+        'Disminuye la pérdida de agua transepidérmica.',
         'Suaviza paulatinamente las líneas de expresión.',
         'Recomendado para todo tipo de piel.',
       ],
@@ -1152,7 +1134,7 @@ export const initialData: SeedData = {
       actives:
         'Amplificador de Síntesis de Colágeno  ASCIII 0,1%, Acción Anti UV',
       properties: [
-        'Aumenta y retiene la humendad de la piel.',
+        'Aumenta y retiene la humedad de la piel.',
         'Estimula la síntesis de colágeno.',
         'Amplía la protección de la Pantalla Solar Gel por la presencia de filtros solares adicionales.',
         'Recomendado para pieles normales y mixtas.',
@@ -1187,10 +1169,10 @@ export const initialData: SeedData = {
       profesionalPrice: 165600,
       actives: 'Aminoacid Complex 5%, Escleroglucam 1%',
       properties: [
-        'Mantiene el factor de hidrtatación natural.',
+        'Mantiene el factor de hidratación natural.',
         'Mejora la proliferación celular y nutre la piel.',
         'Refuerza los mecanismos antiedad de la piel.',
-        'Recomendado para piele grasas y mixtas.',
+        'Recomendado para piel grasas y mixtas.',
       ],
       phase: '',
       time: '',
@@ -1225,7 +1207,7 @@ export const initialData: SeedData = {
         'Provee Oligoelementos, Ácidos Grasos Naturales, Vitaminas y Aceites Esenciales.',
         'Hidrata y estabiliza el pH natural de la piel.',
         'Disminuye la Irritación.',
-        'Recomenda en pieles sensibles.',
+        'Recomendada en pieles sensibles.',
       ],
       phase: '',
       time: '',
@@ -1243,7 +1225,7 @@ export const initialData: SeedData = {
         'Provee Oligoelementos, Ácidos Grasos Naturales, Vitaminas y Aceites Esenciales.',
         'Hidrata y estabiliza el pH natural de la piel.',
         'Disminuye la Irritación.',
-        'Recomenda en pieles acneicas.',
+        'Recomendada en pieles acneicas.',
       ],
       phase: '',
       time: '',
@@ -1261,7 +1243,7 @@ export const initialData: SeedData = {
         'Provee Oligoelementos, Ácidos Grasos Naturales, Vitaminas y Aceites Esenciales.',
         'Hidrata y estabiliza el pH natural de la piel.',
         'Disminuye la Irritación.',
-        'Recomenda para todo tipo de piel.',
+        'Recomendado para todo tipo de piel.',
       ],
       phase: '',
       time: '',
@@ -1339,7 +1321,7 @@ export const initialData: SeedData = {
       actives: 'Rubefacientes',
       properties: [
         'Activa la microcirculación periférica.',
-        'Coayuda en tratamientos anticelulíticos y adelgazantes.',
+        'Coadyuva en tratamientos anticelulíticos y adelgazantes.',
       ],
       phase: '',
       time: '',
@@ -1354,7 +1336,7 @@ export const initialData: SeedData = {
       actives: 'Rubefacientes',
       properties: [
         'Activa la microcirculación periférica.',
-        'Coayuda en tratamientos anticelulíticos y adelgazantes.',
+        'Coadyuva en tratamientos anticelulíticos y adelgazantes.',
       ],
       phase: '',
       time: '',
@@ -1370,8 +1352,8 @@ export const initialData: SeedData = {
         'Mentol 2%, Centella Asiática 1%, Algas Fucus 1%, Equisetum Arvense 1%.',
       properties: [
         'Estimula la circulación periférica.',
-        'Tonifica y favore la evauación de toxinas.',
-        'Reduce la flacidex y aumenta la flexibilidad de la piel.',
+        'Tonifica y favorece la evacuación de toxinas.',
+        'Reduce la flacidez y aumenta la flexibilidad de la piel.',
       ],
       phase: '',
       time: '',
@@ -1385,7 +1367,7 @@ export const initialData: SeedData = {
       profesionalPrice: 45500,
       actives: 'Cafeína 1%, Mentol 1%',
       properties: [
-        'Trabaja sobre la asiposidad localizada con importante acción Anticelulítica y Liporreductora.',
+        'Trabaja sobre la adiposidad localizada con importante acción Anticelulítica y Liporeductora.',
         'Mejora el aspecto de la piel de naranja.',
         'Reafirma y tonifica dejando una sensación refrescante.',
       ],
@@ -1401,7 +1383,7 @@ export const initialData: SeedData = {
       profesionalPrice: 81500,
       actives: 'Cafeína 1%, Mentol 1%',
       properties: [
-        'Trabaja sobre la asiposidad localizada con importante acción Anticelulítica y Liporreductora.',
+        'Trabaja sobre la adiposidad localizada con importante acción Anticelulítica y Liporeductora.',
         'Mejora el aspecto de la piel de naranja.',
         'Reafirma y tonifica dejando una sensación refrescante.',
       ],
@@ -1419,8 +1401,8 @@ export const initialData: SeedData = {
         'Mentol 1%, Centella Asiática 1%, Algas Fucus 1%, Equisetum Arvense 1%.',
       properties: [
         'Estimula la circulación periférica.',
-        'Tonifica y favore la evauación de toxinas.',
-        'Reduce la flacidex y aumenta la flexibilidad de la piel del busto.',
+        'Tonifica y favorece la evacuación de toxinas.',
+        'Reduce la flacidez y aumenta la flexibilidad de la piel del busto.',
       ],
       phase: '',
       time: '',
@@ -1428,12 +1410,12 @@ export const initialData: SeedData = {
     },
     {
       code: 'MB500',
-      name: 'MASCARILLA CRIOGENICA BUSTO x 500 G',
+      name: 'MASCARILLA CRIOGÉNICA BUSTO x 500 G',
       publicPrice: null,
       efficiency: 25,
       profesionalPrice: 81400,
       actives:
-        'Mentol 1%, Extracto de Aloe Vera 4%, Bentonita 6%, Kaolín 6%, Óxido de ZInc 10% ',
+        'Mentol 1%, Extracto de Aloe Vera 4%, Bentonita 6%, Caolín 6%, Óxido de ZInc 10% ',
       properties: [
         'Estimula la regeneración celular del busto.',
         'Hidrata y tonifica la piel del busto.',
@@ -1451,7 +1433,7 @@ export const initialData: SeedData = {
       profesionalPrice: 61100,
       actives: 'Alantoína 0,2%, Úrea 2,5%, Rosa Mosqueta 5%, Vitamina E 1%.',
       properties: [
-        'Contieene bioactivadores del sistema germianal del tejido del busto.',
+        'Contiene bioactivadores del sistema germinal del tejido del busto.',
         'Hidrata y favorece la formación de estructuras que soportan la piel.',
       ],
       phase: '',
@@ -1465,7 +1447,7 @@ export const initialData: SeedData = {
       efficiency: 42,
       profesionalPrice: 143600,
       actives:
-        'Cafeína 1%, Centella Asiática 1%, Algas Fucus 1%, Ginko Biloba 1%,  Castaño de Indias 1%, Equisetum Arvense 1%, Ácido Hialurónico 0,1%.',
+        'Cafeína 1%, Centella Asiática 1%, Algas Fucus 1%, Ginkgo Biloba 1%,  Castaño de Indias 1%, Equisetum Arvense 1%, Ácido Hialurónico 0,1%.',
       properties: [
         'Provee oligoelementos, terpenos,aceites esenciales, flavonoides y aminoácidos.',
         'Alienta el movimiento de la linfa y la evacuación de toxinas.',
@@ -1515,7 +1497,7 @@ export const initialData: SeedData = {
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
         'Apoya protocolos reductores, anticelulíticos, adelgazantes y reafirmantes.',
-        'Nutre la piel con porderosos antioxidantes presentes en los Extractos Naturles.',
+        'Nutre la piel con poderosos antioxidantes presentes en los Extractos Naturales.',
       ],
       phase: '',
       time: '',
@@ -1530,7 +1512,7 @@ export const initialData: SeedData = {
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
         'Apoya protocolos reductores, anticelulíticos, adelgazantes y reafirmantes.',
-        'Nutre la piel con porderosos antioxidantes presentes en los Extractos Naturles.',
+        'Nutre la piel con poderosos antioxidantes presentes en los Extractos Naturales.',
       ],
       phase: '',
       time: '',
@@ -1545,7 +1527,7 @@ export const initialData: SeedData = {
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
         'Apoya protocolos reductores, anticelulíticos, adelgazantes y reafirmantes.',
-        'Nutre la piel con porderosos antioxidantes presentes en los Extractos Naturles.',
+        'Nutre la piel con poderosos antioxidantes presentes en los Extractos Naturales.',
       ],
       phase: '',
       time: '',
@@ -1560,7 +1542,7 @@ export const initialData: SeedData = {
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
         'Apoya protocolos reductores, anticelulíticos, adelgazantes y reafirmantes.',
-        'Nutre la piel con porderosos antioxidantes presentes en los Extractos Naturles.',
+        'Nutre la piel con poderosos antioxidantes presentes en los Extractos Naturales.',
       ],
       phase: '',
       time: '',
@@ -1575,7 +1557,7 @@ export const initialData: SeedData = {
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
         'Apoya protocolos reductores, anticelulíticos, adelgazantes y reafirmantes.',
-        'Nutre la piel con porderosos antioxidantes presentes en los Extractos Naturles.',
+        'Nutre la piel con poderosos antioxidantes presentes en los Extractos Naturales.',
       ],
       phase: '',
       time: '',
@@ -1590,7 +1572,7 @@ export const initialData: SeedData = {
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
         'Apoya protocolos reductores, anticelulíticos, adelgazantes y reafirmantes.',
-        'Nutre la piel con porderosos antioxidantes presentes en los Extractos Naturles.',
+        'Nutre la piel con poderosos antioxidantes presentes en los Extractos Naturales.',
       ],
       phase: '',
       time: '',
@@ -1605,7 +1587,7 @@ export const initialData: SeedData = {
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
         'Apoya protocolos reductores, anticelulíticos, adelgazantes y reafirmantes.',
-        'Nutre la piel con porderosos antioxidantes presentes en los Extractos Naturles.',
+        'Nutre la piel con poderosos antioxidantes presentes en los Extractos Naturales.',
       ],
       phase: '',
       time: '',
@@ -1620,7 +1602,7 @@ export const initialData: SeedData = {
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
         'Apoya protocolos reductores, anticelulíticos, adelgazantes y reafirmantes.',
-        'Nutre la piel con porderosos antioxidantes presentes en los Extractos Naturles.',
+        'Nutre la piel con poderosos antioxidantes presentes en los Extractos Naturales.',
       ],
       phase: '',
       time: '',
@@ -1635,7 +1617,7 @@ export const initialData: SeedData = {
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
         'Apoya protocolos reductores, anticelulíticos, adelgazantes y reafirmantes.',
-        'Nutre la piel con porderosos antioxidantes presentes en los Extractos Naturles.',
+        'Nutre la piel con poderosos antioxidantes presentes en los Extractos Naturales.',
       ],
       phase: '',
       time: '',
@@ -1650,7 +1632,7 @@ export const initialData: SeedData = {
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
         'Apoya protocolos reductores, anticelulíticos, adelgazantes y reafirmantes.',
-        'Nutre la piel con porderosos antioxidantes presentes en los Extractos Naturles.',
+        'Nutre la piel con poderosos antioxidantes presentes en los Extractos Naturales.',
       ],
       phase: '',
       time: '',
@@ -1665,7 +1647,7 @@ export const initialData: SeedData = {
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
         'Apoya protocolos reductores, anticelulíticos, adelgazantes y reafirmantes.',
-        'Nutre la piel con porderosos antioxidantes presentes en los Extractos Naturles.',
+        'Nutre la piel con poderosos antioxidantes presentes en los Extractos Naturales.',
       ],
       phase: '',
       time: '',
@@ -1680,22 +1662,7 @@ export const initialData: SeedData = {
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
         'Apoya protocolos reductores, anticelulíticos, adelgazantes y reafirmantes.',
-        'Nutre la piel con porderosos antioxidantes presentes en los Extractos Naturles.',
-      ],
-      phase: '',
-      time: '',
-      image: null,
-    },
-    {
-      code: 'AMK4000',
-      name: 'ACEITE PARA MASAJES COCO X 4000 G',
-      publicPrice: null,
-      efficiency: 200,
-      profesionalPrice: 192800,
-      actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
-      properties: [
-        'Apoya protocolos reductores, anticelulíticos, adelgazantes y reafirmantes.',
-        'Nutre la piel con porderosos antioxidantes presentes en los Extractos Naturles.',
+        'Nutre la piel con poderosos antioxidantes presentes en los Extractos Naturales.',
       ],
       phase: '',
       time: '',
@@ -1710,7 +1677,7 @@ export const initialData: SeedData = {
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
         'Apoya protocolos reductores, anticelulíticos, adelgazantes y reafirmantes.',
-        'Nutre la piel con porderosos antioxidantes presentes en los Extractos Naturles.',
+        'Nutre la piel con poderosos antioxidantes presentes en los Extractos Naturales.',
       ],
       phase: '',
       time: '',
@@ -1756,7 +1723,7 @@ export const initialData: SeedData = {
         'Aloe Vera 5%, Extracto de Caléndula 2%, Extracto de Manzanilla 2%, Ácido Láctico 1,1%',
       properties: [
         'Aporta delicada higiene a las parte íntima de la mujer.',
-        'Mantiene el pH balanceado y la flora bacteriana en sus niveles equilibados.',
+        'Mantiene el pH balanceado y la flora bacteriana en sus niveles equilibrados.',
         'Su uso continuo previene el molesto flujo vaginal.',
       ],
       phase: '',
@@ -1921,7 +1888,7 @@ export const initialData: SeedData = {
     },
     {
       code: 'GLT500',
-      name: 'GEL LIMPIADOR EXFOLIANTE TE VERDE X 500 G',
+      name: 'AMK4000',
       publicPrice: null,
       efficiency: 42,
       profesionalPrice: 104600,
@@ -1929,8 +1896,8 @@ export const initialData: SeedData = {
       properties: [
         'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.',
         'DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
-        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
-        'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
+        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente de los extractos presente en los aceites.',
+        'HIDRATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
         'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
       ],
       phase: '',
@@ -1939,22 +1906,17 @@ export const initialData: SeedData = {
     },
     {
       code: 'MRT500',
-      name: 'MASCARILLA CORPORAL ARCILLA TE VERDE X 500 G',
+      name: 'MASCARILLA CORPORAL ARCILLA TÉ VERDE X 500 G',
       publicPrice: null,
       efficiency: 42,
       profesionalPrice: 95800,
       actives: '',
-      properties: [
-        'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.',
-        'DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
-        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
-        'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
-        'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
-      ],
+      properties: ['LÍNEA SPA 500'],
       phase: '',
       time: '',
       image: null,
     },
+    null,
     {
       code: 'LHT500',
       name: 'LECHE HIDROREPARADORA TE VERDE X 500 G',
@@ -1965,8 +1927,8 @@ export const initialData: SeedData = {
       properties: [
         'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.',
         'DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
-        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
-        'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
+        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente de los extractos presente en los aceites.',
+        'HIDRATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
         'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
       ],
       phase: '',
@@ -1983,8 +1945,8 @@ export const initialData: SeedData = {
       properties: [
         'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.',
         'DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
-        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
-        'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
+        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente de los extractos presente en los aceites.',
+        'HIDRATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
         'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
       ],
       phase: '',
@@ -2001,8 +1963,8 @@ export const initialData: SeedData = {
       properties: [
         'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.',
         'DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
-        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
-        'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
+        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente de los extractos presente en los aceites.',
+        'HIDRATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
         'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
       ],
       phase: '',
@@ -2019,14 +1981,15 @@ export const initialData: SeedData = {
       properties: [
         'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.',
         'DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
-        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
-        'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
+        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente de los extractos presente en los aceites.',
+        'HIDRATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
         'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
       ],
       phase: '',
       time: '',
       image: null,
     },
+    null,
     {
       code: 'LHS500',
       name: 'LECHE HIDROREPARADORA SEDUCTION X 500 G',
@@ -2037,8 +2000,8 @@ export const initialData: SeedData = {
       properties: [
         'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.',
         'DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
-        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
-        'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
+        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente de los extractos presente en los aceites.',
+        'HIDRATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
         'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
       ],
       phase: '',
@@ -2055,8 +2018,8 @@ export const initialData: SeedData = {
       properties: [
         'LIMPIA: Prepara la piel mediante una abrasión mecánica para la recepción de activos.',
         'DETOXIFICA: Absorbe toxinas y excesos de grasas gracias a las arcillas terapéuticas.',
-        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente del los extractos presente en los aceites.',
-        'HIDARATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
+        'ACONDICIONA: Aporta antioxidantes mediante la acción emoliente de los extractos presente en los aceites.',
+        'HIDRATA: Nutre la piel y disminuye la pérdida de agua transepidérmica.',
         'TONIFICA: Devuelve el brillo y la turgencia natural gracias a los extractos presentes en las mascarillas.',
       ],
       phase: '',
@@ -2069,7 +2032,7 @@ export const initialData: SeedData = {
       publicPrice: null,
       efficiency: 5,
       profesionalPrice: 171000,
-      actives: 'Cafeina, Metilsilanotriol manuronato, Fosfolipidos de Soya.',
+      actives: 'Cafeína, Metilsilanotriol manuronato, Fosfolipidos de Soya.',
       properties: [],
       phase: '',
       time: '',
@@ -2081,7 +2044,7 @@ export const initialData: SeedData = {
       publicPrice: null,
       efficiency: 1,
       profesionalPrice: 65800,
-      actives: 'Cafeina, Metilsilanotriol manuronato, Fosfolipidos de Soya.',
+      actives: 'Cafeína, Metilsilanotriol manuronato, Fosfolipidos de Soya.',
       properties: [],
       phase: '',
       time: '',
@@ -2093,7 +2056,7 @@ export const initialData: SeedData = {
       publicPrice: null,
       efficiency: 6,
       profesionalPrice: 207300,
-      actives: 'Cafeina, Metilsilanotriol manuronato, Fosfolipidos de Soya.',
+      actives: 'Cafeína, Metilsilanotriol manuronato, Fosfolipidos de Soya.',
       properties: [],
       phase: '',
       time: '',
@@ -2105,7 +2068,7 @@ export const initialData: SeedData = {
       publicPrice: 90200,
       efficiency: 20,
       profesionalPrice: 49300,
-      actives: 'Cafeina, Metilsilanotriol manuronato, Fosfolipidos de Soya.',
+      actives: 'Cafeína, Metilsilanotriol manuronato, Fosfolipidos de Soya.',
       properties: [
         'Elimina gradualmente adiposidad localizada.',
         'Restablece la textura suave de la piel.',
@@ -2122,7 +2085,7 @@ export const initialData: SeedData = {
       efficiency: 5,
       profesionalPrice: 217800,
       actives:
-        'Cafeina Anhidra, Metilsilanotriol manuronato, L-Carnitina,  Extracto de Hydroctyl (Centella Asiática),  Coenzima-A, Hialuronato de Sodio, Extracto de Algas Fucus, Hidroxiprolina, Fosfolipidos de Soya.',
+        'Cafeína Anhidra, Metilsilanotriol manuronato, L-Carnitina,  Extracto de Hydrocotyl (Centella Asiática),  Coenzima-A, Hialuronato de Sodio, Extracto de Algas Fucus, Hidroxiprolina, Fosfolipidos de Soya.',
       properties: [],
       phase: '',
       time: '',
@@ -2135,7 +2098,7 @@ export const initialData: SeedData = {
       efficiency: 1,
       profesionalPrice: 81700,
       actives:
-        'Cafeina Anhidra, Metilsilanotriol manuronato, L-Carnitina,  Extracto de Hydroctyl (Centella Asiática),  Coenzima-A, Hialuronato de Sodio, Extracto de Algas Fucus, Hidroxiprolina, Fosfolipidos de Soya.',
+        'Cafeína Anhidra, Metilsilanotriol manuronato, L-Carnitina,  Extracto de Hydrocotyl (Centella Asiática),  Coenzima-A, Hialuronato de Sodio, Extracto de Algas Fucus, Hidroxiprolina, Fosfolipidos de Soya.',
       properties: [],
       phase: '',
       time: '',
@@ -2148,7 +2111,7 @@ export const initialData: SeedData = {
       efficiency: 6,
       profesionalPrice: 247400,
       actives:
-        'Cafeina Anhidra, Metilsilanotriol manuronato, L-Carnitina,  Extracto de Hydroctyl (Centella Asiática),  Coenzima-A, Hialuronato de Sodio, Extracto de Algas Fucus, Hidroxiprolina, Fosfolipidos de Soya.',
+        'Cafeína Anhidra, Metilsilanotriol manuronato, L-Carnitina,  Extracto de Hydrocotyl (Centella Asiática),  Coenzima-A, Hialuronato de Sodio, Extracto de Algas Fucus, Hidroxiprolina, Fosfolipidos de Soya.',
       properties: [],
       phase: '',
       time: '',
@@ -2183,7 +2146,7 @@ export const initialData: SeedData = {
       protocol: {
         dia: [],
         noche: [
-          '1. Desmaquillar los ojos con el desmaquillante de ojos, agitar el producto hasta optener burbujas, aplique en un pomito la cantidad adecuada  para retirar el maquillaje y suciedad del contorno de los ojos.',
+          '1. Desmaquillar los ojos con el desmaquillante de ojos, agitar el producto hasta obtener burbujas, aplique en un pomito la cantidad adecuada  para retirar el maquillaje y suciedad del contorno de los ojos.',
         ],
       },
       imageLink: null,
@@ -2193,11 +2156,19 @@ export const initialData: SeedData = {
       name: 'KIT PIEL SENSIBLE',
       products: [
         {
+          code: 'CÓDIGO',
+          quantity: 1,
+        },
+        {
           code: 'AL150',
           quantity: 1,
         },
         {
           code: 'AGG',
+          quantity: 1,
+        },
+        {
+          code: 'CN50',
           quantity: 1,
         },
         {
@@ -2210,8 +2181,8 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        '1. Seca, grasa mixta. Este tipo de piel reacciona de manera excesiva, mas fuerte o mas rapidamente a un factor externo.',
-        '2. ¿y cómo responden? Con escozor, eritema, descamacion, inflamación entre otros.',
+        '1. Seca, grasa mixta. Este tipo de piel reacciona de manera excesiva, más fuerte o mas rápidamente a un factor externo.',
+        '2. ¿y cómo responden? Con escozor, eritema, descamación, inflamación entre otros.',
       ],
       protocol: {
         dia: [
@@ -2220,11 +2191,11 @@ export const initialData: SeedData = {
           'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          '1. Active una o dos veces la válvula de Ácido Lactico Limpiador sobre el rostro húmedo.',
+          '1. Active una o dos veces la válvula de Ácido Láctico Limpiador sobre el rostro húmedo.',
           'Realice movimientos circulares suaves hasta que salga espuma y lave con abundante agua.',
           'Aplique un rocío de Agua Vitalizante sobre el rostro y realice movimientos hasta su absorción',
           'Aplique una cantidad generosa de Crema Nutritiva Amino Repair Complex y realice un suave masaje hasta su absorción.',
-          'Aplique Ácido Glicólico 7% sobre el rostro, evitando el controno de los ojos y mucuosas. Dejar actuar toda la noche.',
+          'Aplique Ácido Glicólico 7% sobre el rostro, evitando el contorno de los ojos y mucosas. Dejar actuar toda la noche.',
         ],
       },
       imageLink:
@@ -2263,7 +2234,7 @@ export const initialData: SeedData = {
           'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          '1. Active una o dos veces la valvula de Leche Limpiadora.  2 .Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
+          '1. Active una o dos veces la válvula de Leche Limpiadora.  2 .Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
           'Aplique Crema Nutritiva Amino Repair Complex y realice un pequeño masaje hasta su absorción.',
           'Aplique una capa delgada y pareja de Ácido Glicólico Crema 10%, evitando la zona de los ojos y mucosas, dejar actuar toda la noche.',
         ],
@@ -2297,7 +2268,7 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        '1. Limpiar el rostro antes de dormir y en la mañana.Buscamos eliminar tanto las impurezas que se acumulan al dormir como las que surgen a lo largo del dia.',
+        '1. Limpiar el rostro antes de dormir y en la mañana.Buscamos eliminar tanto las impurezas que se acumulan al dormir como las que surgen a lo largo del día.',
         '2. Evitar productos muy agresivos que eliminen completamente el manto hidrolipídico de la piel.',
         '3. Utilizar agua tibia en lugar de caliente o fría.',
         '4. Utilizar un maquillaje que no ocluya los poros.',
@@ -2384,7 +2355,7 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        '1. Nuestra piel no está acostumbrada a la mascarilla y esto produce falta de oxigenación; la piel respira menos y el rozamiento con la mascarilla aumenta el riesgo de infeccion por bacterias propias de nuestra dermis y de irritación por contacto',
+        '1. Nuestra piel no está acostumbrada a la mascarilla y esto produce falta de oxigenación; la piel respira menos y el rozamiento con la mascarilla aumenta el riesgo de infección por bacterias propias de nuestra dermis y de irritación por contacto',
         '2. El resultado es que se taponan los poros y es más fácil que nos salgan erupciones y comedones.',
       ],
       protocol: {
@@ -2432,7 +2403,7 @@ export const initialData: SeedData = {
       ],
       protocol: {
         dia: [
-          '1. Lave muy bien el rostro con abundane agua.',
+          '1. Lave muy bien el rostro con abundante agua.',
           'Aplique Gel Biocolágeno III Liposoma y realice un pequeño masaje hasta su absorción.',
           'Para proteger, dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
@@ -2477,7 +2448,7 @@ export const initialData: SeedData = {
           'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique sobre el escote con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          '1. Dosifique uno o dos gramos de Áciddo Láctico Limpiador sobre el escote.',
+          '1. Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el escote.',
           'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
           'Dosifique cantidad necesaria de Gel Reafirmante Q10 Liposomado y aplique de forma pareja sobre el escote con movimientos circulares hasta su total absorción.',
         ],
@@ -2509,7 +2480,7 @@ export const initialData: SeedData = {
       tips: [
         '1. El paso del tiempo no es el principal causante de arrugas, manchas o falta de elasticidad, sino la exposición a diferentes factores de manera excesiva y sin cuidado alguno.',
         '2. La exposición solar, el uso prolongado y excesivo de maquillaje y la deficiencia de vitamina A y B se cuentan dentro de estos factores y es sabido que aceleran el envejecimiento cutáneo.',
-        '3. Cuidados tempranos son claves para prlongar salud y la apariencia joven de la piel.',
+        '3. Cuidados tempranos son claves para prolongar salud y la apariencia joven de la piel.',
       ],
       protocol: {
         dia: [
@@ -2517,11 +2488,7 @@ export const initialData: SeedData = {
           'Aplique Crema Nutritiva Amino Repair Complex y realice un pequeño masaje hasta su absorción.',
           'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique sobre el rostro con suaves maniobras hasta que se genere una capa sobre la piel.',
         ],
-        noche: [
-          '1. Active la válvula de Leche Limpiadora una o dos veces y aplíquela sobre el rostro.',
-          'Realice movimientos circulares por 30 seg, reitre con paño húmedo.',
-          'Dosifique la cantidad necesaria de Gel Con Vitamina C en su mano y aplique de forma pareja en su rostro, formando una capa uniforme y delgada. Evite el área de los ojos y las mucosas. Déjelo actuar toda la noche.',
-        ],
+        noche: [],
       },
       imageLink:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1740785221/mgikrxt4upkhtv5mqnqz.jpg',
@@ -2549,8 +2516,8 @@ export const initialData: SeedData = {
       ],
       tips: [
         '1. Procure tener una toalla exclusiva para el rostro y exfoliar la cara cada 15 días.',
-        '2. Limpie el rostro una o dos veces al dia y tambien después del ejercicio. Evite frotar o lavar la piel en forma repetitiva.',
-        '3. No manipule las lesiones del rostro. Evite los cosmeticos con bases oleosas.',
+        '2. Limpie el rostro una o dos veces al día y también después del ejercicio. Evite frotar o lavar la piel en forma repetitiva.',
+        '3. No manipule las lesiones del rostro. Evite los cosméticos con bases oleosas.',
         '4. Tome suficiente agua durante el día. Disminuya al máximo el consumo de azúcares, lácteos y chocolates.',
       ],
       protocol: {
@@ -2597,13 +2564,13 @@ export const initialData: SeedData = {
       ],
       protocol: {
         dia: [
-          '1. Lave muy bien el rostro con abudante agua.',
+          '1. Lave muy bien el rostro con abundante agua.',
           'Aplique Gel Hidratante Con Aloe y realice un pequeño masaje hasta su absorción.',
           'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
           '1. Dosifique una porción generosa de Gel Espumoso Facial sobre el rostro húmedo.',
-          'Realice movimientos circulares suaves hasta que salga espuma, lavar con abudane agua.',
+          'Realice movimientos circulares suaves hasta que salga espuma, lavar con abundante agua.',
           'Dosifique cantidad necesaria de Ácido Glicólico Loción 10% y aplique de forma pareja en su rostro, formando una capa uniforme y delgada, Evite el área de los ojos y mucosas. Déjelo actuar toda la noche.',
         ],
       },
@@ -2632,7 +2599,7 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        '1. Hidrate diariamente la piel y límpiela con agua tibia, sin usar jabón.',
+        '1. Hidratar diariamente la piel y límpiela con agua tibia, sin usar jabón.',
         '2. Evite el maquillaje excesivo.',
         '3. Evite las exposiciones solares directas y prolongadas. Proteja su piel con Pantalla Solar Gel.',
         '4. Evite el agua de mar o de piscina',
@@ -2641,7 +2608,7 @@ export const initialData: SeedData = {
         dia: [
           '1. Lave el rostro con abundante agua.',
           'Aplique Loción Hidratante Facial Liposomada y realice un pequeño masaje hasta su absorción.',
-          'Para proteger dosifique un gramo de Pantalla Soloar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
+          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
           '1. Dosifique uno o dos gramos de Gel Limpiador sobre el rostro.',
@@ -2661,7 +2628,7 @@ export const initialData: SeedData = {
           quantity: 1,
         },
         {
-          code: 'AHA10',
+          code: '1. Hidrate diariamente la piel y límpiela con agua tibia, sin usar jabón.',
           quantity: 1,
         },
         {
@@ -2730,7 +2697,7 @@ export const initialData: SeedData = {
         dia: [
           '1. Lave muy bien el rostro con abundante agua.',
           'Aplique Suero Hidratante Amino Acid Complex y realice un pequeño masaje hasta su absorción.',
-          'Para proteger dosifique un gramo de Pantalla Sola Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
+          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
           '1. Dosifique uno o dos gramos de Gel Limpiador sobre el rostro.',
@@ -2772,7 +2739,7 @@ export const initialData: SeedData = {
         dia: [
           '1. Lave muy bien el rostro con abundante agua.',
           'Aplique Loción Hidratante Facial Liposomada y realice un pequeño masaje hasta su absorción.',
-          'Para proteger dosifique un gramo de Pantalla Sola Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
+          'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
           '1. Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el rostro.',

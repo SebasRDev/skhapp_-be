@@ -133,7 +133,7 @@ export const quoteReport = (
           )
         : '',
       {
-        text: homeProducts.length > 0 ? 'Productos uso en cabina:' : '',
+        text: cabineProducts.length > 0 ? 'Productos uso en cabina:' : '',
         style: 'heading',
       },
       cabineProducts.length > 0
@@ -161,6 +161,7 @@ export const quoteReport = (
         margin: [0, 20],
       },
       {
+        unbreakable: true,
         layout: 'noBorders',
         table: {
           widths: ['*', 100],
