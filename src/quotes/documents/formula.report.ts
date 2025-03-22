@@ -3,7 +3,7 @@ import { Kit } from 'src/kits/entities/kit.entity';
 import Product from 'src/products/interfaces/product.interface';
 import { tableReport } from 'src/quotes/documents/table.report';
 import { Data } from 'src/quotes/interfaces/formula.interface';
-import { formatDate, getImage } from 'src/quotes/utils/utils';
+import { formatDate } from 'src/quotes/utils/utils';
 
 export const formulaReport = (
   quoteInfo: Data,
@@ -12,6 +12,7 @@ export const formulaReport = (
 ): TDocumentDefinitions => {
   const today = new Date();
   const formatedDate = formatDate(today);
+  // console.log(kitData);
 
   const { name, consultant, gift, recommendation } = quoteInfo;
 
@@ -68,18 +69,8 @@ export const formulaReport = (
     },
   ]);
 
-  const imageKit = getImage(kitData?.imageLink, 250);
-  console.log(imageKit);
-
   const kitPageContent: Content[] = kitData
     ? [
-        // kitData.imageLink
-        //   ? {
-        //       image: kitData.imageLink,
-        //       width: 150,
-        //       height: 150,
-        //     }
-        //   : '',
         {
           text: `${kitData.name}`,
           style: 'title',
@@ -87,6 +78,13 @@ export const formulaReport = (
           pageBreak: 'beforeEven',
           marginBottom: 30,
         },
+        // kitData.imageLink
+        //   ? {
+        //       image: 'kit',
+        //       width: 150,
+        //       height: 150,
+        //     }
+        //   : '',
         {
           columnGap: 20,
           columns: [
@@ -191,6 +189,12 @@ export const formulaReport = (
       ]
     : [];
 
+  // Define images object conditionally
+  const documentImages = {};
+  // if (kitData && kitData.imageLink) {
+  //   documentImages['kit'] = kitData.imageLink;
+  // }
+
   return {
     pageMargins: [40, 150, 40, 40],
     background: function () {
@@ -202,7 +206,7 @@ export const formulaReport = (
             y: 0,
             w: 595.28,
             h: 841.89,
-            color: '#eeede7',
+            color: '#F2EED4',
           },
         ],
       };
@@ -219,7 +223,7 @@ export const formulaReport = (
         text: `Estimado/a ${name} a continuación ${consultant} especialista Skinhealth te hace la siguiente recomendación`,
         style: 'body',
       },
-      tableReport(formulaProducts),
+      tableReport(formulaProducts, quoteInfo.generalDiscount),
       {
         text: gift ? `Las cortesías por su compra son: ${gift}` : '',
         style: 'body',
@@ -235,8 +239,9 @@ export const formulaReport = (
       },
       { text: 'BENEFICIOS PARA TU PIEL', style: 'title', marginBottom: 10 },
       getBenefits,
-      kitPageContent,
+      kitData ? kitPageContent : [],
     ],
+    images: documentImages,
     footer: function () {
       return [
         {

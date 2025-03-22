@@ -18,8 +18,8 @@ export const currencyFormatter = new Intl.NumberFormat('es-CO', {
 
 export const calculateTotal = (
   products: Product[],
-  property: string = 'publicPrice',
   generalDiscount: number = 0,
+  property: string = 'publicPrice',
 ) => {
   return products.reduce(
     (acc, product) => {

@@ -1,3 +1,4 @@
+import { table } from 'console';
 import { Content } from 'pdfmake/interfaces';
 import Product from 'src/products/interfaces/product.interface';
 import { CellConfig } from 'src/quotes/interfaces/quote.interface';
@@ -7,12 +8,17 @@ import {
   currencyFormatter,
 } from 'src/quotes/utils/utils';
 
-export const tableReport = (data: Product[], property = 'profesionalPrice') => {
+export const tableReport = (
+  data: Product[],
+  generalDiscount?: number,
+  property = 'publicPrice',
+) => {
   const formulaProducts = data;
 
-  const total = calculateTotal(formulaProducts, 'profesionalPrice');
+  const total = calculateTotal(formulaProducts, generalDiscount, 'publicPrice');
 
-  const hasAnyDiscount = formulaProducts.some((product) => product.discount);
+  const hasAnyDiscount =
+    formulaProducts.some((product) => product.discount) || generalDiscount;
 
   const HeaderCell = (value: string, config?: CellConfig) => {
     const { isLast = false, alignment } = config || {};
@@ -24,20 +30,23 @@ export const tableReport = (data: Product[], property = 'profesionalPrice') => {
   };
 
   const regularCell = (value: string, config?: CellConfig) => {
-    const { isLast = false, alignment, margin } = config || {};
+    const { isLast = false, alignment, margin, border } = config || {};
     return {
       text: capitalize(value),
       style: isLast ? 'lastCell' : 'cell',
       alignment,
       margin,
+      border,
     };
   };
 
   const getTableHeaders = () => {
     const baseHeaders = [
-      HeaderCell('Nombre', { alignment: 'left' }),
-      HeaderCell('Fase de tratamiento'),
-      HeaderCell('Uso'),
+      HeaderCell('Nombre', {
+        alignment: 'left',
+      }),
+      HeaderCell('Fase de tratamiento', { alignment: 'left' }),
+      HeaderCell('Uso', { alignment: 'left' }),
       HeaderCell('Cant'),
     ];
 
@@ -54,20 +63,30 @@ export const tableReport = (data: Product[], property = 'profesionalPrice') => {
     if (hasAnyDiscount) {
       baseWidths.push('auto');
     }
-    baseWidths.push('auto');
+    baseWidths.push('*');
     return baseWidths;
   };
 
   const getProductRow = (product: Product, property: string) => {
     const baseRow = [
       regularCell(product.name, { alignment: 'left' }),
-      regularCell(product.phase),
-      regularCell(product.time),
+      regularCell(product.phase, { alignment: 'left' }),
+      regularCell(product.time, { alignment: 'left' }),
       regularCell(product.quantity.toString()),
     ];
 
     if (hasAnyDiscount) {
-      baseRow.push(regularCell(`${product.discount || 0}%`));
+      if (product.discount && generalDiscount) {
+        baseRow.push(
+          regularCell(`${product.discount || 0}+${generalDiscount || 0}%`),
+        );
+      }
+      if (product.discount && !generalDiscount) {
+        baseRow.push(regularCell(`${product.discount}%`));
+      }
+      if (!product.discount && generalDiscount) {
+        baseRow.push(regularCell(`${generalDiscount}%`));
+      }
     }
 
     const formattedValue = currencyFormatter.format(Number(product[property]));
@@ -81,41 +100,24 @@ export const tableReport = (data: Product[], property = 'profesionalPrice') => {
   };
 
   const getTotalRows = () => {
-    const totalColSpan = hasAnyDiscount ? 5 : 4;
     const rows: Content[][] = [];
-
-    const getEmptyCells = (count: number) => {
-      return Array(count)
-        .fill(null)
-        .map(() =>
-          regularCell('', {
-            alignment: 'center',
-            margin: [0, 5],
-          }),
-        );
-    };
-
     if (hasAnyDiscount) {
       rows.push([
         {
           text: 'SUBTOTAL',
           alignment: 'right',
-          colSpan: totalColSpan,
           border: [false, false, false, false],
           style: 'tableHeader',
         } as Content,
-        ...getEmptyCells(totalColSpan - 1),
         HeaderCell(currencyFormatter.format(total.subtotal), { isLast: true }),
       ]);
       rows.push([
         {
           text: 'AHORRO',
           alignment: 'right',
-          colSpan: totalColSpan,
           border: [false, false, false, false],
           style: 'tableHeader',
         } as Content,
-        ...getEmptyCells(totalColSpan - 1),
         HeaderCell(currencyFormatter.format(total.subtotal - total.total), {
           isLast: true,
         }),
@@ -126,11 +128,9 @@ export const tableReport = (data: Product[], property = 'profesionalPrice') => {
       {
         text: 'TOTAL',
         alignment: 'right',
-        colSpan: totalColSpan,
         border: [false, false, false, false],
         style: 'tableHeader',
       } as Content,
-      ...getEmptyCells(totalColSpan - 1),
       HeaderCell(currencyFormatter.format(total.total), { isLast: true }),
     ]);
 
@@ -138,17 +138,54 @@ export const tableReport = (data: Product[], property = 'profesionalPrice') => {
   };
 
   const table: Content = {
-    layout: 'noBorders',
     table: {
       widths: getTableWidths(),
       headerRows: 1,
       body: [
         getTableHeaders(),
         ...formulaProducts.map((prod) => getProductRow(prod, property)),
-        ...getTotalRows(),
       ],
+    },
+    layout: {
+      hLineWidth: function (i, node) {
+        if (!node || !node.table || !node.table.body) return 0;
+        return i === 0 || i === node.table.body.length ? 0 : 0;
+      },
+      vLineWidth: function (i) {
+        // Excluir las líneas del borde izquierdo y derecho de la tabla
+        const numCols = getTableWidths().length;
+        return i === 0 || i === numCols ? 0 : 1;
+      },
+      hLineColor: function () {
+        return '#b1b1b1';
+      },
+      vLineColor: function () {
+        return '#556B2F'; // Color verde olivo
+      },
+      paddingLeft: function () {
+        return 3;
+      },
+      paddingRight: function () {
+        return 3;
+      },
+      paddingTop: function () {
+        return 3;
+      },
+      paddingBottom: function () {
+        return 3;
+      },
     },
   };
 
-  return table;
+  const totals: Content = {
+    margin: [0, 20, 0, 0],
+    table: {
+      headerRows: 1,
+      widths: ['*', 'auto'],
+      body: [...getTotalRows()],
+    },
+    layout: 'noBorders',
+  };
+
+  return [table, totals];
 };

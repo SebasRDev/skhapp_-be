@@ -96,7 +96,7 @@ export const quoteReport = (
             y: 0,
             w: 595.28,
             h: 841.89,
-            color: '#F2EED4',
+            color: '#eeede7',
           },
         ],
       };
@@ -155,7 +155,7 @@ export const quoteReport = (
       {
         text:
           cabineProducts.length > 0
-            ? `En los productos de USO EN CABINA el rendimiento promedio es de ${totalCabine.averageEfficiency} sesiones`
+            ? `En los productos de USO EN CABINA el rendimiento promedio es de ${totalCabine.averageEfficiency.toFixed(0)} sesiones`
             : '',
         style: 'body',
         margin: [0, 20],

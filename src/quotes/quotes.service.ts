@@ -37,9 +37,13 @@ export class QuotesService {
       }),
     );
 
-    const formulaKit = await this.kitRepository.findOneBy({
-      id: quoteData.kit,
-    });
+    // Only look for a kit if a kit ID is provided
+    let formulaKit: Kit | null = null;
+    if (kit) {
+      formulaKit = await this.kitRepository.findOneBy({ id: kit });
+      console.log('kit ID provided:', kit);
+      console.log('formulaKit found:', formulaKit);
+    }
 
     let docDefinition: any;
     if (type === 'formula') {

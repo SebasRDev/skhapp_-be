@@ -17,8 +17,8 @@ export const tableCabineReport = (
 
   const total = calculateTotal(
     formulaProducts,
-    'profesionalPrice',
     generalDiscount,
+    'profesionalPrice',
   );
 
   const hasAnyDiscount =
@@ -83,14 +83,14 @@ export const tableCabineReport = (
     if (hasAnyDiscount) {
       if (product.discount && generalDiscount) {
         baseRow.push(
-          regularCell(`${product.discount || 0}%+${generalDiscount || 0}%`),
+          regularCell(`${product.discount || 0}+${generalDiscount || 0}%`),
         );
       }
       if (product.discount && !generalDiscount) {
-        baseRow.push(regularCell(`${product.discount || 0}%`));
+        baseRow.push(regularCell(`${product.discount}%`));
       }
       if (!product.discount && generalDiscount) {
-        baseRow.push(regularCell(`${generalDiscount || 0}%`));
+        baseRow.push(regularCell(`${generalDiscount}%`));
       }
     }
 
@@ -168,7 +168,6 @@ export const tableCabineReport = (
   };
 
   const table: Content = {
-    layout: 'noBorders',
     table: {
       widths: getTableWidths(),
       headerRows: 1,
@@ -177,6 +176,35 @@ export const tableCabineReport = (
         ...formulaProducts.map((prod) => getProductRow(prod, property)),
         ...getTotalRows(),
       ],
+    },
+    layout: {
+      hLineWidth: function (i, node) {
+        if (!node || !node.table || !node.table.body) return 0;
+        return i === 0 || i === node.table.body.length ? 0 : 0;
+      },
+      vLineWidth: function (i) {
+        // Excluir las líneas del borde izquierdo y derecho de la tabla
+        const numCols = getTableWidths().length;
+        return i === 0 || i === numCols ? 0 : 1;
+      },
+      hLineColor: function () {
+        return '#b1b1b1';
+      },
+      vLineColor: function () {
+        return '#556B2F'; // Color verde olivo
+      },
+      paddingLeft: function () {
+        return 3;
+      },
+      paddingRight: function () {
+        return 3;
+      },
+      paddingTop: function () {
+        return 3;
+      },
+      paddingBottom: function () {
+        return 3;
+      },
     },
   };
 
