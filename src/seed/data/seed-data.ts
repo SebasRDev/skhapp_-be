@@ -1916,7 +1916,6 @@ export const initialData: SeedData = {
       time: '',
       image: null,
     },
-    null,
     {
       code: 'LHT500',
       name: 'LECHE HIDROREPARADORA TE VERDE X 500 G',
@@ -1989,7 +1988,6 @@ export const initialData: SeedData = {
       time: '',
       image: null,
     },
-    null,
     {
       code: 'LHS500',
       name: 'LECHE HIDROREPARADORA SEDUCTION X 500 G',
