@@ -2626,7 +2626,7 @@ export const initialData: SeedData = {
           quantity: 1,
         },
         {
-          code: '1. Hidrate diariamente la piel y límpiela con agua tibia, sin usar jabón.',
+          code: 'AHA10',
           quantity: 1,
         },
         {
