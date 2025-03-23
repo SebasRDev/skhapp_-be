@@ -2154,10 +2154,6 @@ export const initialData: SeedData = {
       name: 'KIT PIEL SENSIBLE',
       products: [
         {
-          code: 'CÓDIGO',
-          quantity: 1,
-        },
-        {
           code: 'AL150',
           quantity: 1,
         },
