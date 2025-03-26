@@ -7,6 +7,8 @@ interface Report {
 export interface Data {
   name: string;
   consultant: string;
+  phone?: string;
+  id?: string;
   gift?: string;
   recommendation?: string;
   generalDiscount?: number;

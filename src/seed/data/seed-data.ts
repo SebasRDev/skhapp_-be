@@ -13,6 +13,7 @@ interface Product {
 
 interface Kit {
   category: string;
+  weight: number;
   name: string;
   tips: string[];
   protocol: { dia: string[]; noche: string[] };
@@ -2119,6 +2120,7 @@ export const initialData: SeedData = {
   kits: [
     {
       category: 'CASA',
+      weight: 1,
       name: 'KIT CUIDADO DE OJOS',
       products: [
         {
@@ -2139,18 +2141,25 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        '1. Humedecer los pomitos con el contorno de ojos y depositarlos en el congelador unos minutos y aplicar en la zona, creando efecto vasoconstrictor. Para finalizar realizar tecleo facial',
+        '1. Para ojeras y bolsas muy visibles en los ojos humedecer los pomitos con el contorno de ojos y depositarlos en el congelador unos minutos y aplicar en la zona, creando efecto vasoconstrictor. Para finalizar realizar tecleo facial',
+        '2. Cuando se aplique el contorno de ojos evitar la zona del lagrimal',
       ],
       protocol: {
         dia: [],
         noche: [
           '1. Desmaquillar los ojos con el desmaquillante de ojos, agitar el producto hasta obtener burbujas, aplique en un pomito la cantidad adecuada  para retirar el maquillaje y suciedad del contorno de los ojos.',
+          'Coloque inicialmente el pomito sobre el ojo y déjelo actuar unos segundos, luego realice movimientos de forma lineales de arriba hacia abajo (nunca circular) hasta retirar todo el maquillaje.',
+          'Active la válvula del contorno de ojos en el pulpejo del dedo anular  ( este dedo ejerce menos presión) y apliquelo de a toquecitos en el contorno de los párpados (inferior y en la parte alta  del párpado móvil, bajo la ceja) hasta su completa absorción.',
+          'Aplique  una pequeña cantidad de pantalla solar gel  para proteger esta área. si se va a exponer a rayos solares o dispositivos electrónicos.',
+          'Aplique piel de seda, para matificar y minimizar pequeñas imperfecciones.',
         ],
       },
-      imageLink: null,
+      imageLink:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1740781928/oe7gfpsvsfknvpuiuvzh.png',
     },
     {
       category: 'CASA',
+      weight: 2,
       name: 'KIT PIEL SENSIBLE',
       products: [
         {
@@ -2175,8 +2184,8 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        '1. Seca, grasa mixta. Este tipo de piel reacciona de manera excesiva, más fuerte o mas rápidamente a un factor externo.',
-        '2. ¿y cómo responden? Con escozor, eritema, descamación, inflamación entre otros.',
+        '1. La piel sensible puede presentarse en todos los biotipos de piel: Seca, grasa mixta. Este tipo de piel reacciona de manera excesiva, más fuerte o mas rápidamente a un factor externo.',
+        '2. ¿y cómo responde? Con escozor, eritema, descamación, inflamación entre otros.',
       ],
       protocol: {
         dia: [
@@ -2197,6 +2206,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CASA',
+      weight: 3,
       name: 'KIT PIEL SECA',
       products: [
         {
@@ -2217,7 +2227,7 @@ export const initialData: SeedData = {
         },
       ],
       tips: [
-        '1. Limitar el tiempo en la ducha o baño a 5 a 10 minutos, utilizar agua templada en vez de caliente.',
+        '1. Para ayudar a cuidar la piel seca, mantenerla sana y evitar que empeore su estado es necesario  limitar el tiempo en la ducha o baño a 5 a 10 minutos, utilizar agua templada en vez de caliente.',
         '2. Aplicar hidratante inmediatamente después de cualquier lavado.',
         '3. Cuando su piel es seca debe dejar de utilizar jabones, desodorantes y productos que contengan alcohol y fragancias.',
       ],
@@ -2228,7 +2238,8 @@ export const initialData: SeedData = {
           'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          '1. Active una o dos veces la válvula de Leche Limpiadora.  2 .Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
+          '1. Active una o dos veces la válvula de Leche Limpiadora.',
+          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
           'Aplique Crema Nutritiva Amino Repair Complex y realice un pequeño masaje hasta su absorción.',
           'Aplique una capa delgada y pareja de Ácido Glicólico Crema 10%, evitando la zona de los ojos y mucosas, dejar actuar toda la noche.',
         ],
@@ -2238,6 +2249,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CASA',
+      weight: 4,
       name: 'KIT PIEL GRASA',
       products: [
         {
@@ -2287,6 +2299,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CASA',
+      weight: 5,
       name: 'KIT PIEL MIXTA',
       products: [
         {
@@ -2329,6 +2342,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CASA',
+      weight: 6,
       name: 'KIT MANTENIMIENTO',
       products: [
         {
@@ -2370,6 +2384,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CASA',
+      weight: 7,
       name: 'KIT REJUVENECIMIENTO',
       products: [
         {
@@ -2412,6 +2427,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CASA',
+      weight: 8,
       name: 'KIT REJUVENECIMIENTO ESCOTE',
       products: [
         {
@@ -2452,6 +2468,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CASA',
+      weight: 9,
       name: 'KIT ENVEJECIMIENTO PREMATURO',
       products: [
         {
@@ -2482,13 +2499,18 @@ export const initialData: SeedData = {
           'Aplique Crema Nutritiva Amino Repair Complex y realice un pequeño masaje hasta su absorción.',
           'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique sobre el rostro con suaves maniobras hasta que se genere una capa sobre la piel.',
         ],
-        noche: [],
+        noche: [
+          '1. Dosifique uno o dos gramos de Leche Limpiadora sobre el rostro.',
+          'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
+          'Dosifique cantidad necesaria de Gel Con Vitamina C 10% y aplique de forma pareja sobre la piel del rostro con movimientos circulares hasta su total absorción.',
+        ],
       },
       imageLink:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1740785221/mgikrxt4upkhtv5mqnqz.jpg',
     },
     {
       category: 'CASA',
+      weight: 10,
       name: 'KIT ACNÉ VULGAR',
       products: [
         {
@@ -2531,6 +2553,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CASA',
+      weight: 11,
       name: 'KIT ACNÉ JUVENIL',
       products: [
         {
@@ -2573,6 +2596,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CASA',
+      weight: 12,
       name: 'KIT PIEL MIXTA HIPERPIGMENTADA',
       products: [
         {
@@ -2615,6 +2639,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CASA',
+      weight: 13,
       name: 'KIT ACLARADOR PIGMENTACIÓN LEVE',
       products: [
         {
@@ -2662,6 +2687,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CASA',
+      weight: 14,
       name: 'KIT PIEL ÉTNICA HIPERPIGMENTADA',
       products: [
         {
@@ -2704,6 +2730,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CASA',
+      weight: 15,
       name: 'KIT PIEL SENSIBLE HIPERPIGMENTADA',
       products: [
         {
@@ -2746,6 +2773,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CABINA',
+      weight: 16,
       name: 'PROTOCOLO DESPIGMENTACIÓN',
       products: [
         {
@@ -2798,6 +2826,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CABINA',
+      weight: 17,
       name: 'PROTOCOLO LIFTING MERIDIONAL JAPONÉS',
       products: [
         {
@@ -2842,6 +2871,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CABINA',
+      weight: 18,
       name: 'PROTOCOLO P.E.F.E',
       products: [
         {
@@ -2870,6 +2900,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CABINA',
+      weight: 19,
       name: 'PROTOCOLO G.L.M',
       products: [
         {
@@ -2918,6 +2949,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CABINA',
+      weight: 20,
       name: 'PROTOCOLO PORCELANIZACIÓN',
       products: [
         {
@@ -2962,6 +2994,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CABINA',
+      weight: 21,
       name: 'PROTOCOLO BIONEUROEMOCIÓN',
       products: [
         {
@@ -2998,6 +3031,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CABINA',
+      weight: 22,
       name: 'PROTOCOLO BUSTO Y GLÚTEOS',
       products: [
         {
@@ -3034,6 +3068,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CABINA',
+      weight: 23,
       name: 'PROTOCOLO ACNÉ',
       products: [
         {
@@ -3082,6 +3117,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CABINA',
+      weight: 24,
       name: 'PROTOCOLO ZONAS NIGRIS',
       products: [
         {
@@ -3114,6 +3150,7 @@ export const initialData: SeedData = {
     },
     {
       category: 'CABINA',
+      weight: 25,
       name: 'PROTOCOLO ANTIEDAD',
       products: [
         {

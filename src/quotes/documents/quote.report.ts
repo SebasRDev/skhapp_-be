@@ -15,7 +15,7 @@ export const quoteReport = (
   const today = new Date();
   const formatedDate = formatDate(today);
 
-  const { name, consultant, gift } = quoteInfo;
+  const { name, consultant, gift, phone, id } = quoteInfo;
 
   const homeProducts = quoteProducts.filter(
     (product) => product.publicPrice !== null,
@@ -117,6 +117,12 @@ export const quoteReport = (
     },
     content: [
       { text: 'Cotización', style: 'title' },
+      {
+        text: `Nombre: ${name}\n
+              Identificación: ${phone}\n
+              Contacto: ${id}\n`,
+        style: 'body',
+      },
       {
         text: `Estimado/a ${name} el asesor ${consultant} presenta la cotización a continuación`,
         style: 'body',

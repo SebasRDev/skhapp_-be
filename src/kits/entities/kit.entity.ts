@@ -13,6 +13,9 @@ export class Kit {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
+  @Column('integer', { nullable: true })
+  weight: number;
+
   @Column('text', { nullable: true })
   category: string;
 
