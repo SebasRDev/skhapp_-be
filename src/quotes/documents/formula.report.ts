@@ -76,15 +76,15 @@ export const formulaReport = (
           alignment: 'center',
           pageBreak: 'beforeEven',
           marginBottom: kitData.imageLink ? 20 : 30,
-          marginTop: kitData.imageLink ? 70 : 0,
+          marginTop: kitData.imageLink ? 100 : 0,
         },
         kitData.imageLink
           ? {
               image: 'kit',
               width: 300,
               absolutePosition: {
-                x: 295,
-                y: 0,
+                x: 255,
+                y: 30,
               },
             }
           : '',
