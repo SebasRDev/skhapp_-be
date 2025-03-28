@@ -83,7 +83,6 @@ export class QuotesService {
         this.logger.log(
           `Successfully fetched and converted image for kit ${formulaKit.id}. MimeType: ${mimeType}`,
         );
-        console.log('kitImageBase64:', kitImageBase64);
         formulaKit.imageLink = kitImageBase64;
       } catch (error) {
         // Type-safe error handling
