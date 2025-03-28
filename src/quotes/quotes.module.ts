@@ -6,6 +6,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { Product } from 'src/products/entities/product.entity';
 import { ProductsModule } from 'src/products/products.module';
 import { KitsModule } from 'src/kits/kits.module';
+import { HttpModule } from '@nestjs/axios';
 
 @Module({
   controllers: [QuotesController],
@@ -15,6 +16,7 @@ import { KitsModule } from 'src/kits/kits.module';
     TypeOrmModule.forFeature([Product]),
     ProductsModule,
     KitsModule,
+    HttpModule,
   ],
 })
 export class QuotesModule {}

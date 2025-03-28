@@ -1,5 +1,3 @@
-import { createCanvas, loadImage } from 'canvas';
-import fetch from 'node-fetch'; // Add this import
 import Product from 'src/products/interfaces/product.interface';
 
 export const formatDate = (date: Date) =>
@@ -24,6 +22,7 @@ export const calculateTotal = (
   return products.reduce(
     (acc, product) => {
       const productTotal = getProductPrice(
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         product[property],
         product?.quantity,
         product?.discount,
@@ -126,37 +125,3 @@ export const calculateQuoteTotals = (
     },
   };
 };
-
-export async function getImage(
-  url: string | null | undefined,
-  size: number,
-): Promise<string | null> {
-  if (!url) return null;
-
-  try {
-    // For local files that don't need fetch
-    if (
-      url.startsWith('file://') ||
-      url.startsWith('/') ||
-      url.startsWith('./')
-    ) {
-      const image = await loadImage(url);
-      const canvas = createCanvas(size, size);
-      const ctx = canvas.getContext('2d');
-      ctx.drawImage(image, 0, 0, size, size);
-      return canvas.toDataURL();
-    }
-
-    // For remote URLs that need fetch
-    const response = await fetch(url);
-    const buffer = await response.buffer();
-    const image = await loadImage(buffer);
-    const canvas = createCanvas(size, size);
-    const ctx = canvas.getContext('2d');
-    ctx.drawImage(image, 0, 0, size, size);
-    return canvas.toDataURL();
-  } catch (error) {
-    console.error('Error loading image:', error);
-    return null;
-  }
-}

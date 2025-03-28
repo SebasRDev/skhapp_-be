@@ -12,7 +12,6 @@ export const formulaReport = (
 ): TDocumentDefinitions => {
   const today = new Date();
   const formatedDate = formatDate(today);
-  // console.log(kitData);
 
   const { name, consultant, gift, recommendation } = quoteInfo;
 
@@ -76,15 +75,19 @@ export const formulaReport = (
           style: 'title',
           alignment: 'center',
           pageBreak: 'beforeEven',
-          marginBottom: 30,
+          marginBottom: kitData.imageLink ? 20 : 30,
+          marginTop: kitData.imageLink ? 70 : 0,
         },
-        // kitData.imageLink
-        //   ? {
-        //       image: 'kit',
-        //       width: 150,
-        //       height: 150,
-        //     }
-        //   : '',
+        kitData.imageLink
+          ? {
+              image: 'kit',
+              width: 300,
+              absolutePosition: {
+                x: 295,
+                y: 0,
+              },
+            }
+          : '',
         {
           columnGap: 20,
           columns: [
@@ -134,7 +137,7 @@ export const formulaReport = (
                 layout: 'noBorders',
               },
               kitData.tips.map((tip) => ({
-                text: `- ${tip}`,
+                text: `${tip}`,
                 style: 'BenefitsBody',
               })),
             ],
@@ -163,6 +166,7 @@ export const formulaReport = (
                 ? {
                     text: 'DIA',
                     style: 'BenefitsBody',
+                    bold: true,
                   }
                 : '',
               kitData.protocol.dia.length > 0
@@ -175,6 +179,7 @@ export const formulaReport = (
                 ? {
                     text: 'NOCHE',
                     style: 'BenefitsBody',
+                    bold: true,
                   }
                 : '',
               kitData.protocol.noche.length > 0
@@ -191,9 +196,9 @@ export const formulaReport = (
 
   // Define images object conditionally
   const documentImages = {};
-  // if (kitData && kitData.imageLink) {
-  //   documentImages['kit'] = kitData.imageLink;
-  // }
+  if (kitData && kitData.imageLink) {
+    documentImages['kit'] = kitData.imageLink;
+  }
 
   return {
     pageMargins: [40, 150, 40, 40],
