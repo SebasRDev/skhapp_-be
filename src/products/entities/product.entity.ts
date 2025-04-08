@@ -6,6 +6,9 @@ export class Product {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
+  @Column('integer', { nullable: true })
+  weight: number;
+
   @Column('text', { unique: true })
   code: string;
 

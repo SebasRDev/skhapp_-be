@@ -9,6 +9,7 @@ interface Product {
   phase: string;
   time: string;
   image?: string | null;
+  weight: number;
 }
 
 interface Kit {
@@ -45,6 +46,7 @@ export const initialData: SeedData = {
       time: 'NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413911/noi6cqot6axzxhjydtyh.png',
+      weight: 1,
     },
     {
       code: 'AGG',
@@ -63,6 +65,7 @@ export const initialData: SeedData = {
       time: 'NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413911/sswdutsjj7ifdegpywqf.png',
+      weight: 2,
     },
     {
       code: 'AGL',
@@ -82,6 +85,7 @@ export const initialData: SeedData = {
       time: 'NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413902/pkqmhdjrwpnplo2tfizi.png',
+      weight: 3,
     },
     {
       code: 'AGHK',
@@ -100,6 +104,7 @@ export const initialData: SeedData = {
       time: 'NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413910/tnhew2jkdqdjuruuwejh.png',
+      weight: 4,
     },
     {
       code: 'AKG',
@@ -118,6 +123,7 @@ export const initialData: SeedData = {
       time: 'NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/benbdyatvh5eo0za20w5.png',
+      weight: 5,
     },
     {
       code: 'VC30',
@@ -136,6 +142,7 @@ export const initialData: SeedData = {
       time: 'NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/oci3oalpz5niembomt71.png',
+      weight: 6,
     },
     {
       code: 'MAN10-30',
@@ -152,6 +159,7 @@ export const initialData: SeedData = {
       time: 'NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413910/g8clyi9slkwrjyuhdipn.png',
+      weight: 7,
     },
     {
       code: 'AHA10',
@@ -171,6 +179,7 @@ export const initialData: SeedData = {
       time: 'NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413901/vsfvs7nhkr6objiw250s.png',
+      weight: 8,
     },
     {
       code: 'SDN30',
@@ -189,6 +198,7 @@ export const initialData: SeedData = {
       time: 'NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413901/nqav4kqidizbfiypu4v7.png',
+      weight: 9,
     },
     {
       code: 'AL150',
@@ -206,6 +216,7 @@ export const initialData: SeedData = {
       time: 'DÍA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413910/bfodpf83l1dwqyl1ac3j.png',
+      weight: 10,
     },
     {
       code: 'GE125',
@@ -223,6 +234,7 @@ export const initialData: SeedData = {
       time: 'DÍA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413910/eoiizzocwtsdgf8q0rin.png',
+      weight: 11,
     },
     {
       code: 'GL125',
@@ -240,6 +252,7 @@ export const initialData: SeedData = {
       time: 'DÍA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413901/aouf1hwlsm7gufkhk4xj.png',
+      weight: 12,
     },
     {
       code: 'LL150',
@@ -257,6 +270,7 @@ export const initialData: SeedData = {
       time: 'DÍA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/gvmdxrwvvtpgau3dbg7y.png',
+      weight: 13,
     },
     {
       code: 'GD100',
@@ -274,6 +288,7 @@ export const initialData: SeedData = {
       time: 'DÍA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413911/dxeqgrlesimnfhnievjm.png',
+      weight: 14,
     },
     {
       code: 'ATN120',
@@ -293,6 +308,7 @@ export const initialData: SeedData = {
       time: 'DÍA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/xlzskwgdirhkffuzz9vn.png',
+      weight: 15,
     },
     {
       code: 'ATR120',
@@ -312,6 +328,7 @@ export const initialData: SeedData = {
       time: 'DÍA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/xlzskwgdirhkffuzz9vn.png',
+      weight: 16,
     },
     {
       code: 'ATV120',
@@ -331,6 +348,7 @@ export const initialData: SeedData = {
       time: 'DÍA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/xlzskwgdirhkffuzz9vn.png',
+      weight: 17,
     },
     {
       code: 'CEQ10',
@@ -349,6 +367,7 @@ export const initialData: SeedData = {
       time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/aqyn4qju0m0o2yvilrrn.png',
+      weight: 18,
     },
     {
       code: 'RQ50',
@@ -366,6 +385,7 @@ export const initialData: SeedData = {
       time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413906/uonri7k7tyfskums65hi.png',
+      weight: 19,
     },
     {
       code: 'GA50',
@@ -383,6 +403,7 @@ export const initialData: SeedData = {
       time: 'NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413910/su4b5s6js4ribs5tepha.png',
+      weight: 20,
     },
     {
       code: 'BA150',
@@ -402,6 +423,7 @@ export const initialData: SeedData = {
       time: 'DIA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413901/etuhknuzbp72dvocvmau.png',
+      weight: 21,
     },
     {
       code: 'BL30',
@@ -422,6 +444,7 @@ export const initialData: SeedData = {
       time: 'DIA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/e1hcm3traw5uye1itokh.png',
+      weight: 22,
     },
     {
       code: 'CN50',
@@ -440,6 +463,7 @@ export const initialData: SeedData = {
       time: 'DIA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413904/jyy7fsng3vydmnghe6p1.png',
+      weight: 23,
     },
     {
       code: 'GH100',
@@ -457,6 +481,7 @@ export const initialData: SeedData = {
       time: 'DIA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/vtchupl8gkkjae8ey2xi.png',
+      weight: 24,
     },
     {
       code: 'HF50',
@@ -476,6 +501,7 @@ export const initialData: SeedData = {
       time: 'DIA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/sn7itfr23fsief6vwdjl.png',
+      weight: 25,
     },
     {
       code: 'SH50',
@@ -494,6 +520,7 @@ export const initialData: SeedData = {
       time: 'DIA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/xeoooniobmd3ybpihgoc.png',
+      weight: 26,
     },
     {
       code: 'CO30',
@@ -510,6 +537,7 @@ export const initialData: SeedData = {
       time: 'DIA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/twsnshzsmcgbl18ogl1e.png',
+      weight: 27,
     },
     {
       code: 'DO125',
@@ -526,6 +554,7 @@ export const initialData: SeedData = {
       time: 'DIA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/im0pne2qi3sdnmliinl5.png',
+      weight: 28,
     },
     {
       code: 'DO250',
@@ -542,6 +571,7 @@ export const initialData: SeedData = {
       time: 'DIA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/im0pne2qi3sdnmliinl5.png',
+      weight: 29,
     },
     {
       code: 'PT60',
@@ -559,6 +589,7 @@ export const initialData: SeedData = {
       time: 'DIA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416045/oeobnzv2lkrwya1lfq9j.png',
+      weight: 30,
     },
     {
       code: 'PT100',
@@ -576,6 +607,7 @@ export const initialData: SeedData = {
       time: 'DIA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416045/oeobnzv2lkrwya1lfq9j.png',
+      weight: 31,
     },
     {
       code: 'PT150',
@@ -593,6 +625,26 @@ export const initialData: SeedData = {
       time: 'DIA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416045/oeobnzv2lkrwya1lfq9j.png',
+      weight: 32,
+    },
+    {
+      code: 'PTC60',
+      name: 'PANTALLA SOLAR GEL COLOR X 60 G',
+      publicPrice: 166600,
+      efficiency: null,
+      profesionalPrice: 119300,
+      actives:
+        'Foto protectores de amplio espectro anti-UV, Dióxido de Titanio.',
+      properties: [
+        'Forma una capa física que absorbe y refleja la radiación.',
+        'Evita que la radiación UVA y UVB alcance la piel.',
+        'Aporta un delicado color cálido a la piel.',
+      ],
+      phase: 'PROTECCIÓN',
+      time: 'DIA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416043/dcgofck6iudd6q7kdqng.png',
+      weight: 33,
     },
     {
       code: 'PTC100',
@@ -611,6 +663,7 @@ export const initialData: SeedData = {
       time: 'DIA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416043/dcgofck6iudd6q7kdqng.png',
+      weight: 34,
     },
     {
       code: 'PTC150',
@@ -629,6 +682,7 @@ export const initialData: SeedData = {
       time: 'DIA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416043/dcgofck6iudd6q7kdqng.png',
+      weight: 35,
     },
     {
       code: 'CC60',
@@ -646,6 +700,7 @@ export const initialData: SeedData = {
       time: 'DIA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/suj8rjbilusnschh8dp8.png',
+      weight: 36,
     },
     {
       code: 'PSN30',
@@ -663,6 +718,7 @@ export const initialData: SeedData = {
       time: 'DIA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413902/swbamj1u13yfjmph3w9w.png',
+      weight: 37,
     },
     {
       code: 'PSP30',
@@ -680,6 +736,7 @@ export const initialData: SeedData = {
       time: 'DIA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/cszkdphjaj3we12eszd2.png',
+      weight: 38,
     },
     {
       code: 'LHT150',
@@ -697,6 +754,7 @@ export const initialData: SeedData = {
       time: 'DIA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/mkbpmnwhxnlk2ssji23z.png',
+      weight: 39,
     },
     {
       code: 'LHS150',
@@ -714,6 +772,7 @@ export const initialData: SeedData = {
       time: 'DIA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/mkbpmnwhxnlk2ssji23z.png',
+      weight: 40,
     },
     {
       code: 'CI150',
@@ -732,6 +791,7 @@ export const initialData: SeedData = {
       time: 'DIA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413902/lsbx8extme0auve9x9ci.png',
+      weight: 41,
     },
     {
       code: 'GN150',
@@ -749,6 +809,7 @@ export const initialData: SeedData = {
       phase: 'TRATAMIENTO',
       time: 'DIA',
       image: null,
+      weight: 42,
     },
     {
       code: 'GS150',
@@ -766,6 +827,7 @@ export const initialData: SeedData = {
       time: 'DIA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/vjtezmdavkoshkzjmmmu.png',
+      weight: 43,
     },
     {
       code: 'GLD100',
@@ -782,6 +844,7 @@ export const initialData: SeedData = {
       time: 'DIA O NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/jk9uans0jb2jjxskmtdc.png',
+      weight: 44,
     },
     {
       code: 'GI300',
@@ -798,6 +861,7 @@ export const initialData: SeedData = {
       time: 'DIA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413902/usatlfvkoxhpc1wfuqed.png',
+      weight: 45,
     },
     {
       code: 'SA300',
@@ -814,6 +878,7 @@ export const initialData: SeedData = {
       time: 'DIA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413902/mw37jrugacrrs3kgets4.png',
+      weight: 46,
     },
     {
       code: 'CTR65',
@@ -830,6 +895,7 @@ export const initialData: SeedData = {
       time: 'DIA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/irba8iyidhyzvez3knzn.png',
+      weight: 47,
     },
     {
       code: 'CTR25',
@@ -846,6 +912,7 @@ export const initialData: SeedData = {
       time: 'DIA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/irba8iyidhyzvez3knzn.png',
+      weight: 48,
     },
     {
       code: 'ESML13',
@@ -862,6 +929,7 @@ export const initialData: SeedData = {
       time: 'DIA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413901/dsitm9k62r0vbmfvpdbf.png',
+      weight: 49,
     },
     {
       code: 'ESEU13',
@@ -878,6 +946,7 @@ export const initialData: SeedData = {
       time: 'DIA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413901/sa4nsjgm9wjnw8vyevlf.png',
+      weight: 50,
     },
     {
       code: 'AL500',
@@ -894,6 +963,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 51,
     },
     {
       code: 'GE500',
@@ -910,6 +980,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 52,
     },
     {
       code: 'GL500',
@@ -926,6 +997,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 53,
     },
     {
       code: 'LL500',
@@ -942,6 +1014,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 54,
     },
     {
       code: 'GD500',
@@ -958,6 +1031,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 55,
     },
     {
       code: 'MD300',
@@ -971,6 +1045,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 56,
     },
     {
       code: 'MF300',
@@ -987,6 +1062,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 57,
     },
     {
       code: 'MP300',
@@ -1003,6 +1079,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 58,
     },
     {
       code: 'MV300',
@@ -1019,6 +1096,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 59,
     },
     {
       code: 'MA300',
@@ -1037,6 +1115,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 60,
     },
     {
       code: 'MAH300',
@@ -1055,6 +1134,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 61,
     },
     {
       code: 'BA500',
@@ -1073,6 +1153,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 62,
     },
     {
       code: 'BL150',
@@ -1092,6 +1173,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 63,
     },
     {
       code: 'CN150',
@@ -1109,6 +1191,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 64,
     },
     {
       code: 'GH500',
@@ -1125,6 +1208,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 65,
     },
     {
       code: 'HF150',
@@ -1143,6 +1227,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 66,
     },
     {
       code: 'CEQ150',
@@ -1161,6 +1246,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 67,
     },
     {
       code: 'SH150',
@@ -1178,6 +1264,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 68,
     },
     {
       code: 'RQ150',
@@ -1195,6 +1282,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 69,
     },
     {
       code: 'ATN300',
@@ -1213,6 +1301,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 70,
     },
     {
       code: 'ATR300',
@@ -1231,6 +1320,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 71,
     },
     {
       code: 'ATV300',
@@ -1249,6 +1339,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 72,
     },
     {
       code: 'CC120',
@@ -1265,6 +1356,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 73,
     },
     {
       code: 'MPN250',
@@ -1282,6 +1374,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 74,
     },
     {
       code: 'GI500',
@@ -1297,6 +1390,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 75,
     },
     {
       code: 'GI4000',
@@ -1312,6 +1406,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 76,
     },
     {
       code: 'SA500',
@@ -1327,6 +1422,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 77,
     },
     {
       code: 'SA4000',
@@ -1342,6 +1438,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 78,
     },
     {
       code: 'GF500',
@@ -1359,6 +1456,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 79,
     },
     {
       code: 'HV500',
@@ -1375,6 +1473,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 80,
     },
     {
       code: 'LB500',
@@ -1391,6 +1490,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 81,
     },
     {
       code: 'RB500',
@@ -1408,6 +1508,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 82,
     },
     {
       code: 'MB500',
@@ -1425,6 +1526,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 83,
     },
     {
       code: 'CB120',
@@ -1440,6 +1542,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 84,
     },
     {
       code: 'GN500',
@@ -1457,6 +1560,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 85,
     },
     {
       code: 'GS500',
@@ -1473,6 +1577,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 86,
     },
     {
       code: 'GLD500',
@@ -1488,6 +1593,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 87,
     },
     {
       code: 'AA500',
@@ -1503,6 +1609,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 88,
     },
     {
       code: 'AN500',
@@ -1518,6 +1625,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 89,
     },
     {
       code: 'AMT500',
@@ -1533,6 +1641,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 90,
     },
     {
       code: 'AMS500',
@@ -1548,6 +1657,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 91,
     },
     {
       code: 'AMY500',
@@ -1563,6 +1673,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 92,
     },
     {
       code: 'AMK500',
@@ -1578,6 +1689,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 93,
     },
     {
       code: 'AMD500',
@@ -1593,6 +1705,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 94,
     },
     {
       code: 'AA4000',
@@ -1608,6 +1721,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 95,
     },
     {
       code: 'AN4000',
@@ -1623,6 +1737,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 96,
     },
     {
       code: 'AMT4000',
@@ -1638,6 +1753,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 97,
     },
     {
       code: 'AMS4000',
@@ -1653,6 +1769,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 98,
     },
     {
       code: 'AMY4000',
@@ -1668,6 +1785,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 99,
     },
     {
       code: 'AMD4000',
@@ -1683,6 +1801,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 100,
     },
     {
       code: 'AQ4000A',
@@ -1698,6 +1817,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 101,
     },
     {
       code: 'AQ4000T',
@@ -1713,6 +1833,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 102,
     },
     {
       code: 'CI500',
@@ -1730,6 +1851,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 103,
     },
     {
       code: 'AG15-30',
@@ -1742,6 +1864,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 104,
     },
     {
       code: 'AG15-60',
@@ -1754,6 +1877,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 105,
     },
     {
       code: 'AG25-30',
@@ -1766,6 +1890,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 106,
     },
     {
       code: 'AG25-60',
@@ -1778,6 +1903,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 107,
     },
     {
       code: 'AG35-30',
@@ -1790,6 +1916,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 108,
     },
     {
       code: 'AG35-60',
@@ -1802,6 +1929,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 109,
     },
     {
       code: 'LN250',
@@ -1814,6 +1942,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 110,
     },
     {
       code: 'MAN30-30',
@@ -1826,6 +1955,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 111,
     },
     {
       code: 'AHA30',
@@ -1838,6 +1968,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 112,
     },
     {
       code: 'AP30',
@@ -1850,6 +1981,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 113,
     },
     {
       code: 'AL10-30',
@@ -1862,6 +1994,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 114,
     },
     {
       code: 'AKG5-30',
@@ -1874,6 +2007,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 115,
     },
     {
       code: 'SD',
@@ -1886,6 +2020,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 116,
     },
     {
       code: 'GLT500',
@@ -1904,6 +2039,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 117,
     },
     {
       code: 'MRT500',
@@ -1916,6 +2052,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 118,
     },
     {
       code: 'LHT500',
@@ -1934,6 +2071,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 120,
     },
     {
       code: 'MNT300',
@@ -1952,6 +2090,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 121,
     },
     {
       code: 'GLS500',
@@ -1970,6 +2109,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 122,
     },
     {
       code: 'MRS500',
@@ -1988,6 +2128,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 123,
     },
     {
       code: 'LHS500',
@@ -2006,6 +2147,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 125,
     },
     {
       code: 'MNS300',
@@ -2024,6 +2166,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 126,
     },
     {
       code: 'LPR5',
@@ -2036,6 +2179,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 127,
     },
     {
       code: 'LPR10',
@@ -2048,6 +2192,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 128,
     },
     {
       code: 'OLPR',
@@ -2060,6 +2205,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 129,
     },
     {
       code: 'LPR120',
@@ -2076,6 +2222,7 @@ export const initialData: SeedData = {
       phase: 'TRATAMIENTO ',
       time: 'DIA O NOCHE',
       image: null,
+      weight: 130,
     },
     {
       code: 'LPRP',
@@ -2089,6 +2236,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 131,
     },
     {
       code: 'LPRP10',
@@ -2102,6 +2250,7 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 132,
     },
     {
       code: 'OLPRP',
@@ -2115,13 +2264,14 @@ export const initialData: SeedData = {
       phase: '',
       time: '',
       image: null,
+      weight: 133,
     },
   ],
   kits: [
     {
       category: 'CASA',
       weight: 1,
-      name: 'KIT CUIDADO DE OJOS',
+      name: 'TRATAMIENTO CUIDADO DE OJOS',
       products: [
         {
           code: 'DO125',
@@ -2160,7 +2310,7 @@ export const initialData: SeedData = {
     {
       category: 'CASA',
       weight: 2,
-      name: 'KIT PIEL SENSIBLE',
+      name: 'TRATAMIENTO PIEL SENSIBLE',
       products: [
         {
           code: 'AL150',
@@ -2207,7 +2357,7 @@ export const initialData: SeedData = {
     {
       category: 'CASA',
       weight: 3,
-      name: 'KIT PIEL SECA',
+      name: 'TRATAMIENTO PIEL SECA',
       products: [
         {
           code: 'LL150',
@@ -2250,7 +2400,7 @@ export const initialData: SeedData = {
     {
       category: 'CASA',
       weight: 4,
-      name: 'KIT PIEL GRASA',
+      name: 'TRATAMIENTO PIEL GRASA',
       products: [
         {
           code: 'GL125',
@@ -2300,7 +2450,7 @@ export const initialData: SeedData = {
     {
       category: 'CASA',
       weight: 5,
-      name: 'KIT PIEL MIXTA',
+      name: 'TRATAMIENTO PIEL MIXTA',
       products: [
         {
           code: 'AL150',
@@ -2343,7 +2493,7 @@ export const initialData: SeedData = {
     {
       category: 'CASA',
       weight: 6,
-      name: 'KIT MANTENIMIENTO',
+      name: 'TRATAMIENTO MANTENIMIENTO',
       products: [
         {
           code: 'AL150',
@@ -2385,7 +2535,7 @@ export const initialData: SeedData = {
     {
       category: 'CASA',
       weight: 7,
-      name: 'KIT REJUVENECIMIENTO',
+      name: 'TRATAMIENTO REJUVENECIMIENTO',
       products: [
         {
           code: 'GL125',
@@ -2428,7 +2578,7 @@ export const initialData: SeedData = {
     {
       category: 'CASA',
       weight: 8,
-      name: 'KIT REJUVENECIMIENTO ESCOTE',
+      name: 'TRATAMIENTO REJUVENECIMIENTO ESCOTE',
       products: [
         {
           code: 'AL150',
@@ -2469,7 +2619,7 @@ export const initialData: SeedData = {
     {
       category: 'CASA',
       weight: 9,
-      name: 'KIT ENVEJECIMIENTO PREMATURO',
+      name: 'TRATAMIENTO ENVEJECIMIENTO PREMATURO',
       products: [
         {
           code: 'LL150',
@@ -2511,7 +2661,7 @@ export const initialData: SeedData = {
     {
       category: 'CASA',
       weight: 10,
-      name: 'KIT ACNÉ VULGAR',
+      name: 'TRATAMIENTO ACNÉ VULGAR',
       products: [
         {
           code: 'GE125',
@@ -2554,7 +2704,7 @@ export const initialData: SeedData = {
     {
       category: 'CASA',
       weight: 11,
-      name: 'KIT ACNÉ JUVENIL',
+      name: 'TRATAMIENTO ACNÉ JUVENIL',
       products: [
         {
           code: 'GE125',
@@ -2597,7 +2747,7 @@ export const initialData: SeedData = {
     {
       category: 'CASA',
       weight: 12,
-      name: 'KIT PIEL MIXTA HIPERPIGMENTADA',
+      name: 'TRATAMIENTO PIEL MIXTA HIPERPIGMENTADA',
       products: [
         {
           code: 'GL125',
@@ -2640,7 +2790,7 @@ export const initialData: SeedData = {
     {
       category: 'CASA',
       weight: 13,
-      name: 'KIT ACLARADOR PIGMENTACIÓN LEVE',
+      name: 'TRATAMIENTO ACLARADOR PIGMENTACIÓN LEVE',
       products: [
         {
           code: 'AL150',
@@ -2688,7 +2838,7 @@ export const initialData: SeedData = {
     {
       category: 'CASA',
       weight: 14,
-      name: 'KIT PIEL ÉTNICA HIPERPIGMENTADA',
+      name: 'TRATAMIENTO PIEL ÉTNICA HIPERPIGMENTADA',
       products: [
         {
           code: 'GL125',
@@ -2731,7 +2881,7 @@ export const initialData: SeedData = {
     {
       category: 'CASA',
       weight: 15,
-      name: 'KIT PIEL SENSIBLE HIPERPIGMENTADA',
+      name: 'TRATAMIENTO PIEL SENSIBLE HIPERPIGMENTADA',
       products: [
         {
           code: 'AL150',
@@ -2774,7 +2924,7 @@ export const initialData: SeedData = {
     {
       category: 'CABINA',
       weight: 16,
-      name: 'PROTOCOLO DESPIGMENTACIÓN',
+      name: 'KIT CABINA DESPIGMENTACIÓN',
       products: [
         {
           code: 'GL500',
@@ -2827,7 +2977,7 @@ export const initialData: SeedData = {
     {
       category: 'CABINA',
       weight: 17,
-      name: 'PROTOCOLO LIFTING MERIDIONAL JAPONÉS',
+      name: 'KIT CABINA LIFTING MERIDIONAL JAPONÉS',
       products: [
         {
           code: 'RQ150',
@@ -2872,7 +3022,7 @@ export const initialData: SeedData = {
     {
       category: 'CABINA',
       weight: 18,
-      name: 'PROTOCOLO P.E.F.E',
+      name: 'KIT CABINA P.E.F.E',
       products: [
         {
           code: 'LPRP',
@@ -2901,7 +3051,7 @@ export const initialData: SeedData = {
     {
       category: 'CABINA',
       weight: 19,
-      name: 'PROTOCOLO G.L.M',
+      name: 'KIT CABINA G.L.M',
       products: [
         {
           code: 'CC120',
@@ -2950,7 +3100,7 @@ export const initialData: SeedData = {
     {
       category: 'CABINA',
       weight: 20,
-      name: 'PROTOCOLO PORCELANIZACIÓN',
+      name: 'KIT CABINA PORCELANIZACIÓN',
       products: [
         {
           code: 'GD500',
@@ -2995,7 +3145,7 @@ export const initialData: SeedData = {
     {
       category: 'CABINA',
       weight: 21,
-      name: 'PROTOCOLO BIONEUROEMOCIÓN',
+      name: 'KIT CABINA BIONEUROEMOCIÓN',
       products: [
         {
           code: 'GN500',
@@ -3032,7 +3182,7 @@ export const initialData: SeedData = {
     {
       category: 'CABINA',
       weight: 22,
-      name: 'PROTOCOLO BUSTO Y GLÚTEOS',
+      name: 'KIT CABINA BUSTO Y GLÚTEOS',
       products: [
         {
           code: 'LB500',
@@ -3069,7 +3219,7 @@ export const initialData: SeedData = {
     {
       category: 'CABINA',
       weight: 23,
-      name: 'PROTOCOLO ACNÉ',
+      name: 'KIT CABINA ACNÉ',
       products: [
         {
           code: 'GE500',
@@ -3118,7 +3268,7 @@ export const initialData: SeedData = {
     {
       category: 'CABINA',
       weight: 24,
-      name: 'PROTOCOLO ZONAS NIGRIS',
+      name: 'KIT CABINA ZONAS NIGRIS',
       products: [
         {
           code: 'GH500',
@@ -3151,7 +3301,7 @@ export const initialData: SeedData = {
     {
       category: 'CABINA',
       weight: 25,
-      name: 'PROTOCOLO ANTIEDAD',
+      name: 'KIT CABINA ANTIEDAD',
       products: [
         {
           code: 'CN150',
