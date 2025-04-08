@@ -25,6 +25,9 @@ export class Kit {
   @Column('integer', { default: 0 })
   price: number;
 
+  @Column('integer', { default: 0 })
+  profesionalPrice: number;
+
   @OneToMany(() => KitProduct, (kitProduct) => kitProduct.kit, {
     cascade: true,
     eager: true,
@@ -42,26 +45,24 @@ export class Kit {
 
   @BeforeInsert()
   @BeforeUpdate()
-  calculatePrice() {
-    if (this.category === 'CASA') {
-      this.price =
-        this.kitProducts?.reduce((total, kitProduct) => {
-          const productPrice = kitProduct.product?.publicPrice ?? 0;
-          return total + productPrice * kitProduct.quantity;
-        }, 0) || 0;
-    } else if (this.category === 'CABINA') {
-      this.price =
-        this.kitProducts?.reduce((total, kitProduct) => {
-          const productPrice = kitProduct.product?.profesionalPrice ?? 0;
-          return total + productPrice * kitProduct.quantity;
-        }, 0) || 0;
-    } else {
-      // Default calculation if category is neither CASA nor CABINA
-      this.price =
-        this.kitProducts?.reduce((total, kitProduct) => {
-          const productPrice = kitProduct.product?.publicPrice ?? 0;
-          return total + productPrice * kitProduct.quantity;
-        }, 0) || 0;
-    }
+  calculatePrices() {
+    this.calculatePrice();
+    this.calculateProfessionalPrice();
+  }
+
+  private calculatePrice() {
+    this.price =
+      this.kitProducts?.reduce((total, kitProduct) => {
+        const productPrice = kitProduct.product?.publicPrice ?? 0;
+        return total + productPrice * kitProduct.quantity;
+      }, 0) || 0;
+  }
+
+  private calculateProfessionalPrice() {
+    this.profesionalPrice =
+      this.kitProducts?.reduce((total, kitProduct) => {
+        const productPrice = kitProduct.product?.profesionalPrice ?? 0;
+        return total + productPrice * kitProduct.quantity;
+      }, 0) || 0;
   }
 }
