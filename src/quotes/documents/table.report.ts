@@ -6,6 +6,7 @@ import {
   calculateTotal,
   capitalize,
   currencyFormatter,
+  getProductPrice,
 } from 'src/quotes/utils/utils';
 
 export const tableReport = (
@@ -76,6 +77,9 @@ export const tableReport = (
     ];
 
     if (hasAnyDiscount) {
+      if (!product.discount && !generalDiscount) {
+        baseRow.push(regularCell(`0%`));
+      }
       if (product.discount && generalDiscount) {
         baseRow.push(
           regularCell(`${product.discount || 0}+${generalDiscount || 0}%`),
@@ -89,9 +93,14 @@ export const tableReport = (
       }
     }
 
-    const formattedValue = currencyFormatter.format(Number(product[property]));
+    const formattedValue = getProductPrice(
+      Number(product[property]),
+      Number(product.quantity),
+      Number(product.discount),
+      Number(generalDiscount),
+    );
     baseRow.push(
-      regularCell(formattedValue, {
+      regularCell(currencyFormatter.format(formattedValue), {
         isLast: true,
       }),
     );

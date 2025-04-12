@@ -81,6 +81,9 @@ export const tableCabineReport = (
     ];
 
     if (hasAnyDiscount) {
+      if (!product.discount && !generalDiscount) {
+        baseRow.push(regularCell(`0%`));
+      }
       if (product.discount && generalDiscount) {
         baseRow.push(
           regularCell(`${product.discount || 0}+${generalDiscount || 0}%`),
@@ -96,9 +99,9 @@ export const tableCabineReport = (
 
     const total = getProductPrice(
       Number(product.profesionalPrice),
-      product.quantity,
-      product.discount,
-      generalDiscount,
+      Number(product.quantity),
+      Number(product.discount),
+      Number(generalDiscount),
     );
 
     baseRow.push(
