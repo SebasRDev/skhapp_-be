@@ -2297,7 +2297,7 @@ export const initialData: SeedData = {
       protocol: {
         dia: [],
         noche: [
-          '1. Desmaquillar los ojos con el desmaquillante de ojos, agitar el producto hasta obtener burbujas, aplique en un pomito la cantidad adecuada  para retirar el maquillaje y suciedad del contorno de los ojos.',
+          'Desmaquillar los ojos con el desmaquillante de ojos, agitar el producto hasta obtener burbujas, aplique en un pomito la cantidad adecuada  para retirar el maquillaje y suciedad del contorno de los ojos.',
           'Coloque inicialmente el pomito sobre el ojo y déjelo actuar unos segundos, luego realice movimientos de forma lineales de arriba hacia abajo (nunca circular) hasta retirar todo el maquillaje.',
           'Active la válvula del contorno de ojos en el pulpejo del dedo anular  ( este dedo ejerce menos presión) y apliquelo de a toquecitos en el contorno de los párpados (inferior y en la parte alta  del párpado móvil, bajo la ceja) hasta su completa absorción.',
           'Aplique  una pequeña cantidad de pantalla solar gel  para proteger esta área. si se va a exponer a rayos solares o dispositivos electrónicos.',
@@ -2339,12 +2339,12 @@ export const initialData: SeedData = {
       ],
       protocol: {
         dia: [
-          '1. Lave muy bien el rostro con abundante agua.',
+          'Lave muy bien el rostro con abundante agua.',
           'Aplique Crema Nutritiva - Amino Repair Complex y realice un pequeño masaje hasta su absorción.',
           'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          '1. Active una o dos veces la válvula de Ácido Láctico Limpiador sobre el rostro húmedo.',
+          'Active una o dos veces la válvula de Ácido Láctico Limpiador sobre el rostro húmedo.',
           'Realice movimientos circulares suaves hasta que salga espuma y lave con abundante agua.',
           'Aplique un rocío de Agua Vitalizante sobre el rostro y realice movimientos hasta su absorción',
           'Aplique una cantidad generosa de Crema Nutritiva Amino Repair Complex y realice un suave masaje hasta su absorción.',
@@ -2383,12 +2383,12 @@ export const initialData: SeedData = {
       ],
       protocol: {
         dia: [
-          '1. Lave muy bien el rostro con abundante agua.',
+          'Lave muy bien el rostro con abundante agua.',
           'Aplique Crema Nutritiva - Amino Repair Complex y realice un pequeño masaje hasta su absorción.',
           'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          '1. Active una o dos veces la válvula de Leche Limpiadora.',
+          'Active una o dos veces la válvula de Leche Limpiadora.',
           'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
           'Aplique Crema Nutritiva Amino Repair Complex y realice un pequeño masaje hasta su absorción.',
           'Aplique una capa delgada y pareja de Ácido Glicólico Crema 10%, evitando la zona de los ojos y mucosas, dejar actuar toda la noche.',
@@ -2432,13 +2432,13 @@ export const initialData: SeedData = {
       ],
       protocol: {
         dia: [
-          '1. Lave muy bien el rostro con abundante agua.',
+          'Lave muy bien el rostro con abundante agua.',
           'Aplique Suero Hidratante - Amino Acid Complex y realice un pequeño masaje hasta su absorción.',
           'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
           'Aplique un gramo Gel Piel De Seda con movimientos circulares y lineales suaves.',
         ],
         noche: [
-          '1. Dosifique uno o dos gramos de Gel Limpiador.',
+          'Dosifique uno o dos gramos de Gel Limpiador.',
           'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
           'Aplique Suero Hidratante Amino Acid Complex y realice un pequeño masaje hasta su absorción.',
           'Aplique una capa delgada y pareja de Ácido Glicólico Loción 10%, evitando la zona de los ojos y las mucosas, deja actuar toda la noche.',
@@ -2476,12 +2476,12 @@ export const initialData: SeedData = {
       ],
       protocol: {
         dia: [
-          '1. Lave muy bien el rostro con abundante agua.',
+          'Lave muy bien el rostro con abundante agua.',
           'Aplique Loción Hidratante Facial Liposomada y realice un pequeño masaje hasta su absorción.',
           'Para proteger, dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          '1. Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el rostro.',
+          'Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el rostro.',
           'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
           'Aplique Loción Hidratante Facial Liposomada y realice un pequeño masaje hasta su absorción.',
           'Aplique una capa delgada y pareja de Ácido Glicólico Loción 10%, evitando la zona de los ojos y las mucosas. Dejar actuar toda la noche.',
@@ -2518,12 +2518,12 @@ export const initialData: SeedData = {
       ],
       protocol: {
         dia: [
-          '1. Lave muy bien el rostro con abundante agua.',
+          'Lave muy bien el rostro con abundante agua.',
           'Aplique Suero Antioxidante y realice un pequeño masaje hasta su absorción.',
           'Para proteger, dosifique un gramo de Pantalla Solar Gel, aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          '1.  Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el rostro.',
+          'Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el rostro.',
           'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
           'Aplique Suero Antioxidante y realice un pequeño masaje hasta su absorción.',
           'Aplique una capa delgada y pareja de Ácido Glicólico Gel 7%, evitando la zona de los ojos y las mucosas. Dejar actuar toda la noche.',
@@ -2562,12 +2562,12 @@ export const initialData: SeedData = {
       ],
       protocol: {
         dia: [
-          '1. Lave muy bien el rostro con abundante agua.',
+          'Lave muy bien el rostro con abundante agua.',
           'Aplique Gel Biocolágeno III Liposoma y realice un pequeño masaje hasta su absorción.',
           'Para proteger, dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          '1. Dosifique uno o dos gramos de Gel Limpiador sobre el rostro.',
+          'Dosifique uno o dos gramos de Gel Limpiador sobre el rostro.',
           'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
           'Dosifique cantidad necesaria de Gel Antiedad en su mano y aplique de forma pareja en su rostro, formando una capa uniforme y delgada, Evite el área de los ojos y las mucosas. Déjelo actuar toda la noche.',
         ],
@@ -2603,12 +2603,12 @@ export const initialData: SeedData = {
       ],
       protocol: {
         dia: [
-          '1. Lave muy bien el rostro con abundante agua.',
+          'Lave muy bien el rostro con abundante agua.',
           'Aplique sobre el escote Crema Nutritiva Amino Repair Complex y realice un pequeño masaje hasta su absorción.',
           'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique sobre el escote con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          '1. Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el escote.',
+          'Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el escote.',
           'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
           'Dosifique cantidad necesaria de Gel Reafirmante Q10 Liposomado y aplique de forma pareja sobre el escote con movimientos circulares hasta su total absorción.',
         ],
@@ -2645,12 +2645,12 @@ export const initialData: SeedData = {
       ],
       protocol: {
         dia: [
-          '1. Lave muy bien el rostro con abundante agua.',
+          'Lave muy bien el rostro con abundante agua.',
           'Aplique Crema Nutritiva Amino Repair Complex y realice un pequeño masaje hasta su absorción.',
           'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique sobre el rostro con suaves maniobras hasta que se genere una capa sobre la piel.',
         ],
         noche: [
-          '1. Dosifique uno o dos gramos de Leche Limpiadora sobre el rostro.',
+          'Dosifique uno o dos gramos de Leche Limpiadora sobre el rostro.',
           'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
           'Dosifique cantidad necesaria de Gel Con Vitamina C 10% y aplique de forma pareja sobre la piel del rostro con movimientos circulares hasta su total absorción.',
         ],
@@ -2688,12 +2688,12 @@ export const initialData: SeedData = {
       ],
       protocol: {
         dia: [
-          '1. Lave muy bien el rostro con abundante agua.',
+          'Lave muy bien el rostro con abundante agua.',
           'Aplique Suero Hidratante - Amino Acid Complex y realice un pequeño masaje hasta su absorción.',
           'Para proteger, dosifique  un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          '1. Dosifique una porción generosa de Gel Espumoso Facial sobre el rostro húmedo.',
+          'Dosifique una porción generosa de Gel Espumoso Facial sobre el rostro húmedo.',
           'Realice movimientos circulares suaves hasta que salga espuma, lavar con abundante agua.',
           'Dosifique una cantidad necesaria de Ácido Kójico Gel y aplique de forma pareja en su rostro, formando una capa uniforme y delgada. Evite el área de los ojos y las mucosas nasales. Déjelo actuar toda la noche.',
         ],
@@ -2731,12 +2731,12 @@ export const initialData: SeedData = {
       ],
       protocol: {
         dia: [
-          '1. Lave muy bien el rostro con abundante agua.',
+          'Lave muy bien el rostro con abundante agua.',
           'Aplique Gel Hidratante Con Aloe y realice un pequeño masaje hasta su absorción.',
           'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          '1. Dosifique una porción generosa de Gel Espumoso Facial sobre el rostro húmedo.',
+          'Dosifique una porción generosa de Gel Espumoso Facial sobre el rostro húmedo.',
           'Realice movimientos circulares suaves hasta que salga espuma, lavar con abundante agua.',
           'Dosifique cantidad necesaria de Ácido Glicólico Loción 10% y aplique de forma pareja en su rostro, formando una capa uniforme y delgada, Evite el área de los ojos y mucosas. Déjelo actuar toda la noche.',
         ],
@@ -2774,12 +2774,12 @@ export const initialData: SeedData = {
       ],
       protocol: {
         dia: [
-          '1. Lave el rostro con abundante agua.',
+          'Lave el rostro con abundante agua.',
           'Aplique Loción Hidratante Facial Liposomada y realice un pequeño masaje hasta su absorción.',
           'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          '1. Dosifique uno o dos gramos de Gel Limpiador sobre el rostro.',
+          'Dosifique uno o dos gramos de Gel Limpiador sobre el rostro.',
           'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
           'Dosifique cantidad necesaria de Gel Despigmentante Liposomado y aplique de forma pareja en su rostro, formando una capa uniforme y delgada. Evite el área de los ojos y las mucosas. Déjelo actuar toda la noche.',
         ],
@@ -2821,13 +2821,13 @@ export const initialData: SeedData = {
       ],
       protocol: {
         dia: [
-          '1. Lave muy bien el rostro con abundante agua.',
+          'Lave muy bien el rostro con abundante agua.',
           'Aplique una cantidad suficiente de Gel Con Vitamina C y realice un pequeño masaje hasta su absorción.',
           'Aplique Loción Hidratante Facial Liposomada y realice un pequeño masaje hasta su absorción.',
           'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          '1. Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el rostro.',
+          'Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el rostro.',
           'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
           "Dosifique cantidad necesaria de Suero Aclarador AHA'S Mandelic Serum y aplique de forma pareja formando una capa uniforme y delgada. Evite el área de los ojos y las mucosas. Déjelo actuar toda la noche.",
         ],
@@ -2865,12 +2865,12 @@ export const initialData: SeedData = {
       ],
       protocol: {
         dia: [
-          '1. Lave muy bien el rostro con abundante agua.',
+          'Lave muy bien el rostro con abundante agua.',
           'Aplique Suero Hidratante Amino Acid Complex y realice un pequeño masaje hasta su absorción.',
           'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          '1. Dosifique uno o dos gramos de Gel Limpiador sobre el rostro.',
+          'Dosifique uno o dos gramos de Gel Limpiador sobre el rostro.',
           'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
           'Dosifique cantidad necesaria de Mandélico Gel Líposoma 10% y aplique de forma pareja formando una capa uniforme y delgada. Evite el área de los ojos y las mucosas. Déjelo actuar toda la noche.',
         ],
@@ -2908,12 +2908,12 @@ export const initialData: SeedData = {
       ],
       protocol: {
         dia: [
-          '1. Lave muy bien el rostro con abundante agua.',
+          'Lave muy bien el rostro con abundante agua.',
           'Aplique Loción Hidratante Facial Liposomada y realice un pequeño masaje hasta su absorción.',
           'Para proteger dosifique un gramo de Pantalla Solar Gel y aplique con suaves maniobras hasta que se genere una capa transparente sobre la piel.',
         ],
         noche: [
-          '1. Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el rostro.',
+          'Dosifique uno o dos gramos de Ácido Láctico Limpiador sobre el rostro.',
           'Realice movimientos circulares por 30 seg, retire con paño húmedo o abundante agua.',
           'Dosifique cantidad necesaria de Suero Despigmentante B3 Niacinamide Liposome y aplique de forma pareja formando una capa uniforme y delgada. Evite el área de los ojos y las mucosas. Déjelo actuar toda la noche.',
         ],

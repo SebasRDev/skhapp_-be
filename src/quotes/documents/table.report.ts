@@ -1,4 +1,3 @@
-import { table } from 'console';
 import { Content } from 'pdfmake/interfaces';
 import Product from 'src/products/interfaces/product.interface';
 import { CellConfig } from 'src/quotes/interfaces/quote.interface';

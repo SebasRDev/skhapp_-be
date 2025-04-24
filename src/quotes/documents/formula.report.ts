@@ -3,7 +3,7 @@ import { Kit } from 'src/kits/entities/kit.entity';
 import Product from 'src/products/interfaces/product.interface';
 import { tableReport } from 'src/quotes/documents/table.report';
 import { Data } from 'src/quotes/interfaces/formula.interface';
-import { formatDate } from 'src/quotes/utils/utils';
+import { formatDate, LowerCaseCapitalize } from 'src/quotes/utils/utils';
 
 export const formulaReport = (
   quoteInfo: Data,
@@ -15,58 +15,67 @@ export const formulaReport = (
 
   const { name, consultant, gift, recommendation } = quoteInfo;
 
-  const getBenefits: Content[] = formulaProducts.map((product) => [
-    {
-      table: {
-        widths: ['auto', '*', 'auto'],
-        body: [
-          [
-            {
-              text: product.name,
-              border: [false, false, false, false],
-              fillColor: '#D9D9D9',
-              bold: true,
-              margin: [2, 3],
-            },
-            {
-              text: '',
-              fillColor: '#D9D9D9',
-            },
-            {
-              text: product.phase,
-              alignment: 'Right',
-              fillColor: '#D9D9D9',
-              bold: true,
-              margin: [2, 3],
-            },
+  // Modificación: Agregamos keepTogether: true para evitar que se separen los bloques
+  const getBenefits: Content[] = formulaProducts.map((product) => ({
+    stack: [
+      {
+        table: {
+          widths: ['auto', '*', 'auto'],
+          body: [
+            [
+              {
+                text: product.name,
+                border: [false, false, false, false],
+                fillColor: '#D9D9D9',
+                bold: true,
+                margin: [2, 3],
+              },
+              {
+                text: '',
+                fillColor: '#D9D9D9',
+              },
+              {
+                text: product.phase,
+                alignment: 'Right',
+                fillColor: '#D9D9D9',
+                bold: true,
+                margin: [2, 3],
+              },
+            ],
           ],
-        ],
+        },
+        layout: 'noBorders',
       },
-      layout: 'noBorders',
-    },
-    {
-      text: 'Activos:',
-      style: 'BenefitsBody',
-      bold: true,
-    },
-    {
-      text: product.actives,
-      style: 'BenefitsBody',
-    },
-    {
-      text: 'Propiedades:',
-      style: 'BenefitsBody',
-      bold: true,
-    },
-    product.properties.map((prop, idx) => ({
-      text: `${idx + 1}. ${prop}`,
-      style: 'BenefitsBody',
-    })),
-    {
-      text: '',
-      marginTop: 12,
-    },
-  ]);
+      {
+        text: 'Activos:',
+        style: 'BenefitsBody',
+        bold: true,
+      },
+      {
+        text: product.actives,
+        style: 'BenefitsBody',
+      },
+      {
+        text: 'Propiedades:',
+        style: 'BenefitsBody',
+        bold: true,
+      },
+      {
+        stack: product.properties.map((prop, idx) => ({
+          text: `${idx + 1}. ${prop}`,
+          style: 'BenefitsBody',
+        })),
+      },
+      {
+        text: '',
+        marginTop: 12,
+      },
+    ],
+    // Esta propiedad evita que el contenido se separe entre páginas
+    keepTogether: true,
+    // Esta propiedad garantiza espacio adecuado para el footer
+    marginBottom: 20,
+  }));
 
   const kitPageContent: Content[] = kitData
     ? [
@@ -74,7 +83,7 @@ export const formulaReport = (
           text: `${kitData.name}`,
           style: 'title',
           alignment: 'center',
-          pageBreak: 'beforeEven',
+          pageBreak: 'before',
           marginBottom: kitData.imageLink ? 20 : 30,
           marginTop: kitData.imageLink ? 100 : 0,
         },
@@ -112,10 +121,12 @@ export const formulaReport = (
                 },
                 layout: 'noBorders',
               },
-              formulaProducts.map((prod) => ({
-                text: `- ${prod.name}`,
-                style: 'BenefitsBody',
-              })),
+              {
+                stack: formulaProducts.map((prod) => ({
+                  text: `- ${LowerCaseCapitalize(prod.name)}`,
+                  style: 'BenefitsBody',
+                })),
+              },
               {
                 marginBottom: 10,
                 marginTop: 10,
@@ -136,10 +147,12 @@ export const formulaReport = (
                 },
                 layout: 'noBorders',
               },
-              kitData.tips.map((tip) => ({
-                text: `${tip}`,
-                style: 'BenefitsBody',
-              })),
+              {
+                stack: kitData.tips.map((tip) => ({
+                  text: `${tip}`,
+                  style: 'BenefitsBody',
+                })),
+              },
             ],
             [
               {
@@ -162,32 +175,38 @@ export const formulaReport = (
                 },
                 layout: 'noBorders',
               },
+              // Agrupamos el protocolo del día para evitar división
               kitData.protocol.dia.length > 0
                 ? {
-                    text: 'DIA',
-                    style: 'BenefitsBody',
-                    bold: true,
+                    stack: [
+                      {
+                        text: 'DIA',
+                        style: 'BenefitsBody',
+                        bold: true,
+                      },
+                      ...kitData.protocol.dia.map((tip) => ({
+                        text: `- ${tip}`,
+                        style: 'BenefitsBody',
+                      })),
+                    ],
                   }
                 : '',
-              kitData.protocol.dia.length > 0
-                ? kitData.protocol.dia.map((tip) => ({
-                    text: `- ${tip}`,
-                    style: 'BenefitsBody',
-                  }))
-                : [],
+              // Agrupamos el protocolo de la noche para evitar división
               kitData.protocol.noche.length > 0
                 ? {
-                    text: 'NOCHE',
-                    style: 'BenefitsBody',
-                    bold: true,
+                    stack: [
+                      {
+                        text: 'NOCHE',
+                        style: 'BenefitsBody',
+                        bold: true,
+                      },
+                      ...kitData.protocol.noche.map((tip) => ({
+                        text: `- ${tip}`,
+                        style: 'BenefitsBody',
+                      })),
+                    ],
                   }
                 : '',
-              kitData.protocol.noche.length > 0
-                ? kitData.protocol.noche.map((tip) => ({
-                    text: `- ${tip}`,
-                    style: 'BenefitsBody',
-                  }))
-                : [],
             ],
           ],
         },
@@ -201,7 +220,8 @@ export const formulaReport = (
   }
 
   return {
-    pageMargins: [40, 150, 40, 40],
+    // Ajustamos los márgenes para dejar más espacio para el footer
+    pageMargins: [40, 150, 40, 60],
     background: function () {
       return {
         canvas: [
@@ -243,30 +263,48 @@ export const formulaReport = (
         pageBreak: 'after',
       },
       { text: 'BENEFICIOS PARA TU PIEL', style: 'title', marginBottom: 10 },
-      getBenefits,
+      // Ahora getBenefits ya contiene elementos con keepTogether
+      ...getBenefits,
       kitData ? kitPageContent : [],
     ],
     images: documentImages,
+    // Nuevo footer con tabla y línea roja
     footer: function () {
-      return [
-        {
-          canvas: [
-            {
-              type: 'line',
-              x1: 40,
-              y1: -20,
-              x2: 595 - 40,
-              y2: -20,
-              lineWidth: 1,
-              lineColor: '#b1b1b1',
-            },
+      return {
+        margin: [40, 0, 40, 0],
+        table: {
+          widths: ['*'],
+          body: [
+            // Primera fila: línea roja
+            [
+              {
+                canvas: [
+                  {
+                    type: 'line',
+                    x1: 0,
+                    y1: 0,
+                    x2: 515, // Ancho disponible considerando márgenes
+                    y2: 0,
+                    lineWidth: 1,
+                    lineColor: '#b1b1b1',
+                  },
+                ],
+                border: [false, false, false, false],
+                marginBottom: 15,
+              },
+            ],
+            // Segunda fila: texto del footer
+            [
+              {
+                text: `Esta cotización es valida hasta ${formatedDate}\n y esta sujeta a disponibilidad de inventario`,
+                style: 'footer',
+                border: [false, false, false, false],
+              },
+            ],
           ],
         },
-        {
-          text: `Esta cotización es valida hasta ${formatedDate}\n y esta sujeta a disponibilidad de inventario`,
-          style: 'footer',
-        },
-      ];
+        layout: 'noBorders',
+      };
     },
     styles: {
       header: {
