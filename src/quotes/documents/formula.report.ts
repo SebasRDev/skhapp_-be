@@ -13,7 +13,7 @@ export const formulaReport = (
   const today = new Date();
   const formatedDate = formatDate(today);
 
-  const { name, consultant, gift, recommendation } = quoteInfo;
+  const { name, consultant, gift, recommendations } = quoteInfo;
 
   // Modificación: Agregamos keepTogether: true para evitar que se separen los bloques
   const getBenefits: Content[] = formulaProducts.map((product) => ({
@@ -255,9 +255,9 @@ export const formulaReport = (
         margin: [0, 20],
       },
       {
-        text: recommendation
+        text: recommendations
           ? `Recomendaciones:  
-            ${recommendation}`
+            ${recommendations}`
           : '',
         style: 'body',
         pageBreak: 'after',
