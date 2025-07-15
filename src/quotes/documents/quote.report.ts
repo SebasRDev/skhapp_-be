@@ -15,7 +15,8 @@ export const quoteReport = (
   const today = new Date();
   const formatedDate = formatDate(today);
 
-  const { name, consultant, gift, phone, id } = quoteInfo;
+  const { name, consultant, gift, phone, id, city, campaign, recommendations } =
+    quoteInfo;
 
   const homeProducts = quoteProducts.filter(
     (product) => product.publicPrice !== null,
@@ -120,7 +121,9 @@ export const quoteReport = (
       {
         text: `Nombre: ${name}\n
               Identificación: ${phone}\n
-              Contacto: ${id}\n`,
+              Contacto: ${id}\n
+              Ciudad: ${city}\n
+              Campaña: ${campaign}\n`,
         style: 'body',
       },
       {
@@ -174,6 +177,13 @@ export const quoteReport = (
           headerRows: 1,
           body: tableBody,
         },
+      },
+      {
+        text: recommendations
+          ? `Observaciones: 
+            ${recommendations}`
+          : '',
+        style: 'body',
       },
     ],
     footer: function () {

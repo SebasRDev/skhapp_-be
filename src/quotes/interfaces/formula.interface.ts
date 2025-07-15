@@ -10,6 +10,8 @@ export interface Data {
   phone?: string;
   id?: string;
   gift?: string;
+  city?: string;
+  campaign?: string;
   recommendations?: string;
   generalDiscount?: number;
 }
