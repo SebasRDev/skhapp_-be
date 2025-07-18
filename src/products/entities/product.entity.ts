@@ -12,6 +12,9 @@ export class Product {
   @Column('text', { unique: true })
   code: string;
 
+  @Column('text', { nullable: true })
+  category: string;
+
   @Column('text', { unique: true })
   name: string;
 

@@ -1,6 +1,7 @@
 interface Product {
   code: string;
   name: string;
+  category: string;
   publicPrice?: number | null;
   efficiency?: number | null;
   profesionalPrice: number;
@@ -32,6 +33,7 @@ export const initialData: SeedData = {
     {
       code: 'AGC',
       name: 'ÁCIDO GLICÓLICO CREMA 10% X 30 G',
+      category: 'DERMOABRASIVOS',
       publicPrice: 138000,
       efficiency: null,
       profesionalPrice: 93700,
@@ -51,6 +53,7 @@ export const initialData: SeedData = {
     {
       code: 'AGG',
       name: 'ÁCIDO GLICÓLICO GEL 7% X 30 G',
+      category: 'DERMOABRASIVOS',
       publicPrice: 131400,
       efficiency: null,
       profesionalPrice: 87600,
@@ -70,6 +73,7 @@ export const initialData: SeedData = {
     {
       code: 'AGL',
       name: 'ÁCIDO GLICÓLICO LOCIÓN 10% X 30 G',
+      category: 'DERMOABRASIVOS',
       publicPrice: 152200,
       efficiency: null,
       profesionalPrice: 108600,
@@ -90,6 +94,7 @@ export const initialData: SeedData = {
     {
       code: 'AGHK',
       name: 'GEL DESPIGMENTANTE LIPOSOMA X 30 G',
+      category: 'DESPIGMENTANTES Y ACLARANTES',
       publicPrice: 202200,
       efficiency: null,
       profesionalPrice: 142900,
@@ -109,6 +114,7 @@ export const initialData: SeedData = {
     {
       code: 'AKG',
       name: 'ÁCIDO KÓJICO GEL 3% X 30 G',
+      category: 'DESPIGMENTANTES Y ACLARANTES',
       publicPrice: 167200,
       efficiency: null,
       profesionalPrice: 117200,
@@ -128,6 +134,7 @@ export const initialData: SeedData = {
     {
       code: 'VC30',
       name: 'GEL CON VITAMINA C 10% X 30 G',
+      category: 'DESPIGMENTANTES Y ACLARANTES',
       publicPrice: 175900,
       efficiency: null,
       profesionalPrice: 125300,
@@ -147,6 +154,7 @@ export const initialData: SeedData = {
     {
       code: 'MAN10-30',
       name: 'MANDÉLICO GEL LIPOSOMA 10% X 30 G',
+      category: 'DESPIGMENTANTES Y ACLARANTES',
       publicPrice: 121400,
       efficiency: null,
       profesionalPrice: 82100,
@@ -164,6 +172,7 @@ export const initialData: SeedData = {
     {
       code: 'AHA10',
       name: 'SUERO ACLARADOR X 30 G AHAS MANDELIC SERUM 10%',
+      category: 'DESPIGMENTANTES Y ACLARANTES',
       publicPrice: 162500,
       efficiency: null,
       profesionalPrice: 114300,
@@ -184,6 +193,7 @@ export const initialData: SeedData = {
     {
       code: 'SDN30',
       name: 'SUERO DESPIGMENTANTE B3 NIACINAMIDE LIPOSOME X30G',
+      category: 'DESPIGMENTANTES Y ACLARANTES',
       publicPrice: 177300,
       efficiency: null,
       profesionalPrice: 128400,
@@ -203,17 +213,18 @@ export const initialData: SeedData = {
     {
       code: 'AL150',
       name: 'ÁCIDO LÁCTICO LIMPIADOR X 150 G',
+      category: 'LIMPIEZA Y EXFOLIACIÓN',
       publicPrice: 101800,
       efficiency: null,
       profesionalPrice: 66400,
       actives: 'Ácido Láctico 1,1%',
       properties: [
-        'Eliminar impurezas y toxinas.',
+        'Elimina impurezas y toxinas.',
         'Estabiliza la acidez natural de la piel.',
         'Recomendado para pieles sensibles.',
       ],
       phase: 'LIMPIEZA',
-      time: 'DÍA O NOCHE',
+      time: 'DÍA/NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413910/bfodpf83l1dwqyl1ac3j.png',
       weight: 10,
@@ -221,6 +232,7 @@ export const initialData: SeedData = {
     {
       code: 'GE125',
       name: 'GEL ESPUMOSO FACIAL X 125 G',
+      category: 'LIMPIEZA Y EXFOLIACIÓN',
       publicPrice: 133200,
       efficiency: null,
       profesionalPrice: 86700,
@@ -231,7 +243,7 @@ export const initialData: SeedData = {
         'Recomendado para pieles grasas con tendencia comedogénica.',
       ],
       phase: 'LIMPIEZA',
-      time: 'DÍA O NOCHE',
+      time: 'DÍA/NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413910/eoiizzocwtsdgf8q0rin.png',
       weight: 11,
@@ -239,6 +251,7 @@ export const initialData: SeedData = {
     {
       code: 'GL125',
       name: 'GEL LIMPIADOR X 125 G',
+      category: 'LIMPIEZA Y EXFOLIACIÓN',
       publicPrice: 95200,
       efficiency: null,
       profesionalPrice: 62300,
@@ -249,7 +262,7 @@ export const initialData: SeedData = {
         'Recomendado para todo tipo de piel.',
       ],
       phase: 'LIMPIEZA',
-      time: 'DÍA O NOCHE',
+      time: 'DÍA/NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413901/aouf1hwlsm7gufkhk4xj.png',
       weight: 12,
@@ -257,6 +270,7 @@ export const initialData: SeedData = {
     {
       code: 'LL150',
       name: 'LECHE LIMPIADORA x 150 G',
+      category: 'LIMPIEZA Y EXFOLIACIÓN',
       publicPrice: 97000,
       efficiency: null,
       profesionalPrice: 63500,
@@ -267,7 +281,7 @@ export const initialData: SeedData = {
         'Recomendado para pieles mixtas y secas.',
       ],
       phase: 'LIMPIEZA',
-      time: 'DÍA O NOCHE',
+      time: 'DÍA/NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/gvmdxrwvvtpgau3dbg7y.png',
       weight: 13,
@@ -275,6 +289,7 @@ export const initialData: SeedData = {
     {
       code: 'GD100',
       name: 'GEL LIMPIADOR EXFOLIANTE FACIAL X 100 G',
+      category: 'LIMPIEZA Y EXFOLIACIÓN',
       publicPrice: 101600,
       efficiency: null,
       profesionalPrice: 68600,
@@ -285,7 +300,7 @@ export const initialData: SeedData = {
         'Recomendado para todo tipo de piel.',
       ],
       phase: 'LIMPIEZA Y EXFOLIACIÓN',
-      time: 'DÍA O NOCHE',
+      time: 'DÍA/NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413911/dxeqgrlesimnfhnievjm.png',
       weight: 14,
@@ -293,6 +308,7 @@ export const initialData: SeedData = {
     {
       code: 'ATN120',
       name: 'AGUA VITALIZANTE NATURAL X 120 G',
+      category: 'TÓNICO VITALIZANTE',
       publicPrice: 83000,
       efficiency: null,
       profesionalPrice: 45200,
@@ -305,7 +321,7 @@ export const initialData: SeedData = {
         'Recomendada en pieles sensibles.',
       ],
       phase: 'TÓNICO VITALIZANTE',
-      time: 'DÍA O NOCHE',
+      time: 'DÍA/NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/xlzskwgdirhkffuzz9vn.png',
       weight: 15,
@@ -313,6 +329,7 @@ export const initialData: SeedData = {
     {
       code: 'ATR120',
       name: 'AGUA VITALIZANTE ROSADA X 120 G',
+      category: 'TÓNICO VITALIZANTE',
       publicPrice: 83000,
       efficiency: null,
       profesionalPrice: 45200,
@@ -325,7 +342,7 @@ export const initialData: SeedData = {
         'Recomendada en pieles acneicas.',
       ],
       phase: 'TÓNICO VITALIZANTE',
-      time: 'DÍA O NOCHE',
+      time: 'DÍA/NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/xlzskwgdirhkffuzz9vn.png',
       weight: 16,
@@ -333,6 +350,7 @@ export const initialData: SeedData = {
     {
       code: 'ATV120',
       name: 'AGUA VITALIZANTE VERDE X 120 G',
+      category: 'TÓNICO VITALIZANTE',
       publicPrice: 83000,
       efficiency: null,
       profesionalPrice: 45200,
@@ -345,7 +363,7 @@ export const initialData: SeedData = {
         'Recomendado para todo tipo de piel.',
       ],
       phase: 'TÓNICO VITALIZANTE',
-      time: 'DÍA O NOCHE',
+      time: 'DÍA/NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/xlzskwgdirhkffuzz9vn.png',
       weight: 17,
@@ -353,6 +371,7 @@ export const initialData: SeedData = {
     {
       code: 'CEQ10',
       name: 'SUERO ANTIOXIDANTE - SERUM LIPOSOME X 30 G',
+      category: 'ANTIENVEJECIMIENTO',
       publicPrice: 173700,
       efficiency: null,
       profesionalPrice: 115100,
@@ -372,6 +391,7 @@ export const initialData: SeedData = {
     {
       code: 'RQ50',
       name: 'GEL REAFIRMANTE Q10 LIPOSOMA X 50 G',
+      category: 'ANTIENVEJECIMIENTO',
       publicPrice: 208200,
       efficiency: null,
       profesionalPrice: 139000,
@@ -390,6 +410,7 @@ export const initialData: SeedData = {
     {
       code: 'GA50',
       name: 'GEL ANTIEDAD X 50 G',
+      category: 'ANTIENVEJECIMIENTO',
       publicPrice: 132300,
       efficiency: null,
       profesionalPrice: 86000,
@@ -408,6 +429,7 @@ export const initialData: SeedData = {
     {
       code: 'BA150',
       name: 'BÁLSAMO AFTERSHAVE-INHIBIDOR VELLO X 150G',
+      category: 'LIPOSOMAS- HIDRATACION- NUTRICION',
       publicPrice: 107500,
       efficiency: null,
       profesionalPrice: 65500,
@@ -420,7 +442,7 @@ export const initialData: SeedData = {
         'Recomendado para todo tipo de piel.',
       ],
       phase: 'NUTRICIÓN E HIDRATACIÓN',
-      time: 'DIA O NOCHE',
+      time: 'DÍA/NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413901/etuhknuzbp72dvocvmau.png',
       weight: 21,
@@ -428,6 +450,7 @@ export const initialData: SeedData = {
     {
       code: 'BL30',
       name: 'GEL BIOCOLAGENO III LIPOSOMA X 30 G',
+      category: 'LIPOSOMAS- HIDRATACION- NUTRICION',
       publicPrice: 190100,
       efficiency: null,
       profesionalPrice: 131900,
@@ -441,7 +464,7 @@ export const initialData: SeedData = {
         'Recomendado para todo tipo de piel.',
       ],
       phase: 'NUTRICIÓN E HIDRATACIÓN',
-      time: 'DIA O NOCHE',
+      time: 'DÍA/NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/e1hcm3traw5uye1itokh.png',
       weight: 22,
@@ -449,6 +472,7 @@ export const initialData: SeedData = {
     {
       code: 'CN50',
       name: 'CREMA NUTRITIVA - AMINO REPAIR COMPLEX X 50 G',
+      category: 'LIPOSOMAS- HIDRATACION- NUTRICION',
       publicPrice: 145600,
       efficiency: null,
       profesionalPrice: 98900,
@@ -460,7 +484,7 @@ export const initialData: SeedData = {
         'Recomendado para pieles secas.',
       ],
       phase: 'NUTRICIÓN E HIDRATACIÓN',
-      time: 'DIA O NOCHE',
+      time: 'DÍA/NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413904/jyy7fsng3vydmnghe6p1.png',
       weight: 23,
@@ -468,6 +492,7 @@ export const initialData: SeedData = {
     {
       code: 'GH100',
       name: 'GEL HIDRATANTE CON ALOE X 100 G',
+      category: 'LIPOSOMAS- HIDRATACION- NUTRICION',
       publicPrice: 105900,
       efficiency: null,
       profesionalPrice: 62100,
@@ -478,7 +503,7 @@ export const initialData: SeedData = {
         'Recomendado para pieles grasas.',
       ],
       phase: 'NUTRICIÓN E HIDRATACIÓN',
-      time: 'DIA O NOCHE',
+      time: 'DÍA/NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/vtchupl8gkkjae8ey2xi.png',
       weight: 24,
@@ -486,6 +511,7 @@ export const initialData: SeedData = {
     {
       code: 'HF50',
       name: 'LOCIÓN HIDRATANTE FACIAL LIPOSOMADA X50 G',
+      category: 'LIPOSOMAS- HIDRATACION- NUTRICION',
       publicPrice: 183400,
       efficiency: null,
       profesionalPrice: 126400,
@@ -498,7 +524,7 @@ export const initialData: SeedData = {
         'Recomendado para pieles normales y mixtas.',
       ],
       phase: 'NUTRICIÓN E HIDRATACIÓN',
-      time: 'DIA O NOCHE',
+      time: 'DÍA/NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/sn7itfr23fsief6vwdjl.png',
       weight: 25,
@@ -506,6 +532,7 @@ export const initialData: SeedData = {
     {
       code: 'SH50',
       name: 'SUERO HIDRATANTE - AMINO ACID COMPLEX X 50 G',
+      category: 'LIPOSOMAS- HIDRATACION- NUTRICION',
       publicPrice: 179100,
       efficiency: null,
       profesionalPrice: 122000,
@@ -517,7 +544,7 @@ export const initialData: SeedData = {
         'Recomendado para piel grasas y mixtas.',
       ],
       phase: 'NUTRICIÓN E HIDRATACIÓN',
-      time: 'DIA O NOCHE',
+      time: 'DÍA/NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/xeoooniobmd3ybpihgoc.png',
       weight: 26,
@@ -525,6 +552,7 @@ export const initialData: SeedData = {
     {
       code: 'CO30',
       name: 'GEL CONTORNO DE OJOS X 30 G',
+      category: 'CUIDADO DE OJOS',
       publicPrice: 184300,
       efficiency: null,
       profesionalPrice: 138800,
@@ -534,7 +562,7 @@ export const initialData: SeedData = {
         'Desintoxica la piel orbicular de radicales libres.',
       ],
       phase: 'TRATAMIENTO',
-      time: 'DIA O NOCHE',
+      time: 'DÍA/NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/twsnshzsmcgbl18ogl1e.png',
       weight: 27,
@@ -542,6 +570,7 @@ export const initialData: SeedData = {
     {
       code: 'DO125',
       name: 'DEMAQUILLANTE DE OJOS X 125 G',
+      category: 'CUIDADO DE OJOS',
       publicPrice: 85800,
       efficiency: null,
       profesionalPrice: 59800,
@@ -551,7 +580,7 @@ export const initialData: SeedData = {
         'Cuida el manto hidrolipídico de la piel.',
       ],
       phase: 'LIMPIEZA',
-      time: 'DIA O NOCHE',
+      time: 'DÍA/NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/im0pne2qi3sdnmliinl5.png',
       weight: 28,
@@ -559,6 +588,7 @@ export const initialData: SeedData = {
     {
       code: 'DO250',
       name: 'DEMAQUILLANTE DE OJOS X 250 G',
+      category: 'CUIDADO DE OJOS',
       publicPrice: 135900,
       efficiency: null,
       profesionalPrice: 85600,
@@ -568,7 +598,7 @@ export const initialData: SeedData = {
         'Cuida el manto hidrolipídico de la piel.',
       ],
       phase: 'LIMPIEZA',
-      time: 'DIA O NOCHE',
+      time: 'DÍA/NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/im0pne2qi3sdnmliinl5.png',
       weight: 29,
@@ -576,6 +606,7 @@ export const initialData: SeedData = {
     {
       code: 'PT60',
       name: 'PANTALLA SOLAR GEL X 60 G',
+      category: 'PROTECCIÓN SOLAR',
       publicPrice: 151200,
       efficiency: null,
       profesionalPrice: 111500,
@@ -586,7 +617,7 @@ export const initialData: SeedData = {
         'Evita que la radiación UVA y UVB alcance la piel.',
       ],
       phase: 'PROTECCIÓN',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416045/oeobnzv2lkrwya1lfq9j.png',
       weight: 30,
@@ -594,6 +625,7 @@ export const initialData: SeedData = {
     {
       code: 'PT100',
       name: 'PANTALLA SOLAR  EDICIÓN ESPECIAL X 100 G',
+      category: 'PROTECCIÓN SOLAR',
       publicPrice: 199800,
       efficiency: null,
       profesionalPrice: 148600,
@@ -604,7 +636,7 @@ export const initialData: SeedData = {
         'Evita que la radiación UVA y UVB alcance la piel.',
       ],
       phase: 'PROTECCIÓN',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416045/oeobnzv2lkrwya1lfq9j.png',
       weight: 31,
@@ -612,6 +644,7 @@ export const initialData: SeedData = {
     {
       code: 'PT150',
       name: 'PANTALLA SOLAR GEL X 150 G',
+      category: 'PROTECCIÓN SOLAR',
       publicPrice: 255200,
       efficiency: null,
       profesionalPrice: 190200,
@@ -622,7 +655,7 @@ export const initialData: SeedData = {
         'Evita que la radiación UVA y UVB alcance la piel.',
       ],
       phase: 'PROTECCIÓN',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416045/oeobnzv2lkrwya1lfq9j.png',
       weight: 32,
@@ -630,6 +663,7 @@ export const initialData: SeedData = {
     {
       code: 'PTC60',
       name: 'PANTALLA SOLAR GEL COLOR X 60 G',
+      category: 'PROTECCIÓN SOLAR COLOR',
       publicPrice: 166600,
       efficiency: null,
       profesionalPrice: 119300,
@@ -641,7 +675,7 @@ export const initialData: SeedData = {
         'Aporta un delicado color cálido a la piel.',
       ],
       phase: 'PROTECCIÓN',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416043/dcgofck6iudd6q7kdqng.png',
       weight: 33,
@@ -649,6 +683,7 @@ export const initialData: SeedData = {
     {
       code: 'PTC100',
       name: 'PANTALLA SOLAR GEL COLOR X 100 G',
+      category: 'PROTECCIÓN SOLAR COLOR',
       publicPrice: 213400,
       efficiency: null,
       profesionalPrice: 163400,
@@ -660,7 +695,7 @@ export const initialData: SeedData = {
         'Aporta un delicado color cálido a la piel.',
       ],
       phase: 'PROTECCIÓN',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416043/dcgofck6iudd6q7kdqng.png',
       weight: 34,
@@ -668,6 +703,7 @@ export const initialData: SeedData = {
     {
       code: 'PTC150',
       name: 'PANTALLA SOLAR GEL COLOR X 150 G',
+      category: 'PROTECCIÓN SOLAR COLOR',
       publicPrice: 281200,
       efficiency: null,
       profesionalPrice: 207300,
@@ -679,7 +715,7 @@ export const initialData: SeedData = {
         'Aporta un delicado color cálido a la piel.',
       ],
       phase: 'PROTECCIÓN',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742416043/dcgofck6iudd6q7kdqng.png',
       weight: 35,
@@ -687,6 +723,7 @@ export const initialData: SeedData = {
     {
       code: 'CC60',
       name: 'CREMA DERMOREPARADORA X 60 G',
+      category: 'COMPLEMENTARIOS',
       publicPrice: 142300,
       efficiency: null,
       profesionalPrice: 98400,
@@ -697,7 +734,7 @@ export const initialData: SeedData = {
         'Recupera  y nutre la piel luego de irritaciones por dermoabrasión, sobreexposición solar o quemaduras.',
       ],
       phase: 'REPARACIÓN',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/suj8rjbilusnschh8dp8.png',
       weight: 36,
@@ -705,6 +742,7 @@ export const initialData: SeedData = {
     {
       code: 'PSN30',
       name: 'GEL PIEL DE SEDA NATURAL X30G',
+      category: 'COMPLEMENTARIOS',
       publicPrice: 170200,
       efficiency: null,
       profesionalPrice: 123100,
@@ -715,7 +753,7 @@ export const initialData: SeedData = {
         'Mejora la apariencia de cicatrices.',
       ],
       phase: 'PRIMER',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413902/swbamj1u13yfjmph3w9w.png',
       weight: 37,
@@ -723,6 +761,7 @@ export const initialData: SeedData = {
     {
       code: 'PSP30',
       name: 'GEL PIEL DE SEDA PIEL X 30 G',
+      category: 'COMPLEMENTARIOS',
       publicPrice: 165900,
       efficiency: null,
       profesionalPrice: 115900,
@@ -733,7 +772,7 @@ export const initialData: SeedData = {
         'Aporta un delicado color cálido a la piel.',
       ],
       phase: 'PRIMER',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413903/cszkdphjaj3we12eszd2.png',
       weight: 38,
@@ -741,6 +780,7 @@ export const initialData: SeedData = {
     {
       code: 'LHT150',
       name: 'LECHE HIDROREPARADORA TE VERDE X 150 G',
+      category: 'HIDRATACIÓN MANOS Y CUERPO',
       publicPrice: 97300,
       efficiency: null,
       profesionalPrice: 57000,
@@ -751,7 +791,7 @@ export const initialData: SeedData = {
         'Mantiene la piel fresca suave e hidratada.',
       ],
       phase: 'HIDRATACIÓN Y NUTRICIÓN',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/mkbpmnwhxnlk2ssji23z.png',
       weight: 39,
@@ -759,6 +799,7 @@ export const initialData: SeedData = {
     {
       code: 'LHS150',
       name: 'LECHE HIDROREPARADORA SEDUCTION X 150 G',
+      category: 'HIDRATACIÓN MANOS Y CUERPO',
       publicPrice: 97300,
       efficiency: null,
       profesionalPrice: 57000,
@@ -769,7 +810,7 @@ export const initialData: SeedData = {
         'Mantiene la piel fresca suave e hidratada.',
       ],
       phase: 'HIDRATACIÓN Y NUTRICIÓN',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/mkbpmnwhxnlk2ssji23z.png',
       weight: 40,
@@ -777,6 +818,7 @@ export const initialData: SeedData = {
     {
       code: 'CI150',
       name: 'CUIDADO ÍNTIMO X 150 G',
+      category: 'COMPLEMENTARIOS',
       publicPrice: 97800,
       efficiency: null,
       profesionalPrice: 69800,
@@ -788,7 +830,7 @@ export const initialData: SeedData = {
         'Su uso continuo previene el flujo vaginal.',
       ],
       phase: 'LIMPIEZA',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413902/lsbx8extme0auve9x9ci.png',
       weight: 41,
@@ -796,6 +838,7 @@ export const initialData: SeedData = {
     {
       code: 'GN150',
       name: 'GEL ANTICELULÍTICO X 150 G',
+      category: 'COMPLEMENTARIOS',
       publicPrice: 117400,
       efficiency: null,
       profesionalPrice: 81300,
@@ -807,13 +850,15 @@ export const initialData: SeedData = {
         'Mejor el aspecto de la piel de naranja.',
       ],
       phase: 'TRATAMIENTO',
-      time: 'DIA',
-      image: null,
+      time: 'DÍA',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1752099693/yjnu6xcdsuhub1ay7qbk.png',
       weight: 42,
     },
     {
       code: 'GS150',
       name: 'GEL ANTIESTRÍAS X 150 G',
+      category: 'COMPLEMENTARIOS',
       publicPrice: 105500,
       efficiency: null,
       profesionalPrice: 65000,
@@ -824,7 +869,7 @@ export const initialData: SeedData = {
         'Devuelve la hidratación natural.',
       ],
       phase: 'TRATAMIENTO',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/vjtezmdavkoshkzjmmmu.png',
       weight: 43,
@@ -832,6 +877,7 @@ export const initialData: SeedData = {
     {
       code: 'GLD100',
       name: 'GEL EXFOLIANTE CORPORAL DURAZNO X 100 G',
+      category: 'COMPLEMENTARIOS',
       publicPrice: 92500,
       efficiency: null,
       profesionalPrice: 66200,
@@ -841,7 +887,7 @@ export const initialData: SeedData = {
         'Prepara la piel para recibir activos por abrasión mecánica',
       ],
       phase: 'LIMPIEZA Y EXFOLIACIÓN',
-      time: 'DIA O NOCHE',
+      time: 'DÍA/NOCHE',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413912/jk9uans0jb2jjxskmtdc.png',
       weight: 44,
@@ -849,6 +895,7 @@ export const initialData: SeedData = {
     {
       code: 'GI300',
       name: 'GEL FRÍO PARA MASAJES X 300 G',
+      category: 'COMPLEMENTARIOS',
       publicPrice: 62300,
       efficiency: null,
       profesionalPrice: 44300,
@@ -858,7 +905,7 @@ export const initialData: SeedData = {
         'Deja una sensación refrescante en la piel.',
       ],
       phase: 'TRATAMIENTO',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413902/usatlfvkoxhpc1wfuqed.png',
       weight: 45,
@@ -866,6 +913,7 @@ export const initialData: SeedData = {
     {
       code: 'SA300',
       name: 'GEL CALIENTE PARA MASAJES X 300 G',
+      category: 'COMPLEMENTARIOS',
       publicPrice: 58200,
       efficiency: null,
       profesionalPrice: 37600,
@@ -875,7 +923,7 @@ export const initialData: SeedData = {
         'Coadyuva en tratamientos anticelulíticos y adelgazantes.',
       ],
       phase: 'TRATAMIENTO',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413902/mw37jrugacrrs3kgets4.png',
       weight: 46,
@@ -883,6 +931,7 @@ export const initialData: SeedData = {
     {
       code: 'CTR65',
       name: 'CERA TÉRMICA RELAJANTE x 65ML',
+      category: 'TERAPÉUTICA CON VELAS Y AROMAS',
       publicPrice: 69200,
       efficiency: null,
       profesionalPrice: 49800,
@@ -892,7 +941,7 @@ export const initialData: SeedData = {
         'Su temperatura de fusión promueve la relajación de las fibras miofasciales.',
       ],
       phase: 'RELAJACIÓN',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/irba8iyidhyzvez3knzn.png',
       weight: 47,
@@ -900,6 +949,7 @@ export const initialData: SeedData = {
     {
       code: 'CTR25',
       name: 'CERA TÉRMICA RELAJANTE x 25ML',
+      category: 'TERAPÉUTICA CON VELAS Y AROMAS',
       publicPrice: 45800,
       efficiency: null,
       profesionalPrice: 27600,
@@ -909,7 +959,7 @@ export const initialData: SeedData = {
         'Su temperatura de fusión promueve la relajación de las fibras miofasciales.',
       ],
       phase: 'RELAJACIÓN',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413900/irba8iyidhyzvez3knzn.png',
       weight: 48,
@@ -917,6 +967,7 @@ export const initialData: SeedData = {
     {
       code: 'ESML13',
       name: 'ACEITE ESENCIAL MANDARINA LIMA x13 ML',
+      category: 'TERAPÉUTICA CON VELAS Y AROMAS',
       publicPrice: 63900,
       efficiency: null,
       profesionalPrice: 35800,
@@ -926,7 +977,7 @@ export const initialData: SeedData = {
         'Disipa neblina mental producida por el estrés.',
       ],
       phase: 'RELAJACIÓN',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413901/dsitm9k62r0vbmfvpdbf.png',
       weight: 49,
@@ -934,6 +985,7 @@ export const initialData: SeedData = {
     {
       code: 'ESEU13',
       name: 'ACEITE ESENCIAL EUCALIPTO x 13 ML',
+      category: 'TERAPÉUTICA CON VELAS Y AROMAS',
       publicPrice: 63900,
       efficiency: null,
       profesionalPrice: 35800,
@@ -943,7 +995,7 @@ export const initialData: SeedData = {
         'Energiza y despeja las vías respiratorias.',
       ],
       phase: 'RELAJACIÓN',
-      time: 'DIA',
+      time: 'DÍA',
       image:
         'https://res.cloudinary.com/dch3xg5ja/image/upload/v1742413901/sa4nsjgm9wjnw8vyevlf.png',
       weight: 50,
@@ -951,25 +1003,28 @@ export const initialData: SeedData = {
     {
       code: 'AL500',
       name: 'ÁCIDO LÁCTICO LIMPIADOR X 500 G',
+      category: 'LIMPIEZA Y EXFOLIACIÓN',
       publicPrice: null,
-      efficiency: 425,
+      efficiency: null,
       profesionalPrice: 109200,
       actives: 'Ácido Láctico 1,1%',
       properties: [
-        'Eliminar impurezas y toxinas.',
+        'Elimina impurezas y toxinas.',
         'Estabiliza la acidez natural de la piel.',
         'Recomendado para pieles sensibles.',
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751678272/v0akrv1jvpeftu2d89y4.png',
       weight: 51,
     },
     {
       code: 'GE500',
       name: 'GEL ESPUMOSO FACIAL X 500 G',
+      category: 'LIMPIEZA Y EXFOLIACIÓN',
       publicPrice: null,
-      efficiency: 425,
+      efficiency: null,
       profesionalPrice: 116500,
       actives: 'Aloe Vera 10% , Ácido Salicílico 1,9%',
       properties: [
@@ -979,14 +1034,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751680561/jt6esbndaqbx5mkuwwcy.png',
       weight: 52,
     },
     {
       code: 'GL500',
       name: 'GEL LIMPIADOR x 500 G',
+      category: 'LIMPIEZA Y EXFOLIACIÓN',
       publicPrice: null,
-      efficiency: 425,
+      efficiency: null,
       profesionalPrice: 89800,
       actives: 'Ácidos Grasos de Coco 15%',
       properties: [
@@ -996,14 +1053,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751680933/wr1fqinqzvzhdhkk6d53.png',
       weight: 53,
     },
     {
       code: 'LL500',
       name: 'LECHE LIMPIADORA X 500 G',
+      category: 'LIMPIEZA Y EXFOLIACIÓN',
       publicPrice: null,
-      efficiency: 425,
+      efficiency: null,
       profesionalPrice: 89900,
       actives: 'Ácido Glicólico 0,2%, Aloe Vera 0,2% , Vitamina E 0,1%,',
       properties: [
@@ -1013,14 +1072,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751681664/mvbkynz6z4f6ufzgrdp9.png',
       weight: 54,
     },
     {
       code: 'GD500',
       name: 'GEL LIMPIADOR EXFOLIANTE FACIAL x 500 G',
+      category: 'LIMPIEZA Y EXFOLIACIÓN',
       publicPrice: null,
-      efficiency: 425,
+      efficiency: null,
       profesionalPrice: 107800,
       actives: 'Semillas de durazno y nuez 10%, Ácidos Grasos de Coco 5%',
       properties: [
@@ -1030,28 +1091,32 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751681882/nry6llg6c4rlk6jgjurh.png',
       weight: 55,
     },
     {
       code: 'MD300',
       name: 'MASCARILLA NATURAL MANZANILLA x 300 G',
+      category: 'MASCARILLAS NATURALES',
       publicPrice: null,
-      efficiency: 51,
+      efficiency: null,
       profesionalPrice: 71900,
       actives:
         'Extracto de Aloe >10%,   Extracto de Manzanilla >1%, Extracto de papaya >1%, Extracto de Fresa >1%',
       properties: ['Suaviza y regenera.', 'Disminuye la irritación.'],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751684538/ndkocmzhv8fzfv7vahyf.png',
       weight: 56,
     },
     {
       code: 'MF300',
       name: 'MASCARILLA NATURAL FRESA x 300 G',
+      category: 'MASCARILLAS NATURALES',
       publicPrice: null,
-      efficiency: 51,
+      efficiency: null,
       profesionalPrice: 63900,
       actives:
         'Extracto de Aloe >10%,   Extracto de Manzanilla >1%, Extracto de papaya >1%, Extracto de Fresa >1%',
@@ -1061,14 +1126,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751684425/yuslawtuznti6czfe7sa.png',
       weight: 57,
     },
     {
       code: 'MP300',
       name: 'MASCARILLA NATURAL PAPAYA X 300 G',
+      category: 'MASCARILLAS NATURALES',
       publicPrice: null,
-      efficiency: 51,
+      efficiency: null,
       profesionalPrice: 64400,
       actives:
         'Extracto de Aloe >10%,   Extracto de Manzanilla >1%, Extracto de papaya >1%, Extracto de Fresa >1%',
@@ -1078,14 +1145,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751684297/yjcnvh66q66rlertoi3x.png',
       weight: 58,
     },
     {
       code: 'MV300',
       name: 'MASCARILLA NATURAL ALOE VERA X 300 G',
+      category: 'MASCARILLAS NATURALES',
       publicPrice: null,
-      efficiency: 51,
+      efficiency: null,
       profesionalPrice: 73600,
       actives:
         'Extracto de Aloe >10%,   Extracto de Manzanilla >1%, Extracto de papaya >1%, Extracto de Fresa >1%',
@@ -1095,14 +1164,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751684796/mvfrd6selz7w5kcnzmpj.png',
       weight: 59,
     },
     {
       code: 'MA300',
       name: 'MASCARILLA ASTRINGENTE NATURAL X 300 G',
+      category: 'MASCARILLAS ASTRINGENTES',
       publicPrice: null,
-      efficiency: 25,
+      efficiency: null,
       profesionalPrice: 70100,
       actives:
         'Extractos Herbales Ayurvedas 4%, Bentonita 6%, Caolín 6%, Óxido de ZInc 10% ',
@@ -1114,14 +1185,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751685062/yxbhpwoxnf3vxlbkfxxt.png',
       weight: 60,
     },
     {
       code: 'MAH300',
       name: 'MASCARILLA ASTRINGENTE HERBAL X 300 G',
+      category: 'MASCARILLAS ASTRINGENTES',
       publicPrice: null,
-      efficiency: 25,
+      efficiency: null,
       profesionalPrice: 70100,
       actives:
         'Extractos Herbales Ayurvedas 4%, Bentonita 6%, Caolín 6%, Óxido de ZInc 10% ',
@@ -1133,14 +1206,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751685270/ekihpaawi5qfzafiulid.png',
       weight: 61,
     },
     {
       code: 'BA500',
       name: 'BÁLSAMO AFTER SHAVE -INHIBIDOR VELLO X 500 G',
+      category: 'LIPOSOMAS-HIDRATACION-NUTRICION',
       publicPrice: null,
-      efficiency: 425,
+      efficiency: null,
       profesionalPrice: 88600,
       actives: 'Pilinhib 5% , D-Panthenol 2%, Extracto de Manzanilla',
       properties: [
@@ -1152,14 +1227,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751738629/troxjyfdksgqckm8gggl.png',
       weight: 62,
     },
     {
       code: 'BL150',
       name: 'GEL BIOCOLAGENO III-LIPOSOMA X 150 G',
+      category: 'LIPOSOMAS-HIDRATACION-NUTRICION',
       publicPrice: null,
-      efficiency: 127,
+      efficiency: null,
       profesionalPrice: 208900,
       actives:
         'Rosa Mosqueta 5%, Amplificador de Síntesis de Colágeno  ASCIII 2%',
@@ -1172,14 +1249,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751738207/k913jexxphy8figoxbt7.png',
       weight: 63,
     },
     {
       code: 'CN150',
       name: 'CREMA NUTRITIVA X 150 G',
+      category: 'LIPOSOMAS-HIDRATACION-NUTRICION',
       publicPrice: null,
-      efficiency: 127,
+      efficiency: null,
       profesionalPrice: 153600,
       actives: '17 Aminoácidos Esenciales 5%, Rosa Mosqueta 5%',
       properties: [
@@ -1190,14 +1269,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751738461/g6vy9foqscweuntpbqih.png',
       weight: 64,
     },
     {
       code: 'GH500',
       name: 'GEL HIDRATANTE CON ALOE X 500 G',
+      category: 'LIPOSOMAS-HIDRATACION-NUTRICION',
       publicPrice: null,
-      efficiency: 425,
+      efficiency: null,
       profesionalPrice: 98400,
       actives: 'Aloe Vera 10%',
       properties: [
@@ -1207,14 +1288,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751738585/rg2wxpwatryqqr8xpqy2.png',
       weight: 65,
     },
     {
       code: 'HF150',
       name: 'LOCIÓN HIDRATANTE FACIAL -LIPOSOMAX 150 G',
+      category: 'LIPOSOMAS-HIDRATACION-NUTRICION',
       publicPrice: null,
-      efficiency: 127,
+      efficiency: null,
       profesionalPrice: 185500,
       actives:
         'Amplificador de Síntesis de Colágeno  ASCIII 0,1%, Acción Anti UV',
@@ -1226,14 +1309,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751740420/xwvm6lloiq1qnkeghl1v.png',
       weight: 66,
     },
     {
       code: 'CEQ150',
       name: 'SUERO ANTIOXIDANTE - SERUM LIPOSOME X 150 G',
+      category: 'LIPOSOMAS-HIDRATACION-NUTRICION',
       publicPrice: null,
-      efficiency: 127,
+      efficiency: null,
       profesionalPrice: 172300,
       actives:
         'Vitamina C 3%,  Coenzima Q10 Liposomada 0,5%, Vitamina E 0,2%, Ácido Hialurónico 0,2%',
@@ -1245,14 +1330,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751740704/w1rvsfbhjvklwruv17hj.png',
       weight: 67,
     },
     {
       code: 'SH150',
       name: 'SUERO HIDRATANTE X 150 G',
+      category: 'LIPOSOMAS-HIDRATACION-NUTRICION',
       publicPrice: null,
-      efficiency: 127,
+      efficiency: null,
       profesionalPrice: 165600,
       actives: 'Aminoacid Complex 5%, Escleroglucam 1%',
       properties: [
@@ -1263,14 +1350,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751741138/ssods8l7nrgif6nnj0rn.png',
       weight: 68,
     },
     {
       code: 'RQ150',
       name: 'GEL REAFIRMANTE Q10-LIPOSOMA X 150 G',
+      category: 'LIPOSOMAS-HIDRATACION-NUTRICION',
       publicPrice: null,
-      efficiency: 127,
+      efficiency: null,
       profesionalPrice: 192200,
       actives: 'Coenzima Q10 Liposomada 3%, Escleroglucam 1%',
       properties: [
@@ -1281,14 +1370,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751741987/lov1gz2sjjktt2i3bhqa.png',
       weight: 69,
     },
     {
       code: 'ATN300',
       name: 'AGUA VITALIZANTE NATURAL x 300 G',
+      category: 'TÓNICO VITALIZANTE',
       publicPrice: null,
-      efficiency: 510,
+      efficiency: null,
       profesionalPrice: 83500,
       actives:
         'Extracto de Manzanilla >1%,  Extracto de Caléndula >1% y Extracto de Aloe Vera >1%',
@@ -1300,14 +1391,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751742491/iwmwh7jqamarfj3lf9im.png',
       weight: 70,
     },
     {
       code: 'ATR300',
       name: 'AGUA VITALIZANTE ROSADA x 300 G',
+      category: 'TÓNICO VITALIZANTE',
       publicPrice: null,
-      efficiency: 510,
+      efficiency: null,
       profesionalPrice: 83500,
       actives:
         'Extracto de Manzanilla >1%,  Extracto de Caléndula >1% y Extracto de Aloe Vera >1%',
@@ -1319,14 +1412,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751743498/hdnmau2v7sjunvdptcq9.png',
       weight: 71,
     },
     {
       code: 'ATV300',
       name: 'AGUA VITALIZANTE VERDE x 300 G',
+      category: 'TÓNICO VITALIZANTE',
       publicPrice: null,
-      efficiency: 510,
+      efficiency: null,
       profesionalPrice: 83500,
       actives:
         'Extracto de Manzanilla >1%,  Extracto de Caléndula >1% y Extracto de Aloe Vera >1%',
@@ -1338,14 +1433,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751743809/kdm8wr8kxhntdbulp7rg.png',
       weight: 72,
     },
     {
       code: 'CC120',
       name: 'CREMA DERMOREPARADORA X 120 G',
+      category: 'COMPLEMENTARIOS',
       publicPrice: null,
-      efficiency: 306,
+      efficiency: null,
       profesionalPrice: 141100,
       actives:
         'Óxido de Zinc 18%, Rosa Mosqueta 7%, Alantoína 0,2%, Vitamina E 0,2%',
@@ -1355,14 +1452,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751744266/lztzntda5hrlqejejcxh.png',
       weight: 73,
     },
     {
       code: 'MPN250',
       name: 'MASCARILLA PLÁSTICA NATURAL X 250 G',
+      category: 'COMPLEMENTARIOS',
       publicPrice: null,
-      efficiency: 110,
+      efficiency: null,
       profesionalPrice: 68500,
       actives:
         'Placenta Hidrolizada 1%, Colágeno Hidrolizado 1%, Elastina HIdrolizada 1%.',
@@ -1373,14 +1472,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751744466/kcnpqbjguphdmoakbpqt.png',
       weight: 74,
     },
     {
       code: 'GI500',
       name: 'GEL FRÍO PARA MASAJES X 500 G',
+      category: 'LIPO-REDUCCIÓN',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: null,
       profesionalPrice: 66800,
       actives: 'Cafeína 1%, Mentol 1%, Alcanfor',
       properties: [
@@ -1389,14 +1490,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751850496/tlvs08p4txqyfoeoofmg.png',
       weight: 75,
     },
     {
       code: 'GI4000',
       name: 'GEL FRÍO PARA MASAJES X 4000 G',
+      category: 'LIPO-REDUCCIÓN',
       publicPrice: null,
-      efficiency: 340,
+      efficiency: null,
       profesionalPrice: 158600,
       actives: 'Cafeína 1%, Mentol 1%, Alcanfor',
       properties: [
@@ -1405,14 +1508,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751849924/zzw8cfncbccx4b8i5grh.png',
       weight: 76,
     },
     {
       code: 'SA500',
       name: 'GEL CALIENTE PARA MASAJES x 500 G',
+      category: 'LIPO-REDUCCIÓN',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: null,
       profesionalPrice: 56700,
       actives: 'Rubefacientes',
       properties: [
@@ -1421,14 +1526,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751850345/jykac3x63cbk0mtsqrqv.png',
       weight: 77,
     },
     {
       code: 'SA4000',
       name: 'GEL CALIENTE PARA MASAJES x 4000 G',
+      category: 'LIPO-REDUCCIÓN',
       publicPrice: null,
-      efficiency: 340,
+      efficiency: null,
       profesionalPrice: 164900,
       actives: 'Rubefacientes',
       properties: [
@@ -1437,14 +1544,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751850649/dp2c5ivgtormtk2mefoe.png',
       weight: 78,
     },
     {
       code: 'GF500',
       name: 'GEL FRIO REAFIRMANTE X 500 G',
+      category: 'REAFIRMACIÓN',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: null,
       profesionalPrice: 68500,
       actives:
         'Mentol 2%, Centella Asiática 1%, Algas Fucus 1%, Equisetum Arvense 1%.',
@@ -1455,14 +1564,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751852015/qixlouadhvitqjwk4dw4.png',
       weight: 79,
     },
     {
       code: 'HV500',
       name: 'LOCIÓN HIPOTÉRMICA VENDAS X 500 G',
+      category: 'REAFIRMACIÓN',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: null,
       profesionalPrice: 45500,
       actives: 'Cafeína 1%, Mentol 1%',
       properties: [
@@ -1472,14 +1583,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751851567/s5penlc07dymy1j5i5w1.png',
       weight: 80,
     },
     {
       code: 'LB500',
       name: 'LOCIÓN HIPOTÉRMICA BUSTO X 500 G',
+      category: 'KIT BUSTO REAFIRMANTE',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: null,
       profesionalPrice: 81500,
       actives: 'Cafeína 1%, Mentol 1%',
       properties: [
@@ -1489,14 +1602,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751851439/gmjfau3qjbkfbwlpowia.png',
       weight: 81,
     },
     {
       code: 'RB500',
       name: 'GEL REAFIRMANTE BUSTO x 500 G',
+      category: 'KIT BUSTO REAFIRMANTE',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: null,
       profesionalPrice: 89500,
       actives:
         'Mentol 1%, Centella Asiática 1%, Algas Fucus 1%, Equisetum Arvense 1%.',
@@ -1507,14 +1622,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751851006/ymxurcl3ibgyym3crqsp.png',
       weight: 82,
     },
     {
       code: 'MB500',
       name: 'MASCARILLA CRIOGÉNICA BUSTO x 500 G',
+      category: 'KIT BUSTO REAFIRMANTE',
       publicPrice: null,
-      efficiency: 25,
+      efficiency: null,
       profesionalPrice: 81400,
       actives:
         'Mentol 1%, Extracto de Aloe Vera 4%, Bentonita 6%, Caolín 6%, Óxido de ZInc 10% ',
@@ -1525,14 +1642,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751852195/xlvza5pxwlcooro64yjg.png',
       weight: 83,
     },
     {
       code: 'CB120',
       name: 'CREMA REPARADORA BUSTO x 120 G',
+      category: 'KIT BUSTO REAFIRMANTE',
       publicPrice: null,
-      efficiency: 212,
+      efficiency: null,
       profesionalPrice: 61100,
       actives: 'Alantoína 0,2%, Úrea 2,5%, Rosa Mosqueta 5%, Vitamina E 1%.',
       properties: [
@@ -1541,14 +1660,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751852332/hezs6trbyeymrqggxqzs.png',
       weight: 84,
     },
     {
       code: 'GN500',
       name: 'GEL ANTICELULÍTICO X 500 G',
+      category: 'CELULITIS, ESTRIAS, EXFOLIANTE',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: null,
       profesionalPrice: 143600,
       actives:
         'Cafeína 1%, Centella Asiática 1%, Algas Fucus 1%, Ginkgo Biloba 1%,  Castaño de Indias 1%, Equisetum Arvense 1%, Ácido Hialurónico 0,1%.',
@@ -1559,14 +1680,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751852466/ehmbqujzgdz5fhirpebw.png',
       weight: 85,
     },
     {
       code: 'GS500',
       name: 'GEL ANTIESTRÍAS x 500 G',
+      category: 'CELULITIS, ESTRIAS, EXFOLIANTE',
       publicPrice: null,
-      efficiency: 85,
+      efficiency: null,
       profesionalPrice: 87500,
       actives: 'Rosa Mosqueta 3%, Centella Asiática 2,5%, Esclerolucam 0,1%',
       properties: [
@@ -1576,30 +1699,35 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751852573/wsjtjbhcyzlusbx3frmp.png',
       weight: 86,
     },
     {
       code: 'GLD500',
       name: 'GEL LIMPIADOR EXFOLIANTE CORPORAL DURAZNO X 500 G',
+      category: 'CELULITIS, ESTRIAS, EXFOLIANTE',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: null,
       profesionalPrice: 104600,
       actives: 'Semillas de durazno y nuez 10%, Ácidos Grasos de Coco 5%',
       properties: [
-        'Ayuda a eliminar células muertas y toxinas de la piel.',
-        'Prepara la piel para recibir activos por abrasión mecánica',
+        'Elimina impurezas y toxinas.',
+        'Estabiliza la acidez natural de la piel.',
+        'Recomendado para pieles sensibles.',
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751854059/neg7mxie3rjcq97ijyys.png',
       weight: 87,
     },
     {
       code: 'AA500',
       name: 'ACEITE PARA MASAJES DE ALMENDRAS X 500 G',
+      category: 'ACEITES PARA MASAJES',
       publicPrice: null,
-      efficiency: 25,
+      efficiency: null,
       profesionalPrice: 71000,
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
@@ -1608,14 +1736,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751902314/akfcizwdhghidmffybs0.png',
       weight: 88,
     },
     {
       code: 'AN500',
       name: 'ACEITE PARA MASAJES DE NARANJA X 500 G',
+      category: 'ACEITES PARA MASAJES',
       publicPrice: null,
-      efficiency: 25,
+      efficiency: null,
       profesionalPrice: 71000,
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
@@ -1624,14 +1754,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751902314/akfcizwdhghidmffybs0.png',
       weight: 89,
     },
     {
       code: 'AMT500',
       name: 'ACEITE PARA MASAJES DE TE VERDE X 500 G',
+      category: 'ACEITES PARA MASAJES',
       publicPrice: null,
-      efficiency: 25,
+      efficiency: null,
       profesionalPrice: 71000,
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
@@ -1640,14 +1772,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751902314/akfcizwdhghidmffybs0.png',
       weight: 90,
     },
     {
       code: 'AMS500',
       name: 'ACEITE PARA MASAJES DE SEDUCTION X 500 G',
+      category: 'ACEITES PARA MASAJES',
       publicPrice: null,
-      efficiency: 25,
+      efficiency: null,
       profesionalPrice: 71000,
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
@@ -1656,14 +1790,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751902314/akfcizwdhghidmffybs0.png',
       weight: 91,
     },
     {
       code: 'AMY500',
       name: 'ACEITE PARA MASAJES MARACUYA X 500 G',
+      category: 'ACEITES PARA MASAJES',
       publicPrice: null,
-      efficiency: 25,
+      efficiency: null,
       profesionalPrice: 71000,
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
@@ -1672,14 +1808,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751902314/akfcizwdhghidmffybs0.png',
       weight: 92,
     },
     {
       code: 'AMK500',
       name: 'ACEITE PARA MASAJES COCO X 500 G',
+      category: 'ACEITES PARA MASAJES',
       publicPrice: null,
-      efficiency: 25,
+      efficiency: null,
       profesionalPrice: 71000,
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
@@ -1688,14 +1826,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751902314/akfcizwdhghidmffybs0.png',
       weight: 93,
     },
     {
       code: 'AMD500',
       name: 'ACEITE PARA MASAJES DURAZNO X 500 G',
+      category: 'ACEITES PARA MASAJES',
       publicPrice: null,
-      efficiency: 25,
+      efficiency: null,
       profesionalPrice: 71000,
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
@@ -1704,14 +1844,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751902314/akfcizwdhghidmffybs0.png',
       weight: 94,
     },
     {
       code: 'AA4000',
       name: 'ACEITE PARA MASAJES DE ALMENDRAS X 4000 G',
+      category: 'ACEITES PARA MASAJES',
       publicPrice: null,
-      efficiency: 200,
+      efficiency: null,
       profesionalPrice: 192800,
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
@@ -1720,14 +1862,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751902314/akfcizwdhghidmffybs0.png',
       weight: 95,
     },
     {
       code: 'AN4000',
       name: 'ACEITE PARA MASAJES DE NARANJA X 4000 G',
+      category: 'ACEITES PARA MASAJES',
       publicPrice: null,
-      efficiency: 200,
+      efficiency: null,
       profesionalPrice: 192800,
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
@@ -1736,14 +1880,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751902314/akfcizwdhghidmffybs0.png',
       weight: 96,
     },
     {
       code: 'AMT4000',
       name: 'ACEITE PARA MASAJES DE TE VERDE X 4000 G',
+      category: 'ACEITES PARA MASAJES',
       publicPrice: null,
-      efficiency: 200,
+      efficiency: null,
       profesionalPrice: 192800,
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
@@ -1752,14 +1898,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751902314/akfcizwdhghidmffybs0.png',
       weight: 97,
     },
     {
       code: 'AMS4000',
       name: 'ACEITE PARA MASAJES DE SEDUCTION X 4000 G',
+      category: 'ACEITES PARA MASAJES',
       publicPrice: null,
-      efficiency: 200,
+      efficiency: null,
       profesionalPrice: 192800,
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
@@ -1768,14 +1916,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751902314/akfcizwdhghidmffybs0.png',
       weight: 98,
     },
     {
       code: 'AMY4000',
       name: 'ACEITE PARA MASAJES MARACUYA X 4000 G',
+      category: 'ACEITES PARA MASAJES',
       publicPrice: null,
-      efficiency: 200,
+      efficiency: null,
       profesionalPrice: 192800,
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
@@ -1784,14 +1934,31 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751902314/akfcizwdhghidmffybs0.png',
       weight: 99,
+    },
+    {
+      code: 'AMK 4000',
+      name: 'ACEITE PARA MASAJES COCO X 4000 G',
+      category: 'ACEITES PARA MASAJES',
+      publicPrice: null,
+      efficiency: null,
+      profesionalPrice: 192800,
+      actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
+      properties: ['LOCIÓN HIDRATANTE FACIAL -LIPOSOMADA 150 G'],
+      phase: '',
+      time: '',
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751902314/akfcizwdhghidmffybs0.png',
+      weight: 100,
     },
     {
       code: 'AMD4000',
       name: 'ACEITE PARA MASAJES DURAZNO X 4000 G',
+      category: 'ACEITES PARA MASAJES',
       publicPrice: null,
-      efficiency: 200,
+      efficiency: null,
       profesionalPrice: 192800,
       actives: 'Blend de Extractos Vegetales, Aceite Mineral USP y Vitamina E.',
       properties: [
@@ -1800,14 +1967,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
-      weight: 100,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751902314/akfcizwdhghidmffybs0.png',
+      weight: 101,
     },
     {
       code: 'AQ4000A',
       name: 'GEL CONDUCTOR AZUL X 4000 G',
+      category: 'COMPLEMENTARIOS',
       publicPrice: null,
-      efficiency: 300,
+      efficiency: null,
       profesionalPrice: 65200,
       actives: 'Agentes conductores.',
       properties: [
@@ -1816,14 +1985,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
-      weight: 101,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751856909/kawyx4ndplbummmian6t.png',
+      weight: 102,
     },
     {
       code: 'AQ4000T',
       name: 'GEL CONDUCTOR TRANSPARENTE X 4000 G',
+      category: 'COMPLEMENTARIOS',
       publicPrice: null,
-      efficiency: 300,
+      efficiency: null,
       profesionalPrice: 65200,
       actives: 'Agentes conductores.',
       properties: [
@@ -1832,14 +2003,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
-      weight: 102,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751856772/vce0tefghxevmuog5ygs.png',
+      weight: 103,
     },
     {
       code: 'CI500',
       name: 'CUIDADO ÍNTIMO X 500 G',
+      category: 'COMPLEMENTARIOS',
       publicPrice: null,
-      efficiency: 425,
+      efficiency: null,
       profesionalPrice: 102500,
       actives:
         'Aloe Vera 5%, Extracto de Caléndula 2%, Extracto de Manzanilla 2%, Ácido Láctico 1,1%',
@@ -1850,28 +2023,17 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
-      weight: 103,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751857017/g4qtnvferitgudjre2ul.png',
+      weight: 104,
     },
     {
       code: 'AG15-30',
       name: 'ÁCIDO GLICÓLICO 15% X 30 G',
+      category: 'PRODUCTOS ESPECIALES',
       publicPrice: null,
-      efficiency: 85,
+      efficiency: null,
       profesionalPrice: 92700,
-      actives: '',
-      properties: [],
-      phase: '',
-      time: '',
-      image: null,
-      weight: 104,
-    },
-    {
-      code: 'AG15-60',
-      name: 'ÁCIDO GLICÓLICO 15% X 60 G',
-      publicPrice: null,
-      efficiency: 170,
-      profesionalPrice: 161100,
       actives: '',
       properties: [],
       phase: '',
@@ -1880,11 +2042,12 @@ export const initialData: SeedData = {
       weight: 105,
     },
     {
-      code: 'AG25-30',
-      name: 'ÁCIDO GLICÓLICO 25% X 30 G',
+      code: 'AG15-60',
+      name: 'ÁCIDO GLICÓLICO 15% X 60 G',
+      category: 'PRODUCTOS ESPECIALES',
       publicPrice: null,
-      efficiency: 85,
-      profesionalPrice: 107000,
+      efficiency: null,
+      profesionalPrice: 161100,
       actives: '',
       properties: [],
       phase: '',
@@ -1893,11 +2056,12 @@ export const initialData: SeedData = {
       weight: 106,
     },
     {
-      code: 'AG25-60',
-      name: 'ÁCIDO GLICÓLICO 25% X 60 G',
+      code: 'AG25-30',
+      name: 'ÁCIDO GLICÓLICO 25% X 30 G',
+      category: 'PRODUCTOS ESPECIALES',
       publicPrice: null,
-      efficiency: 170,
-      profesionalPrice: 183200,
+      efficiency: null,
+      profesionalPrice: 107000,
       actives: '',
       properties: [],
       phase: '',
@@ -1906,11 +2070,12 @@ export const initialData: SeedData = {
       weight: 107,
     },
     {
-      code: 'AG35-30',
-      name: 'ÁCIDO GLICÓLICO 35% X 30 G',
+      code: 'AG25-60',
+      name: 'ÁCIDO GLICÓLICO 25% X 60 G',
+      category: 'PRODUCTOS ESPECIALES',
       publicPrice: null,
-      efficiency: 85,
-      profesionalPrice: 126200,
+      efficiency: null,
+      profesionalPrice: 183200,
       actives: '',
       properties: [],
       phase: '',
@@ -1919,11 +2084,12 @@ export const initialData: SeedData = {
       weight: 108,
     },
     {
-      code: 'AG35-60',
-      name: 'ÁCIDO GLICÓLICO 35% X 60 G',
+      code: 'AG35-30',
+      name: 'ÁCIDO GLICÓLICO 35% X 30 G',
+      category: 'PRODUCTOS ESPECIALES',
       publicPrice: null,
-      efficiency: 170,
-      profesionalPrice: 208400,
+      efficiency: null,
+      profesionalPrice: 126200,
       actives: '',
       properties: [],
       phase: '',
@@ -1932,11 +2098,12 @@ export const initialData: SeedData = {
       weight: 109,
     },
     {
-      code: 'LN250',
-      name: 'LOCIÓN NEUTRALIZANTE X 250 G',
+      code: 'AG35-60',
+      name: 'ÁCIDO GLICÓLICO 35% X 60 G',
+      category: 'PRODUCTOS ESPECIALES',
       publicPrice: null,
-      efficiency: 700,
-      profesionalPrice: 28200,
+      efficiency: null,
+      profesionalPrice: 208400,
       actives: '',
       properties: [],
       phase: '',
@@ -1945,11 +2112,12 @@ export const initialData: SeedData = {
       weight: 110,
     },
     {
-      code: 'MAN30-30',
-      name: 'ÁCIDO MANDÉLICO 30% X 30 G',
+      code: 'LN250',
+      name: 'LOCIÓN NEUTRALIZANTE X 250 G',
+      category: 'PRODUCTOS ESPECIALES',
       publicPrice: null,
-      efficiency: 85,
-      profesionalPrice: 145700,
+      efficiency: null,
+      profesionalPrice: 28200,
       actives: '',
       properties: [],
       phase: '',
@@ -1958,11 +2126,12 @@ export const initialData: SeedData = {
       weight: 111,
     },
     {
-      code: 'AHA30',
-      name: 'SUERO ACLARADOR 30% X 30 G',
+      code: 'MAN30-30',
+      name: 'ÁCIDO MANDÉLICO 30% X 30 G',
+      category: 'PRODUCTOS ESPECIALES',
       publicPrice: null,
-      efficiency: 85,
-      profesionalPrice: 154200,
+      efficiency: null,
+      profesionalPrice: 145700,
       actives: '',
       properties: [],
       phase: '',
@@ -1971,11 +2140,12 @@ export const initialData: SeedData = {
       weight: 112,
     },
     {
-      code: 'AP30',
-      name: 'GEL ANTIEDAD PLUS X 30 G',
+      code: 'AHA30',
+      name: 'SUERO ACLARADOR 30% X 30 G',
+      category: 'PRODUCTOS ESPECIALES',
       publicPrice: null,
-      efficiency: 85,
-      profesionalPrice: 161800,
+      efficiency: null,
+      profesionalPrice: 154200,
       actives: '',
       properties: [],
       phase: '',
@@ -1984,11 +2154,12 @@ export const initialData: SeedData = {
       weight: 113,
     },
     {
-      code: 'AL10-30',
-      name: 'ÁCIDO LÁCTICO 10% X 30G',
+      code: 'AP30',
+      name: 'GEL ANTIEDAD PLUS X 30 G',
+      category: 'PRODUCTOS ESPECIALES',
       publicPrice: null,
-      efficiency: 85,
-      profesionalPrice: 61000,
+      efficiency: null,
+      profesionalPrice: 161800,
       actives: '',
       properties: [],
       phase: '',
@@ -1997,11 +2168,12 @@ export const initialData: SeedData = {
       weight: 114,
     },
     {
-      code: 'AKG5-30',
-      name: 'ÁCIDO KÓJICO 5% X 30G',
+      code: 'AL10-30',
+      name: 'ÁCIDO LÁCTICO 10% X 30G',
+      category: 'PRODUCTOS ESPECIALES',
       publicPrice: null,
-      efficiency: 85,
-      profesionalPrice: 86500,
+      efficiency: null,
+      profesionalPrice: 61000,
       actives: '',
       properties: [],
       phase: '',
@@ -2010,11 +2182,12 @@ export const initialData: SeedData = {
       weight: 115,
     },
     {
-      code: 'SD',
-      name: 'SERVICIO DOMICILIO ',
+      code: 'AKG5-30',
+      name: 'ÁCIDO KÓJICO 5% X 30G',
+      category: 'PRODUCTOS ESPECIALES',
       publicPrice: null,
       efficiency: null,
-      profesionalPrice: 10000,
+      profesionalPrice: 86500,
       actives: '',
       properties: [],
       phase: '',
@@ -2024,9 +2197,10 @@ export const initialData: SeedData = {
     },
     {
       code: 'GLT500',
-      name: 'AMK4000',
+      name: 'GEL LIMPIADOR EXFOLIANTE TE VERDE X 500',
+      category: 'TERAPIA TÉ VERDE',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: null,
       profesionalPrice: 104600,
       actives: '',
       properties: [
@@ -2038,27 +2212,31 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1752096266/kugb1sjh1hspdo2d1zuz.png',
       weight: 117,
     },
     {
       code: 'MRT500',
       name: 'MASCARILLA CORPORAL ARCILLA TÉ VERDE X 500 G',
+      category: 'TERAPIA TÉ VERDE',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: null,
       profesionalPrice: 95800,
       actives: '',
       properties: ['LÍNEA SPA 500'],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1752097051/aekyzxuumrebtvvgv1wm.png',
       weight: 118,
     },
     {
       code: 'LHT500',
       name: 'LECHE HIDROREPARADORA TE VERDE X 500 G',
+      category: 'TERAPIA TÉ VERDE',
       publicPrice: null,
-      efficiency: 110,
+      efficiency: null,
       profesionalPrice: 115000,
       actives: '',
       properties: [
@@ -2070,14 +2248,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1752097438/y8qvh7dixtl0bbjriakw.png',
       weight: 120,
     },
     {
       code: 'MNT300',
       name: 'MASCARILLA NATURAL TE VERDE X 300 G',
+      category: 'TERAPIA TÉ VERDE',
       publicPrice: null,
-      efficiency: 51,
+      efficiency: null,
       profesionalPrice: 62500,
       actives: '',
       properties: [
@@ -2089,14 +2269,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1752096558/bqh7i2gfdec9orqqmzi4.png',
       weight: 121,
     },
     {
       code: 'GLS500',
       name: 'GEL LIMPIADOR EXFOLIANTE SEDUCTION X 500',
+      category: ' TERAPIA SEDUCTION',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: null,
       profesionalPrice: 104600,
       actives: '',
       properties: [
@@ -2108,14 +2290,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1752096741/fhisb4htw7mlm89otqxs.png',
       weight: 122,
     },
     {
       code: 'MRS500',
       name: 'MASCARILLA CORPORAL ARCILLA SEDUCTION X 500 G',
+      category: ' TERAPIA SEDUCTION',
       publicPrice: null,
-      efficiency: 42,
+      efficiency: null,
       profesionalPrice: 95800,
       actives: '',
       properties: [
@@ -2127,14 +2311,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1752096896/qscda7rlaoyj4pesu0rt.png',
       weight: 123,
     },
     {
       code: 'LHS500',
       name: 'LECHE HIDROREPARADORA SEDUCTION X 500 G',
+      category: ' TERAPIA SEDUCTION',
       publicPrice: null,
-      efficiency: 110,
+      efficiency: null,
       profesionalPrice: 115000,
       actives: '',
       properties: [
@@ -2146,14 +2332,16 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1752100295/rok666ljydwdgsjcmopm.png',
       weight: 125,
     },
     {
       code: 'MNS300',
       name: 'MASCARILLA NATURAL SEDUCTION X 300 G',
+      category: ' TERAPIA SEDUCTION',
       publicPrice: null,
-      efficiency: 51,
+      efficiency: null,
       profesionalPrice: 62500,
       actives: '',
       properties: [
@@ -2165,53 +2353,61 @@ export const initialData: SeedData = {
       ],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1752097701/e4dhlojbeqpztipftp1l.png',
       weight: 126,
     },
     {
       code: 'LPR5',
       name: 'LIPOSOLV REDUCTOR CAJA X 5 VIALES X 5 ML',
+      category: 'LIPOREDUCTORES',
       publicPrice: null,
-      efficiency: 5,
+      efficiency: null,
       profesionalPrice: 171000,
       actives: 'Cafeína, Metilsilanotriol manuronato, Fosfolipidos de Soya.',
       properties: [],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751903092/e8nyxjabagn7buteubns.png',
       weight: 127,
     },
     {
       code: 'LPR10',
       name: 'LIPOSOLV REDUCTOR CAJA X 1 VIALES X 10 ML',
+      category: 'LIPOREDUCTORES',
       publicPrice: null,
-      efficiency: 1,
+      efficiency: null,
       profesionalPrice: 65800,
       actives: 'Cafeína, Metilsilanotriol manuronato, Fosfolipidos de Soya.',
       properties: [],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751903214/ulzzu5oha51ggj6donb9.png',
       weight: 128,
     },
     {
       code: 'OLPR',
       name: 'LIPOSOLV REDUCTOR CAJA X 5 ML MAS 1X 10 ML',
+      category: 'LIPOREDUCTORES',
       publicPrice: null,
-      efficiency: 6,
+      efficiency: null,
       profesionalPrice: 207300,
       actives: 'Cafeína, Metilsilanotriol manuronato, Fosfolipidos de Soya.',
       properties: [],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751903323/jng4pxret6idkxplgbo4.png',
       weight: 129,
     },
     {
       code: 'LPR120',
       name: 'LIPOSOLV REDUCTOR FRASCO X 120 ML',
+      category: 'LIPOREDUCTORES',
       publicPrice: 90200,
-      efficiency: 20,
+      efficiency: null,
       profesionalPrice: 49300,
       actives: 'Cafeína, Metilsilanotriol manuronato, Fosfolipidos de Soya.',
       properties: [
@@ -2221,49 +2417,56 @@ export const initialData: SeedData = {
       ],
       phase: 'TRATAMIENTO ',
       time: 'DIA O NOCHE',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751903563/u3s5i45jpk6ioyaxq8af.png',
       weight: 130,
     },
     {
       code: 'LPRP',
       name: 'LIPOSOLV PLUS CAJA X 5 VIALES X 5 ML',
+      category: 'LIPOREDUCTORES',
       publicPrice: null,
-      efficiency: 5,
+      efficiency: null,
       profesionalPrice: 217800,
       actives:
         'Cafeína Anhidra, Metilsilanotriol manuronato, L-Carnitina,  Extracto de Hydrocotyl (Centella Asiática),  Coenzima-A, Hialuronato de Sodio, Extracto de Algas Fucus, Hidroxiprolina, Fosfolipidos de Soya.',
       properties: [],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751904140/uwvkkm5qtyhjxrn3lylr.png',
       weight: 131,
     },
     {
       code: 'LPRP10',
       name: 'LIPOSOLV PLUS CAJA X 1 VIALES X 10 ML',
+      category: 'LIPOREDUCTORES',
       publicPrice: null,
-      efficiency: 1,
+      efficiency: null,
       profesionalPrice: 81700,
       actives:
         'Cafeína Anhidra, Metilsilanotriol manuronato, L-Carnitina,  Extracto de Hydrocotyl (Centella Asiática),  Coenzima-A, Hialuronato de Sodio, Extracto de Algas Fucus, Hidroxiprolina, Fosfolipidos de Soya.',
       properties: [],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751903833/lrsfezv0am5z3oqz0agq.png',
       weight: 132,
     },
     {
       code: 'OLPRP',
       name: 'LIPOSOLV PLUS CAJA X 5 ML MAS 1X 10 ML',
+      category: 'LIPOREDUCTORES',
       publicPrice: null,
-      efficiency: 6,
+      efficiency: null,
       profesionalPrice: 247400,
       actives:
         'Cafeína Anhidra, Metilsilanotriol manuronato, L-Carnitina,  Extracto de Hydrocotyl (Centella Asiática),  Coenzima-A, Hialuronato de Sodio, Extracto de Algas Fucus, Hidroxiprolina, Fosfolipidos de Soya.',
       properties: [],
       phase: '',
       time: '',
-      image: null,
+      image:
+        'https://res.cloudinary.com/dch3xg5ja/image/upload/v1751903731/ackxydahqmfzab7nq81c.png',
       weight: 133,
     },
   ],

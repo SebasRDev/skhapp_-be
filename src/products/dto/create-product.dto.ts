@@ -5,6 +5,8 @@ export class CreateProductDto {
   readonly code: string;
   @IsString()
   readonly name: string;
+  @IsString()
+  readonly category: string;
   @IsNumber()
   @IsOptional()
   readonly publicPrice?: number | null;
